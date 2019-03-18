@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{
+    position: relative;
+    font-family: "Raleway";
+    /* display: flex; */
+    font-size: 10px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* background: rgba(0, 0, 0, 0.274); */
+}
+
 .logo{
-    width: 20rem;
+    width: 17rem;
+    padding-top: 2rem;
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+
+nav li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    padding: 2rem;
+}
+
+.background{
+    background-image: url("../img/smile.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+}
+
+.news{
+    /* color: yellow; */
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 32rem;
+    height: 30rem;;
 }
