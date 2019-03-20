@@ -148,22 +148,25 @@ nav li a {
 }
 
 .box-3 {
-    width: 59rem;
+    width: 120rem;
     height: auto;
     margin: 0 0 0 2rem;
     position: relative;
+    display: flex;
 }
 
 .box-info-3 {
     position: relative;
-    /* bottom: 0; */
+    /* color: #000; */
     width: 100%;
+    height: auto;
     padding: 2rem;
-    background: rgba(134, 137, 142, 0.7);
-    box-sizing: border-box;
+    margin-bottom: .5rem;
+    background: rgba(134, 137, 142, 1);
+    /* box-sizing: border-box; */
 }
 
 .img-box-3 {
-    width: 100%;
+    width: 45rem;
     height: auto;
 }
