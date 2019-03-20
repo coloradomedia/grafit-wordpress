@@ -142,6 +142,21 @@ nav li a {
     box-sizing: border-box;
 }
 
+.box-info-2 strong{
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    padding-bottom: .5rem;
+}
+
+.box-info-2 a{
+    color: #fff;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+    display: block;
+}
+
 .img-box-2 {
     width: 100%;
     height: auto;
