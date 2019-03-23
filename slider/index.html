@@ -6,7 +6,7 @@
 </head>
 <body>
     <div class="main-banner" id="main-banner">
-        <div class="imgbanbtn imgbanbtn-prev" id=imgbanbtn-prev></div>
+        <!-- <div class="imgbanbtn imgbanbtn-prev" id=imgbanbtn-prev></div> -->
         <div class="imgban" id="imgban3">
         </div>
         <div class="imgban" id="imgban2">
@@ -15,7 +15,7 @@
         <div class="imgban" id="imgban1">
             
         </div>
-        <div class="imgbanbtn imgbanbtn-next" id=imgbanbtn-next></div>
+        <!-- <div class="imgbanbtn imgbanbtn-next" id=imgbanbtn-next></div> -->
     </div>
 
 <script>
@@ -40,22 +40,22 @@
         }, bannerTimer);
     }
 
-    document.getElementById("imgbanbtn-prev").onclick = function(){
-        if(bannerStatus === 1){
-            bannerStatus = 2;
-        }
-        else if(bannerStatus === 2){
-            bannerStatus = 3;
-        }
-        else if(bannerStatus === 3){
-            bannerStatus = 1;
-        }
-        bannerLoop();
-    }
+    // document.getElementById("imgbanbtn-prev").onclick = function(){
+    //     if(bannerStatus === 1){
+    //         bannerStatus = 2;
+    //     }
+    //     else if(bannerStatus === 2){
+    //         bannerStatus = 3;
+    //     }
+    //     else if(bannerStatus === 3){
+    //         bannerStatus = 1;
+    //     }
+    //     bannerLoop();
+    // }
 
-    document.getElementById("imgbanbtn-next").onclick = function(){
-        bannerLoop();
-    }
+    // document.getElementById("imgbanbtn-next").onclick = function(){
+    //     bannerLoop();
+    // }
 
     function bannerLoop(){
         if(bannerStatus === 1){
