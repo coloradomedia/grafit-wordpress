@@ -35,7 +35,6 @@
 
 			<?php endwhile; ?>
 
-			<?php materialwp_paging_nav(); ?>
 
 		<?php else : ?>
 
