@@ -9,12 +9,12 @@ License: &copy;ColoradoMedia
 Text Domain: coloradomedia
 */
 
-*{
-    font-size: 20px;
+html{
+    font-size: 10px;
 }
 
 .cards{
-    min-height: 600px;
+    /* min-height: 600px; */
     max-width: 1280px;
     /* background-color: #783575; */
     margin: 0 auto;
@@ -24,12 +24,12 @@ Text Domain: coloradomedia
     /* background-color: #fff; */
     /* width: 375px; */
     /* height: 275px; */
-    padding: 5px;
+    padding: 10px;
 }
 
 .one-4{
     /* background-color: rgb(236, 49, 49); */
-    padding: 5px;
+    padding: 10px;
     /* width: 25%; */
     /* height: 275px; */
 }

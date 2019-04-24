@@ -5,14 +5,13 @@
 }
 
 html {
-    font-size: 20px !important;
+    font-size: 10px;
 
 }
 
 body {
     position: relative;
     font-family: "Raleway";
-    font-size: 20px !important;
     margin: 0;
     padding: 0;
 }

@@ -1,5 +1,3 @@
-<?php?>
-
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -9,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
 
     <?php wp_head(); ?>
 </head>
