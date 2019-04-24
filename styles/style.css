@@ -50,7 +50,7 @@ header {
 div ul {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 4.8rem;
+    /* padding-top: 4.8rem; */
 }
 
 .nav-link{

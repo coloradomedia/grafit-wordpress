@@ -17,16 +17,53 @@
 
 <div class="cards">
 	<div class="row">
-		<div class="col-xl-6 col-lg-6 col-md-12 one-2">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/room.jpg" class="card-img img-fluid">
+		<div class="col-xl-6 col-lg-8 col-md-8 one-2">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-3 col-lg-6 col-md-12 one-4">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/room.jpg" class="card-img img-fluid">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-3 col-lg-6 col-md-12 one-4">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/room.jpg" class="card-img img-fluid">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
+
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
+			
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
+			
+		</div>
+		<div class="col-xl-6 col-lg-8 col-md-8 one-2">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
+
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
+
+		</div>
+		<div class="col-xl-6 col-lg-8 col-md-8 one-2">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
+
+		</div>
+		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
+
+		</div>
+		<!-- <div class="w-100"></div> -->
+		<div class="col-xl-4 col-lg-4 col-md-4 one-4 one-3">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-3.png" class="img-fluid">
+
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 one-2 one-3">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-3.png" class="img-fluid">
+
+		</div>
+		<div class="col-xl-4 col-lg-4 col-md-4 one-4 one-3">
+		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-3.png" class="img-fluid">
 
 		</div>
 	</div>

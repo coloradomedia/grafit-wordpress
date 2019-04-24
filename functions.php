@@ -40,8 +40,8 @@ function grafit_widgets_init() {
 		'name'          => __( 'Footer 1', 'grafit' ),
 		'id'            => 'footer-1',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="footer-title">',
 		'after_title'   => '</h3>',
 	) );
@@ -49,8 +49,8 @@ function grafit_widgets_init() {
 		'name'          => __( 'Footer 2', 'grafit' ),
 		'id'            => 'footer-2',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="footer-title">',
 		'after_title'   => '</h3>',
 	) );
@@ -58,8 +58,8 @@ function grafit_widgets_init() {
 		'name'          => __( 'Footer 3', 'grafit' ),
 		'id'            => 'footer-3',
 		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="footer-title">',
 		'after_title'   => '</h3>',
 	) );
@@ -70,8 +70,6 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
  * Enqueue scripts and styles.
  */
  function grafit_scripts() {
-	// wp_enqueue_style( 'mwp-bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.4', 'all' );
-
     
     // wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.css', array(), '', 'all' );
     wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
@@ -83,7 +81,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     wp_enqueue_style( 'grafit-style', get_stylesheet_uri() );
     
 
-	// wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.4', true );
+	wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.3.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

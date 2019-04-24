@@ -2,11 +2,7 @@
 
 		<!-- pasek widgetow -->
 		<div class="footer-widgets">
-			<div class="container">
-				<div class="row">
-					<?php get_sidebar('footer'); ?>
-				</div>
-			</div>
+			<?php get_sidebar('footer'); ?>
 		</div>
 
 		<!-- prawa autorskie -->

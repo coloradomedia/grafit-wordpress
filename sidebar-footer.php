@@ -4,8 +4,8 @@
  */
 ?>
 
-<div class="footer-widgets-wrapper">
-	<div class="footer-widgets-wrapper-inner">
+<div class="footer-widgets-wrapper container">
+	<div class="footer-widgets-wrapper-inner row">
 		<div class="col-xs-12 col-md-6 footer-widget">
 			<?php dynamic_sidebar( 'footer-1' ); ?>
 		</div>
