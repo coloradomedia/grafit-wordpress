@@ -76,7 +76,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 
     // wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.css', array(), '', 'all' );
     
-	wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/styles/style.css', array(), '', 'all' );
+	wp_enqueue_style( 'style-css', get_template_directory_uri() . '/styles/style.css', array(), '', 'all' );
 
 	// wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.4', true );
 
