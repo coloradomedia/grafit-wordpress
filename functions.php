@@ -72,11 +72,16 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
  function grafit_scripts() {
 	// wp_enqueue_style( 'mwp-bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.4', 'all' );
 
-	// wp_enqueue_style( 'materialwp-style', get_stylesheet_uri() );
-
-    // wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.css', array(), '', 'all' );
     
-	wp_enqueue_style( 'style-css', get_template_directory_uri() . '/styles/style.css', array(), '', 'all' );
+    // wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/css/animate.css', array(), '', 'all' );
+    wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
+    
+    wp_enqueue_style( 'style-css', get_template_directory_uri() . '/styles/style.css', array(), '', 'all' );
+
+
+    
+    wp_enqueue_style( 'grafit-style', get_stylesheet_uri() );
+    
 
 	// wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.4', true );
 

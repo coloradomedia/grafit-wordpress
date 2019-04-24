@@ -8,3 +8,28 @@ Version: 1.0.0
 License: &copy;ColoradoMedia
 Text Domain: coloradomedia
 */
+
+*{
+    font-size: 20px;
+}
+
+.cards{
+    min-height: 600px;
+    max-width: 1280px;
+    /* background-color: #783575; */
+    margin: 0 auto;
+}
+
+.one-2{
+    /* background-color: #fff; */
+    /* width: 375px; */
+    /* height: 275px; */
+    padding: 5px;
+}
+
+.one-4{
+    /* background-color: rgb(236, 49, 49); */
+    padding: 5px;
+    /* width: 25%; */
+    /* height: 275px; */
+}
