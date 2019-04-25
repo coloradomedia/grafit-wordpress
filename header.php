@@ -13,30 +13,29 @@
 
 <body <?php body_class(); ?>>
     <header class="container">
-        <nav class="navbar navbar-expand-md navbar-light" role="navigation">
-            <!-- <div class="container"> -->
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-                        src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo"
-                        width="200" height="auto" /></a>
-                        <!-- </div> -->
-                
-
-            <ul>
-                <li><a href="article.html">Oferta</a></li>
-                <li><a href="#">O nas</a></li>
-                <li><a href="#">Kontakt</a></li>
-                <li><a href="#">Raty</a></li>
-                <li><a href="#">Lokalizacja</a></li>
-            </ul>
 
 
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
+                    src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo"
+                    width="200" height="auto" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="article.html">Oferta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Raty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Lokalizacja</a></li>
+                </ul>
+
+            </div>
         </nav>
+
     </header>
 
     <!-- <?php

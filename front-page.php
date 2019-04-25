@@ -1,68 +1,68 @@
 <?php get_header(); ?>
 
 <!-- sekcja Top slider -->
-<!-- <div class="top-slider">
-		<//?php
-		// $posts = get_posts(array(
-		// 'include' => 43,
-		// 'post_type' => 'any',
-		// 'numberposts' => 1,
-		// 'suppress_filters' => false,
-		// ));
+<div class="top-slider">
+		<?php
+		$posts = get_posts(array(
+		'include' => 43,
+		'post_type' => 'any',
+		'numberposts' => 1,
+		'suppress_filters' => false,
+		));
 
-		// echo apply_filters('the_content', $posts[0]->post_content);
+		echo apply_filters('the_content', $posts[0]->post_content);
 		?>
-</div> -->
+</div>
 
 
 <div class="cards">
-	<div class="row">
-		<div class="col-xl-6 col-lg-8 col-md-8 one-2">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
-
+	<div class="row no-gutters">
+		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
+			<!-- <p class="kitchen">Kuchnie</p> -->
+			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="">
 		</div>
-		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 			
 		</div>
-		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 			
 		</div>
-		<div class="col-xl-6 col-lg-8 col-md-8 one-2">
+		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-6 col-lg-8 col-md-8 one-2">
+		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-3 col-lg-4 col-md-4 one-4">
+		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
 		<!-- <div class="w-100"></div> -->
-		<div class="col-xl-4 col-lg-4 col-md-4 one-4 one-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 one-four one-3">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-3.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-4 col-lg-4 col-md-4 one-2 one-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 one-two one-3">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-3.png" class="img-fluid">
 
 		</div>
-		<div class="col-xl-4 col-lg-4 col-md-4 one-4 one-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 one-four one-3">
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-3.png" class="img-fluid">
 
 		</div>

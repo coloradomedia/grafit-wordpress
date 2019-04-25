@@ -13,8 +13,32 @@ html{
     font-size: 10px;
 }
 
-nav{
-    /* width:  */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* background: rgba(0, 0, 0, 0.274); */
+    position: relative;
+}
+
+/* nav .container{
+    width: 1400px;
+    margin: 0 auto;
+} */
+
+.nav-item{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 .cards{
@@ -25,23 +49,44 @@ nav{
     padding: 25px;
 }
 
-.one-2{
-    /* background-color: #fff; */
-    /* width: 375px; */
-    /* height: 275px; */
-    padding: 10px;
+.one-two{
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    padding: 0px;
     /* margin: 10px; */
 }
 
-.one-4{
-    /* background-color: rgb(236, 49, 49); */
-    padding: 10px;
-    /* margin: 10px; */
-    /* width: 100%;
-    height: 90%; */
-    /* overflow-y: hidden; */
+.one-two img{
+    /* max-width: 100%; */
+    /* overflow: hidden; */
+    transition: 0.75s ease;
 }
 
+.one-two img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 0;
+}
+
+.one-four{
+    overflow: hidden;
+    position: relative;
+    font-size: 15px;
+    padding: 0px;
+    /* margin: 10px; */
+}
+
+.one-four img{
+    transition: 0.75s ease;
+
+}
+
+.one-four img:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 0;
+}
 .footer-widgets-wrapper-inner ul li a{
     font-size: 2rem;
     color: #fff;
@@ -52,6 +97,120 @@ nav{
 /* .one-3 img{
     overflow-y: 295px;
 } */
+
+
+.navbar-toggler{
+    position: absolute;
+    right: 50px;
+    top: 40px;
+    /* background-color: #000; */
+}
+
+.ms-bullet{
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.kitchen{
+    position: absolute;
+    line-height: 300px;
+    width: 100%;
+    /* top: 40%; */
+    /* margin: 0 auto; */
+    padding-right: 10px;
+    text-align: center;
+    /* left: 35%; */
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1199.98px) {
     /* header{
@@ -65,11 +224,4 @@ nav{
         overflow: hidden;
         width: 100vw;
     }
-}
-
-.navbar-toggler{
-    position: absolute;
-    right: 50px;
-    top: 40px;
-    background-color: #000;
 }
