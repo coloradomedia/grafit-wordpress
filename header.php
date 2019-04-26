@@ -30,6 +30,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#">Oferta</a>
                         <div class="dropdown-i">
+                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Pokoje dzienne</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Kuchnie - na wymiar</a>
