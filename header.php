@@ -17,8 +17,8 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-                    src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo"
-                    width="200" height="auto" /></a>
+                    src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo" width="200"
+                    height="auto" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,8 +26,29 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
 
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="article.html">Oferta</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="article.html">O nas</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Oferta</a>
+                        <div class="dropdown-i">
+                            <a class="dropdown-item" href="#">Pokoje dzienne</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Kuchnie - na wymiar</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Pokoje młodzieżowe</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Sypialnie</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Biura</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Łazienki</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Dodatki</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">AGD/RTV</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Bramy i ogrodzenia</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Raty</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lokalizacja</a></li>

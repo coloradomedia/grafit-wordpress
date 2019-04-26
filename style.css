@@ -8,6 +8,7 @@ Version: 1.0.0
 License: &copy;ColoradoMedia
 Text Domain: coloradomedia
 */
+@import url(styles/animate.css);
 
 html{
     font-size: 10px;
@@ -36,6 +37,35 @@ nav {
     text-decoration: none;
     padding: 0 15px 0 15px;
 }
+.dropdown-item{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 30px 5px 20px;
+}
+
+.dropdown-i{
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    left: -9px;
+    top: 150%;
+    transition: all 0.3s ease-in-out 0s;
+    opacity: 0;
+}
+
+.nav-item:hover .dropdown-i{
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+    transition: all 0.3s ease 0s;
+}
+.top-slider{
+    padding: 3rem;
+}
 
 a:hover{
     text-decoration: none;
@@ -43,49 +73,70 @@ a:hover{
 
 .cards{
     /* min-height: 600px; */
-    max-width: 1280px;
-    /* background-color: #783575; */
+    max-width: 1300px;
     margin: 0 auto;
     padding: 25px;
+}
+.row{
+    margin: 0;
 }
 
 .one-two{
     overflow: hidden;
     position: relative;
     font-size: 15px;
-    padding: 0px;
+    padding: 10px;
     /* margin: 10px; */
+    transition: transform 1s ease-out;
+
 }
 
 .one-two img{
-    /* max-width: 100%; */
-    /* overflow: hidden; */
-    transition: 0.75s ease;
-}
-
-.one-two img:hover{
-    cursor: pointer;
-    transform: scale(1.2);
+    /* position: absolute; */
     z-index: 0;
 }
 
-.one-four{
-    overflow: hidden;
-    position: relative;
-    font-size: 15px;
-    padding: 0px;
+
+.one-two:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.wrapper{
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
     /* margin: 10px; */
+    z-index: 2;
+    transition-duration: 1s;
+}
+
+.wrapper:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.one-four{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding: 10px;
+    /* margin: 10px; */
+    transition: transform 1s ease-out;
+
 }
 
 .one-four img{
-    transition: 0.75s ease;
-
+    /* position: absolute; */
+    z-index: 0;
 }
 
-.one-four img:hover{
+.one-four:hover{
     cursor: pointer;
-    transform: scale(1.2);
-    z-index: 0;
+    transform: scale(1.1);
+    z-index: 1;
 }
 .footer-widgets-wrapper-inner ul li a{
     font-size: 2rem;
@@ -114,19 +165,42 @@ a:hover{
 
 .kitchen{
     position: absolute;
-    line-height: 300px;
-    width: 100%;
-    /* top: 40%; */
-    /* margin: 0 auto; */
-    padding-right: 10px;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    /* left: 35%; */
-    /* margin-left: 0; */
-    /* margin-right: 0; */
     color: #fff;
-    font-size: 50px;
+    font-size: 40px;
     text-transform: uppercase;
-    
+    z-index: 3;
+}
+
+.kitchen::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    /* -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s; */
+    transition: all .75s cubic-bezier(.5, 0, 0, 0.75) 0s;
+    /* transition: all .75s 0s; */
+}
+
+.one-two:hover .img-fluid{
+    filter: blur(3px);
+    transition: ease-in 1s;
+}
+
+.one-two:hover .kitchen::before, .one-four:hover .kitchen::before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 

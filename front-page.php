@@ -16,40 +16,48 @@
 
 
 <div class="cards">
-	<div class="row no-gutters">
+	<div class="row">
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
-			<!-- <p class="kitchen">Kuchnie</p> -->
-			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="">
+			<div class="wrapper"><p class="kitchen">Kuchnia&nbsp;na&nbsp;wymiar</p></div>
+			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 		</div>
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="wrapper"><p class="kitchen">Biuro</p></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="wrapper"><p class="kitchen">Sypialnia</p></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="wrapper"><p class="kitchen">Pokój dziecięcy</p></div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 			
 		</div>
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="wrapper"><p class="kitchen">Łazienka</p></div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 			
 		</div>
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
+		<div class="wrapper"><p class="kitchen">Salon</p></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 
 		</div>
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="wrapper"><p class="kitchen">Kuchnie</p></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
+		<div class="wrapper"><p class="kitchen">Kuchnie</p></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 
 		</div>
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="wrapper"><p class="kitchen">Kuchnie</p></div>
 		<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-4.png" class="img-fluid">
 
 		</div>
