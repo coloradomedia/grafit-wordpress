@@ -33,7 +33,7 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 		
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 			<div class="wrapper">
-				<p class="kitchen">Pokój dzienny</p>
+				<p class="kitchen">Pokój&nbsp;dzienny</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/living_room.png" class="img-fluid">
 		</div>
@@ -123,21 +123,23 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 	<p>Bo wygoda jest najważniejsza</p>
 </div>
 
-<!-- sekcja Marki -->
-<div class="three-features">
-	<div class="container-fluid section-padding">
-		<?php
-		$posts = get_posts(array(
-		'include' => 26,
-		'post_type' => 'any',
-		'numberposts' => 1,
-		'suppress_filters' => false,
-		));
-
-		echo apply_filters('the_content', $posts[0]->post_content);
-		?>
+<div class="container brand">
+	<h2><span>Partnerzy </span>handlowi</h2>
+	<article>Współpracyjemy z wieloma znanymi markami i dzięki temu jesteśmy w stanie zaoferować bardzo wiele.</article>
+		<hr>
+	<div class="brand-slider">
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/ml_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/halmar_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/bogfran_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/meblik_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt=""></div>
 	</div>
 </div>
+
+
 
 <!-- sekcja kontakt -->
 <div class="product-advantages darker-bg">
