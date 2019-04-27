@@ -20,7 +20,7 @@
 	<article>GRAFIT to 
 W naszym salonie o powierzchni 1000 mkw oferujemy szeroki wybór między innymi mebli wypoczynkowych, kuchennych, stołów, szaf, biurek oraz mebli kalwaryjskich. <br><br>
 Dla nas ważne jest żeby każdy klient był zadowolony. Dlatego doświadczeni sprzedawcy zawsze służą pomocą. Możesz z nami zaprojektować swoją kuchnię marzeń, a dowolny mebel wykonamy według podanych przez Ciebie wymiarów. <br><br>
-
+Współpraca z wieloma znanymi markami daje nam szelokie pole manewru a Tobie nieograniczony wybór.
 <br><br>
 W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w naszej ofercie coś dla siebie. 
 </article>
@@ -119,8 +119,11 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 	</div>
 </div>
 
+<div class="text">
+	<p>Bo wygoda jest najważniejsza</p>
+</div>
 
-<!-- sekcja Trzy kluczowe cechy -->
+<!-- sekcja Marki -->
 <div class="three-features">
 	<div class="container-fluid section-padding">
 		<?php
@@ -136,7 +139,7 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 	</div>
 </div>
 
-<!-- sekcja Zalety produktu -->
+<!-- sekcja kontakt -->
 <div class="product-advantages darker-bg">
 	<div class="container">
 		<?php
@@ -152,21 +155,6 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 	</div>
 </div>
 
-<!-- sekcja Zobacz wiecej-->
-<div class="product-more">
-	<div class="container section-padding">
-		<?php
-		$posts = get_posts(array(
-		'include' => 34,
-		'post_type' => 'any',
-		'numberposts' => 1,
-		'suppress_filters' => false,
-		));
-
-		echo apply_filters('the_content', $posts[0]->post_content);
-		?>
-	</div>
-</div>
 
 <!-- sekcja Call to action-->
 <div class="call-to-action accent-bg">
