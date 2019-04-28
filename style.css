@@ -122,6 +122,7 @@ header{
     color: #8b8d92;
 }
 
+
 .offer hr,
 .brand hr{
     border-top-color: rgb(37, 70, 117, .3);
@@ -215,18 +216,16 @@ header{
 
 .navbar-toggler{
     position: absolute;
-    right: 50px;
-    top: 40px;
+    right: 0px;
+    top: 30px;
+    color: #254675 !important;
+    font-size: 30px;
+    border: none;
     /* background-color: #000; */
 }
 
-/* .ms-bullet{
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-} */
 
-.kitchen{
+.card-text{
     position: absolute;
     width: auto;
     top: 50%;
@@ -240,7 +239,7 @@ header{
     line-height: 50px;
 }
 
-.kitchen::before{
+.card-text::before{
     content: '';
     width: 100%;
     height: 3px;
@@ -251,13 +250,12 @@ header{
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    /* -webkit-transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s; */
-    transition: all .75s cubic-bezier(.5, 0, 0, 0.75) 0s;
-    /* transition: all .75s 0s; */
+    -webkit-transition: all .75s cubic-bezier(.5, 0, 0, 0.75) 0s;
+            transition: all .75s cubic-bezier(.5, 0, 0, 0.75) 0s;
 }
 
 /* Podkleślenie pod napisem na kafelku wyświetlane cały czas */
-/* .kitchen::after{
+/* .card-text::after{
     content: '';
     width: 100%;
     height: 1px;
@@ -277,7 +275,8 @@ header{
     transition: ease-in .75s;
 }
 
-.one-two:hover .kitchen::before, .one-four:hover .kitchen::before{
+.one-two:hover .card-text::before,
+.one-four:hover .card-text::before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -285,9 +284,9 @@ header{
 
 .text{
     background: url(img/bed-bedroom-clean-775219.jpg) no-repeat fixed center;
-    min-height: 400px;
+    min-height: 500px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .text::after{
@@ -298,11 +297,9 @@ header{
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     border-top: 70px solid white;
-
     border-left: 100vw solid transparent;
-    /* border-left: 100vw solid transparent; */
 }
 
 .text::before{
@@ -312,78 +309,29 @@ header{
     top: 0;
     left: 0;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     border-bottom: 70px solid white;
     border-right: 100vw solid transparent;
-    /* border-left: 100vw solid transparent; */
 }
 
-.text p{
+.text h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 5rem;
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 1000;
-    border-bottom: 2px solid #8b8d92;
+    /* border-bottom: 2px solid #8b8d92; */
 }
 
-.product-advantages{
-    background: url(img/grafit.jpg) no-repeat fixed center;
-    position: relative;
-    z-index: 0;
+.text hr{
+    border-top: 3px solid #254675;
+    width: 30%;
 }
-
-.product-advantages::after{
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    border-bottom: 70px solid white;
-    border-right: 100vw solid transparent;
-    border-top: 70px solid white;
-    /* border-left: 100vw solid transparent; */
-}
-
-.product-advantages::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-}
-
-/* .three-features{
-    background: url(img/office.png) no-repeat left;
-} */
-.form-wrapper{
-    color: white;
-    z-index: 1000;
-}
-
-.form-wrapper input,textarea{
-    background-color: rgba(255, 255, 255, .05);
-    border: 0 transparent;
-    border-bottom: 1px solid white;
-}
-
-.form-wrapper input:focus, textarea:focus{
-    outline: 0;
-    border-bottom: 3px solid white;
-}
-
-.product-advantages .container .fw-main-row .fw-container{
-    z-index: 1000;
-}
-
 
 .slick-slide img{
     margin: 0 auto;
@@ -392,17 +340,16 @@ header{
     padding-right: 10px;
 }
 
+.slick-next {
+    right: -50px;
+}
+
 .slick-prev{
     /* position: absolute; */
     left: -50px;
     transform: rotate(180deg);
     margin-top: -13px;
-}
-
-  
-.slick-next {
-    right: -50px;
-}
+} 
 
 .slick-next:before {
     content: '';
@@ -437,6 +384,10 @@ header{
     transition: all .5s ease;
 }
 
+.brand{
+    position: relative;
+    padding: 50px;
+}
 
 .brand h2{
     text-align: center;
@@ -444,12 +395,56 @@ header{
 
 }
 
-
-.brand{
+.product-advantages{
+    background: url(img/grafit.jpg) no-repeat fixed center;
     position: relative;
-    padding-left: 50px;
-    padding-right: 50px;
+    z-index: 0;
 }
+
+.product-advantages::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    border-bottom: 70px solid white;
+    border-right: 100vw solid transparent;
+    border-top: 70px solid white;
+}
+
+.product-advantages::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.product-advantages .container .fw-main-row .fw-container{
+    z-index: 1000;
+}
+
+.form-wrapper{
+    color: white;
+    z-index: 1000;
+}
+
+.form-wrapper input,textarea{
+    background-color: rgba(255, 255, 255, .05);
+    border: 0 transparent;
+    border-bottom: 1px solid white;
+}
+
+.form-wrapper input:focus, textarea:focus{
+    outline: 0;
+    border-bottom: 3px solid white;
+}
+
 
 
 

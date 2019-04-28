@@ -17,10 +17,9 @@
 <div class="container offer">
 	<h2><span>O</span>ferta</h2>
 	<hr>
-	<article>GRAFIT to 
-W naszym salonie o powierzchni 1000 mkw oferujemy szeroki wybór między innymi mebli wypoczynkowych, kuchennych, stołów, szaf, biurek oraz mebli kalwaryjskich. <br><br>
-Dla nas ważne jest żeby każdy klient był zadowolony. Dlatego doświadczeni sprzedawcy zawsze służą pomocą. Możesz z nami zaprojektować swoją kuchnię marzeń, a dowolny mebel wykonamy według podanych przez Ciebie wymiarów. <br><br>
-Współpraca z wieloma znanymi markami daje nam szelokie pole manewru a Tobie nieograniczony wybór.
+	<article>GRAFIT to niepowtarzalne miejsce, w którym pasja i doświadczenie idą w parze ze stylem. <br>
+W naszym salonie o powierzchni 1000 m&#178; oferujemy szeroki wybór mebli wypoczynkowych, kuchennych, stołów, szaf, biurek, mebli kalwaryjskich, krzeseł, oświetlenia oraz dodatków. <br><br>
+Dla nas ważne jest aby każdy klient był zadowolony. Dlatego mili i doświadczeni doradcy zawsze służą pomocą. Możesz z nami zaprojektować swoją kuchnię marzeń, a dowolny mebel wykonamy według podanych przez Ciebie wymiarów. Współpraca z wieloma znanymi markami daje nam szelokie pole manewru a Tobie nieograniczony wybór.
 <br><br>
 W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w naszej ofercie coś dla siebie. 
 </article>
@@ -33,35 +32,35 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 		
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 			<div class="wrapper">
-				<p class="kitchen">Pokój&nbsp;dzienny</p>
+				<p class="card-text">Pokój&nbsp;dzienny</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/living_room.png" class="img-fluid">
 		</div>
 
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">Pokój dziecięcy</p>
+				<p class="card-text">Pokój dziecięcy</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/kids_room.png" class="img-fluid">
 		</div>
 
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">Sypialnia</p>
+				<p class="card-text">Sypialnia</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/bedroom.png" class="img-fluid">
 		</div>
 
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">Biuro</p>
+				<p class="card-text">Biuro</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/office.png" class="img-fluid">
 		</div>
 		
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">Łazienka</p>
+				<p class="card-text">Łazienka</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/bathroom.png" class="img-fluid">
 		</div>
@@ -69,49 +68,49 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 			
 			<div class="wrapper">
-				<p class="kitchen">Kuchnia&nbsp;na&nbsp;wymiar</p>
+				<p class="card-text">Kuchnia&nbsp;na&nbsp;wymiar</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.png" class="img-fluid">
 		</div>
 
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">Dodatki</p>
+				<p class="card-text">Dodatki</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/extras.png" class="img-fluid">
 		</div>
 		
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 			<div class="wrapper">
-				<p class="kitchen">Pokój&nbsp;młodzieżowy</p>
+				<p class="card-text">Pokój&nbsp;młodzieżowy</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/teen_room.png" class="img-fluid">
 		</div>
 		
 		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">AGD/RTV</p>
+				<p class="card-text">AGD/RTV</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/agd.png" class="img-fluid">
 		</div>
 
 		<div class="col-xl-4 col-lg-4 col-md-4 one-four">
 			<div class="wrapper">
-				<p class="kitchen">Drzwi</p>
+				<p class="card-text">Drzwi</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/door.png" class="img-fluid">
 		</div>
 		
 		<div class="col-xl-4 col-lg-4 col-md-4 one-two one-3">
 		<div class="wrapper">
-				<p class="kitchen">Panele</p>
+				<p class="card-text">Panele</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/floor_panels.png" class="img-fluid">
 		</div>
 		
 		<div class="col-xl-4 col-lg-4 col-md-4 one-four one-3">
 		<div class="wrapper">
-				<p class="kitchen">Bramy i ogrodzenia</p>
+				<p class="card-text">Bramy i ogrodzenia</p>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/wisniowski.png" class="img-fluid">
 		</div>
@@ -119,8 +118,9 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 	</div>
 </div>
 
-<div class="text">
-	<p>Bo wygoda jest najważniejsza</p>
+<div class="text container-fluid">
+	<h2>Bo wygoda, jest najważniejsza<hr></h2>
+
 </div>
 
 <div class="container brand">
