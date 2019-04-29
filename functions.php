@@ -113,8 +113,8 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 }
 add_action( 'wp_enqueue_scripts', 'grafit_scripts' );
 
-
-
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'kwadracik', 250, 250 );
         
 // Register custom login stylesheet
 function my_custom_login() {

@@ -282,14 +282,14 @@ header{
     transform: scaleX(1);
 }
 
-.text{
+.motto{
     background: url(img/bed-bedroom-clean-775219.jpg) no-repeat fixed center;
     min-height: 500px;
     position: relative;
     z-index: 0;
 }
 
-.text::after{
+.motto::after{
     content: '';
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
@@ -302,7 +302,7 @@ header{
     border-left: 100vw solid transparent;
 }
 
-.text::before{
+.motto::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -314,7 +314,7 @@ header{
     border-right: 100vw solid transparent;
 }
 
-.text h2{
+.motto h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 5rem;
@@ -328,7 +328,7 @@ header{
     /* border-bottom: 2px solid #8b8d92; */
 }
 
-.text hr{
+.motto hr{
     border-top: 3px solid #254675;
     width: 30%;
 }
@@ -475,7 +475,11 @@ footer p{
 
 
 
-
+.gallery{
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+}
 
 
 

@@ -118,7 +118,7 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 	</div>
 </div>
 
-<div class="text container-fluid">
+<div class="motto container-fluid">
 	<h2>Bo wygoda, jest najważniejsza<hr></h2>
 
 </div>
@@ -140,6 +140,21 @@ W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w nasz
 </div>
 
 
+<!-- galeria -->
+<div class="gallery darker-bg">
+	<div class="nim">
+		<?php
+		$posts = get_posts(array(
+		'include' => 487,
+		'post_type' => 'any',
+		'numberposts' => 1,
+		'suppress_filters' => false,
+		));
+	
+		echo apply_filters('the_content', $posts[0]->post_content);
+		?>
+	</div>
+</div>
 
 <!-- sekcja kontakt -->
 <div class="product-advantages darker-bg">
