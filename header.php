@@ -35,17 +35,17 @@
                         <a class="nav-link" href="#">Oferta</a>
                         <div class="dropdown-i">
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Pokoje dzienne</a>
+                            <a class="dropdown-item" href="http://localhost/wordpress/pokoje-dzienne/">Pokoje dzienne</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Kuchnie - na wymiar</a>
+                            <a class="dropdown-item" href="pokoje-page.php">Kuchnie - na wymiar</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Pokoje młodzieżowe</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Sypialnie</a>
+                            <a class="dropdown-item" href="pokoje.php">Sypialnie</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Biura</a>
+                            <a class="dropdown-item" href="biura">Biura</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Łazienki</a>
+                            <a class="dropdown-item" href="pokoje">Łazienki</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Dodatki</a>
                             <div class="dropdown-divider"></div>
