@@ -12,14 +12,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
+
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="container">
+    
+<header class=" nav-head">
 
-
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="container navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
                     src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo" width="200"
                     height="auto" /></a>
@@ -35,23 +36,29 @@
                         <a class="nav-link" href="#">Oferta</a>
                         <div class="dropdown-i">
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="http://localhost/wordpress/pokoje-dzienne/">Pokoje dzienne</a>
+                            <a class="dropdown-item" href="salon">Pokoje dzienne</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="pokoje-page.php">Kuchnie - na wymiar</a>
+                            <a class="dropdown-item" href="kitchen">Kuchnie - na wymiar</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Pokoje młodzieżowe</a>
+                            <a class="dropdown-item" href="teens">Pokoje młodzieżowe</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="pokoje.php">Sypialnie</a>
+                            <a class="dropdown-item" href="kids">Pokoje dziecięce</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="biura">Biura</a>
+                            <a class="dropdown-item" href="bedrooms">Sypialnie</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="pokoje">Łazienki</a>
+                            <a class="dropdown-item" href="office">Biura</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Dodatki</a>
+                            <a class="dropdown-item" href="bathrooms">Łazienki</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">AGD/RTV</a>
+                            <a class="dropdown-item" href="extras">Dodatki</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Bramy i ogrodzenia</a>
+                            <a class="dropdown-item" href="agdrtv">AGD/RTV</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="doors">Drzwi</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="wood">Panele</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="gateways">Bramy i ogrodzenia</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>

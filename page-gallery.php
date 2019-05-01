@@ -1,9 +1,9 @@
-<?php
-/*
- * The template used for displaying page content in page-gallery.php
- */
-?>
+<?php /* Template Name: Galeria */ ?>
+
+<?php get_header(); ?>
+
 <div class="space"></div>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <div class="main-offer gallery-offer">
@@ -19,3 +19,5 @@
     </footer><!-- .edit-footer -->
 
 </article><!-- #post-## -->
+
+<?php get_footer(); ?>
