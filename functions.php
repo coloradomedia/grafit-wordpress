@@ -70,8 +70,10 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
  * Enqueue scripts and styles.
  */
  function grafit_scripts() {
-    //  wp_enqueue_style( 'reset-css', get_template_directory_uri() . '/styles/reset.css', array(), '', 'all' );
     
+    wp_enqueue_script( 'app-js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
+
+
      wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
      
      wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/styles/animate.css', array(), '', 'all' );
@@ -106,6 +108,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     
     wp_enqueue_script( 'script-js', get_template_directory_uri() . '/slick/js/script.js', array('jquery'), '', true );
 
+
     
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -117,6 +120,11 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'kwadracik', 250, 250 );
 add_image_size( 'duze', 1920, 1024 );
         
+add_filter('tiny_mce_before_init', 'tinymce_init');
+
+
+
+
 // Register custom login stylesheet
 function my_custom_login() {
 echo '<link rel="stylesheet" type="text/css"

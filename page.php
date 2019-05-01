@@ -13,7 +13,7 @@
 get_header(); ?>
 
 
-<header class="entry-header">
+<header class="featured-img-header">
 	<?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(5000,1000), false, ''); ?>
 	<div class="entry-img" style="background: url(<?php echo $src[0]; ?>);">
 		<div class="dark-image-overlay">
