@@ -2,21 +2,16 @@
 
 <?php get_header(); ?>
 
-<div class="space"></div>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <div class="main-offer gallery-offer">
 
-        <?php the_title('<h2 class="main-offer">', '</h2>'); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php the_content(); ?>
-        
+            <?php get_template_part( 'content', 'page' ); ?>
+
+        <?php endwhile; // end of the loop. ?>
     </div>
-
-    <footer class="edit-footer container">
-        <?php edit_post_link( __( 'Edytuj', 'motywgrafit' ), '<button class="edit-link btn btn-success">', '</button>' ); ?>
-    </footer><!-- .edit-footer -->
 
 </article><!-- #post-## -->
 
