@@ -1,5 +1,5 @@
-	<footer id="colophon" class="main-footer" role="contentinfo">
-
+	<footer id="colophon" class="wrap-main-footer" role="contentinfo">
+<div class="main-footer">
 		<!-- pasek widgetow -->
 		<div class="footer-widgets">
 			<?php get_sidebar('footer'); ?>
@@ -14,7 +14,7 @@
 		<p class="site-info">&copy; 2019 | ColoradoMedia</p><!-- .site-info -->
 
 
-		
+		</div>	
 		
 	</footer><!-- #colophon -->
 </div><!-- #page -->
