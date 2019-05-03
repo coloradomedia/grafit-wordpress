@@ -17,7 +17,7 @@
 		<div class="carousel-item active">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -26,7 +26,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -35,7 +35,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider4.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -44,7 +44,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -53,7 +53,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -62,7 +62,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider7.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -71,7 +71,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider8.jpg"
 				alt="First slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -80,7 +80,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
 				alt="Second slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>To jest biurko</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -89,7 +89,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider10.jpg"
 				alt="Third slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>To jest biurko</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
@@ -98,7 +98,7 @@
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider11.jpg"
 				alt="Third slide">
-			<div class="carousel-caption d-md-block">
+			<div class="carousel-text d-md-block">
 				<h2>To jest biurko</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
 					repellendus, inventore illo</p>
