@@ -1,51 +1,121 @@
 <?php get_header(); ?>
 
 <div id="arrows" class="carousel slide carousel-fade" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#arrows" data-slide-to="0" class="active"></li>
-    <li data-target="#arrows" data-slide-to="1"></li>
-    <li data-target="#arrows" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-	  <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/desk.jpg" alt="First slide">
-	  <div class="carousel-caption d-md-block">
-    <h2>Salon meblowy Grafit</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo repellendus, inventore illo</p>
-  </div>
-    </div>
-    <div class="carousel-item">
-	  <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/smile.jpg" alt="Second slide">
-	  <div class="carousel-caption d-md-block">
-    <h5>To jest biurko</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo repellendus, inventore illo</p>
-  </div>
-    </div>
-    <div class="carousel-item">
-	  <img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/desk.jpg" alt="Third slide">
-	  <div class="carousel-caption d-md-block">
-    <h5>To jest biurko</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo repellendus, inventore illo</p>
-  </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#arrows" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#arrows" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+	<ol class="carousel-indicators">
+		<li data-target="#arrows" data-slide-to="0" class="active"></li>
+		<li data-target="#arrows" data-slide-to="1"></li>
+		<li data-target="#arrows" data-slide-to="2"></li>
+		<li data-target="#arrows" data-slide-to="3"></li>
+		<li data-target="#arrows" data-slide-to="4"></li>
+		<li data-target="#arrows" data-slide-to="5"></li>
+		<li data-target="#arrows" data-slide-to="6"></li>
+		<li data-target="#arrows" data-slide-to="7"></li>
+		<li data-target="#arrows" data-slide-to="8"></li>
+		<li data-target="#arrows" data-slide-to="9"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider4.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider7.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider8.jpg"
+				alt="First slide">
+			<div class="carousel-caption d-md-block">
+				<h2>Salon meblowy Grafit</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
+				alt="Second slide">
+			<div class="carousel-caption d-md-block">
+				<h2>To jest biurko</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider10.jpg"
+				alt="Third slide">
+			<div class="carousel-caption d-md-block">
+				<h2>To jest biurko</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider11.jpg"
+				alt="Third slide">
+			<div class="carousel-caption d-md-block">
+				<h2>To jest biurko</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
+					repellendus, inventore illo</p>
+			</div>
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#arrows" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#arrows" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
 </div>
 
-<div class="carousel-item">
-  <img src="../img/desk.jpg" alt="...">
-  <div class="carousel-caption d-md-block">
-    <h5>To jest biurko</h5>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo repellendus, inventore illo</p>
-  </div>
-</div>
+
 
 
 
@@ -67,7 +137,7 @@
 </div> -->
 <div class="space"></div>
 <div class="container main-offer">
-<h2><span>O</span>ferta</h2>
+	<h2><span>O</span>ferta</h2>
 	<hr>
 	<article>GRAFIT to niepowtarzalne miejsce, w którym pasja i doświadczenie idą w parze ze stylem. <br>
 		W naszym salonie o powierzchni 1000 m&#178; oferujemy szeroki wybór mebli wypoczynkowych, kuchennych, stołów,
