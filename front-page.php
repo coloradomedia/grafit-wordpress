@@ -11,7 +11,6 @@
 		<li data-target="#arrows" data-slide-to="6"></li>
 		<li data-target="#arrows" data-slide-to="7"></li>
 		<li data-target="#arrows" data-slide-to="8"></li>
-		<li data-target="#arrows" data-slide-to="9"></li>
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
@@ -19,8 +18,6 @@
 				alt="First slide">
 			<div class="carousel-text">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -28,19 +25,9 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
 			</div>
 		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider4.jpg"
-				alt="First slide">
-			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
-			</div>
-		</div>
+
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
 				alt="First slide">
