@@ -295,6 +295,13 @@
 </div>
 
 
+
+<div class="news container">
+	<div class="col-md-4"></div>
+	<div class="col-md-4"></div>
+	<div class="col-md-4"></div>
+</div>
+
 <!-- sekcja Call to action-->
 <div class="call-to-action accent-bg">
 	<div class="container section-padding">
