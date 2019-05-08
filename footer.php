@@ -11,7 +11,7 @@
 
 			</div><!-- .row -->
 		</div><!-- .container -->
-		<p class="site-info">&copy; 2019 | ColoradoMedia</p><!-- .site-info -->
+		<p class="site-info">meblegrafit.pl &copy;2019 | Realizacja ColoradoMedia</p><!-- .site-info -->
 
 
 		</div>	
