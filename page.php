@@ -13,21 +13,7 @@
 get_header(); ?>
 
 
-<header class="featured-img-header">
-	<?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(5000,1000), false, ''); ?>
-	<div class="entry-img" style="background: url(<?php echo $src[0]; ?>);">
-		<div class="dark-image-overlay">
-		</div>
-		<!-- tytul strony -->
-		<div class="container">
-			<div class="entry-title">
-				<?php the_title('<h1 class="entry-title-header">', '</h1>'); ?>
-			</div>
-		</diV>
-	</div>
-</header>
-
-<div class=" section-padding">
+<div class="section-padding">
 
 		<div id="primary" class="col-xs-12">
 			<main id="main" class="site-main" role="main">
@@ -47,7 +33,5 @@ get_header(); ?>
 
 			</main><!-- #main -->
 		</div><!-- #primary -->
-
-</div><!-- .container -->
 </div>
 <?php get_footer(); ?>

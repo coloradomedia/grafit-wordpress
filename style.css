@@ -222,12 +222,7 @@ nav{
     z-index: 1;
 }
 
-.footer-widgets-wrapper-inner ul li a{
-    font-size: 2rem;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
+
 
 /* .one-3 img{
     overflow-y: 295px;
@@ -535,9 +530,57 @@ nav{
 
 }
 
+.footer-widgets-wrapper{
+    color: #fff;
+}
+
+.footer-widget{
+    padding-top: 4rem;
+}
+
+.footer-title{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.fa-facebook-official{
+    font-size: 3rem;
+}
+
+.footer-widgets-wrapper-inner ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-widgets-wrapper-inner ul li{
+    padding-top: 1.5rem;
+}
+
+.footer-widgets-wrapper-inner ul li a{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    opacity: .6;
+}
+
+.open-footer{
+    /* padding-top: 8rem; */
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.open-footer{
+    padding-top: 4.5rem;
+}
+
+.open-footer h3{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
 .wrap-main-footer{
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     position: relative;
     padding-top: 5rem;
     /* margin-top: 5rem; */
@@ -547,15 +590,20 @@ nav{
 
 .main-footer{
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     /* background: #edeff5; */
     background: #254675;
-    background-image: url(img/dots.png);
-    background-repeat: repeat;
-
+    background-image: url(img/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     /* background-image: linear-gradient(to bottom right, #013d71, #86888d); */
     position: relative;
     bottom: 0;
+}
+
+.main-footer img{
+    z-index: -200;
+    background-size: center;
 }
 
 .site-info{
@@ -565,14 +613,23 @@ nav{
     text-transform: uppercase;
     text-align: center;
     position: absolute;
+    bottom: -.75rem;
+    z-index: 100;
+}
+
+.copyrights{
+    width: 100%;
+    height: 3rem;
+    background-color: #001e4971;
+    position: absolute;
     bottom: 0;
 }
 
-.main-footer .container::before{
+/* .main-footer .container::before{
     content: '';
     width: 20rem;
     height: 20rem;
-    background-color: #5671a4;
+    background-color: #5671a480;
     z-index: 2;
     position: absolute;
     top: -5rem;
@@ -585,14 +642,14 @@ nav{
     content: '';
     width: 28rem;
     height: 28rem;
-    background-color: #bbbdc2;
+    background-color: #bbbdc280;
     z-index: 0;
     position: absolute;
     top: 7rem;
     left: 0;
-    /* -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%); */
+    -webkit-clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
-}
+} */
 
 /* .site-info{
     color: #000;
