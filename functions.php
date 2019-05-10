@@ -73,6 +73,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     
     wp_enqueue_script( 'app-js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
 
+	wp_enqueue_style( 'all-css', '//use.fontawesome.com/releases/v5.0.0/css/all.css');
 
      wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
      
@@ -81,7 +82,8 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 //slick slider
      wp_enqueue_style( 'slick-css', get_template_directory_uri() . '/slick/css/slick.css', array(), '', 'all' );
 
-     wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/slick/css/slick-theme.css', array(), '', 'all' );
+	 wp_enqueue_style( 'slick-theme-css', get_template_directory_uri() . '/slick/css/slick-theme.css', array(), '', 'all' );
+	 
      
 
     //  wp_enqueue_style( 'sensiblewp-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');

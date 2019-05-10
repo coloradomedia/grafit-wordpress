@@ -16,8 +16,11 @@
 		<div class="col-xs-12 col-md-2 footer-widget">
 			<?php dynamic_sidebar( 'footer-3' ); ?>
 		</div>
-		<div class="col-xs-12 col-md-2 footer-widget">
-			<i class="fa fa-facebook-official"></i>
+		<div class="col-xs-12 col-md-3 footer-widget contact-footer">
+			<p class="facebook"><i class="fab fa-facebook"></i>&nbsp;Grafit na Facebooku</p>
+			<p class="phone"><i class="fas fa-phone"></i>&nbsp;14 613 21 04</p>
+			<p class="mail"><a href="mailto:biuro@meblegrafit.pl"><i class="fas fa-at"></i>&nbsp;biuro@meblegrafit.pl</a></p>
+			<p class="map-mark"><i class="fas fa-map-marker-alt"></i>&nbsp;32-731 Żegocina 10</p>
 		</div>
 	</div>
 </div>

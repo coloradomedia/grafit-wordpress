@@ -14,7 +14,7 @@
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
 				alt="First slide">
 			<div class="carousel-text">
 				<h2>Salon meblowy Grafit</h2>
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
 				alt="Second slide">
 			<div class="carousel-text d-md-block">
 				<h2>To jest biurko</h2>

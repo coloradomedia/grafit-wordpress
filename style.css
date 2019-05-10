@@ -543,8 +543,42 @@ nav{
     text-transform: uppercase;
 }
 
-.fa-facebook-official{
-    font-size: 3rem;
+.contact-footer{
+    font-size: 2rem;
+}
+
+.contact-footer p{
+    padding-top: 1rem;
+}
+
+.facebook i{
+    font-size: 2.3rem;
+    padding-right: 1rem;
+}
+
+.phone i{
+    font-size: 2.1rem;
+    padding-right: 1rem;
+}
+
+.mail i{
+    font-size: 2.2rem;
+    padding-right: 1.1rem;
+    text-decoration: none;
+}
+
+.mail a{
+    color: #fff;
+}
+
+.mail a:hover{
+    text-decoration: none;
+}
+
+.map-mark i{
+    font-size: 2.2rem;
+    padding-left: .3rem;
+    padding-right: 1.2rem;
 }
 
 .footer-widgets-wrapper-inner ul{
@@ -564,7 +598,6 @@ nav{
 }
 
 .open-footer{
-    /* padding-top: 8rem; */
     text-align: center;
     font-size: 2.5rem;
 }
@@ -591,12 +624,10 @@ nav{
 .main-footer{
     width: 100%;
     height: 30rem;
-    /* background: #edeff5; */
     background: #254675;
     background-image: url(img/footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    /* background-image: linear-gradient(to bottom right, #013d71, #86888d); */
     position: relative;
     bottom: 0;
 }
