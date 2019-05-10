@@ -286,6 +286,8 @@
 </div>
 
 <div class="news">
+<h2>Aktualnści</h2>
+<hr>
 	<div class="row">
 			<?php 
 			$query = new WP_Query( array(
@@ -295,6 +297,7 @@
 			<?php get_template_part( 'content', 'small' ); ?>
 			<?php endwhile; ?>
 	</div>
+	<div class="btn-news"><a class="btn btn-info" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
 
