@@ -527,8 +527,19 @@ nav{
 
 
 .news{
+    width: 150rem;
     min-height: 30rem;
+    margin: 0 auto;
+    padding-top: 5rem;
+    position: relative;
+}
+.entry-img{
+    position: relative;
+}
 
+.entry-img h3{
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-widgets-wrapper{

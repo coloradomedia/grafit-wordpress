@@ -1,4 +1,4 @@
-<?php /* Template Name: Galeria */ ?>
+<?php /* Template Name: Standard */ ?>
 
 <?php get_header(); ?>
 
@@ -6,7 +6,7 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <?php get_template_part( 'content', 'gallery' ); ?>
+    <?php get_template_part( 'content', 'standard' ); ?>
 
     <?php endwhile; // end of the loop. ?>
 

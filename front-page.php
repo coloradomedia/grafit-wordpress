@@ -285,18 +285,15 @@
 	</div>
 </div>
 
-<div class="news container-fluid">
+<div class="news">
 	<div class="row">
-		<div class="col-md-4">
 			<?php 
 			$query = new WP_Query( array(
 				'posts_per_page' => 3)
 			);
-			while ( $query->have_posts() ) : $query->the_post();
-			?>
+			while ( $query->have_posts() ) : $query->the_post(); ?>
 			<?php get_template_part( 'content', 'small' ); ?>
 			<?php endwhile; ?>
-		</div>
 	</div>
 </div>
 

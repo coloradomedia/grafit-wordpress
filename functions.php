@@ -131,3 +131,10 @@ href="' . get_bloginfo('stylesheet_directory') .
 '/login/login-styles.css" />';
 }
 add_action('login_head', 'my_custom_login');
+
+function new_excerpt_more($more){
+	global $post;
+	return '<div><a class="btn btn-success" href="'. get_permalink($post->ID) .'">Czytaj dalej</a></div>';
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');

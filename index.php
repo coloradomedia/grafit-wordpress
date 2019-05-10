@@ -14,7 +14,7 @@
 	</div>
 </header>
 
-<div class="container blog-index">
+<div class="blog-index">
 	<div class="row justify-content-center">
 
 	<div id="primary" class="col-md-6 col-lg-9">

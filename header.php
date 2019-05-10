@@ -62,7 +62,7 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Raty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="installment">Raty</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lokalizacja</a></li>
                 </ul>
 
