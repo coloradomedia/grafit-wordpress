@@ -278,44 +278,28 @@
 </div>
 
 
-<!-- sekcja kontakt -->
-<div class="product-advantages darker-bg">
+<!-- contact section -->
+<div class="contact-form darker-bg">
 	<div class="container">
-		<?php
-		$posts = get_posts(array(
-		'include' => 30,
-		'post_type' => 'any',
-		'numberposts' => 1,
-		'suppress_filters' => false,
-		));
-	
-		echo apply_filters('the_content', $posts[0]->post_content);
-		?>
+		Formularz kontaktowy
+	</div>
+</div>
+
+<div class="news container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<?php 
+			$query = new WP_Query( array(
+				'posts_per_page' => 3)
+			);
+			while ( $query->have_posts() ) : $query->the_post();
+			?>
+			<?php get_template_part( 'content', 'small' ); ?>
+			<?php endwhile; ?>
+		</div>
 	</div>
 </div>
 
 
-
-<div class="news container">
-	<div class="col-md-4"></div>
-	<div class="col-md-4"></div>
-	<div class="col-md-4"></div>
-</div>
-
-<!-- sekcja Call to action-->
-<div class="call-to-action accent-bg">
-	<div class="container section-padding">
-		<?php
-		$posts = get_posts(array(
-		'include' => 40,
-		'post_type' => 'any',
-		'numberposts' => 1,
-		'suppress_filters' => false,
-		));
-
-		echo apply_filters('the_content', $posts[0]->post_content);
-		?>
-	</div>
-</div>
 
 <?php get_footer(); ?>

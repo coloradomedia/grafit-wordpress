@@ -18,6 +18,8 @@
 // }
 // add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
 
+add_theme_support( 'post-thumbnails' );
+
 // Register Custom Navigation Walker
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
