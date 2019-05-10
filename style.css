@@ -583,7 +583,6 @@ nav{
     color: #fff;
     font-weight: 600 !important;
     font-size: 1.2rem;
-    /* background-color: #254675; */
     text-transform: uppercase;
 }
 
@@ -598,7 +597,16 @@ nav{
 
 .btn-news a{
     font-size: 2rem;
+    background-color: #254675;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+}
 
+.btn-news a:hover{
+    font-size: 2rem;
+    background-color: #001f49;
+    color: #fff;
 }
 
 .footer-widgets-wrapper{
