@@ -102,26 +102,6 @@
 	</a>
 </div>
 
-
-
-
-
-
-
-
-<!-- sekcja Top slider -->
-<!-- <div class="top-slider">
-	</?php
-		// $posts = get_posts(array(
-		// 'include' => 43,
-		// 'post_type' => 'any',
-		// 'numberposts' => 1,
-		// 'suppress_filters' => false,
-		// ));
-
-		// echo apply_filters('the_content', $posts[0]->post_content);
-		// ?>
-</div> -->
 <div class="space"></div>
 <div class="container main-offer">
 	<h2><span>O</span>ferta</h2>
@@ -141,7 +121,6 @@
 
 <div class="cards">
 	<div class="row">
-
 
 		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
 			<a href="salon">
@@ -261,30 +240,6 @@
 
 </div>
 
-<div class="container brand">
-	<h2><span>Partnerzy </span>handlowi</h2>
-	<article>Współpracujemy z wieloma znanymi markami i dzięki temu jesteśmy w stanie zaoferować bardzo wiele.</article>
-	<hr>
-	<div class="brand-slider">
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/ml_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/halmar_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/bogfran_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/meblik_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt=""></div>
-	</div>
-</div>
-
-
-<!-- contact section -->
-<div class="contact-form darker-bg">
-	<div class="container">
-		Formularz kontaktowy
-	</div>
-</div>
-
 <div class="news">
 <h2>Aktualności</h2>
 <hr>
@@ -300,6 +255,28 @@
 	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
+<!-- contact section -->
+<div class="contact-form darker-bg">
+	<div class="container">
+		Formularz kontaktowy
+	</div>
+</div>
+
+<div class="container brand">
+	<h2><span>Partnerzy </span>handlowi</h2>
+	<article>Współpracujemy z wieloma znanymi markami i dzięki temu jesteśmy w stanie zaoferować bardzo wiele.</article>
+	<hr>
+	<div class="brand-slider">
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/ml_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/halmar_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/bogfran_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/meblik_logo.png" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt=""></div>
+	</div>
+</div>
 
 
 <?php get_footer(); ?>

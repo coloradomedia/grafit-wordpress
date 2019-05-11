@@ -64,22 +64,10 @@
                     <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
                     <li class="nav-item"><a class="nav-link" href="installment">Raty</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lokalizacja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Grafit-MEBLE-%C5%BBegocina-1400822653517757/"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
 
             </div>
         </nav>
 
     </header>
-
-    <!-- <?php
-                // wp_nav_menu( array(
-                //     'theme_location'    => 'primary',
-                //     'depth'             => 2,
-                //     'container'         => 'div',
-                //     'container_class'   => 'collapse navbar-collapse',
-                //     'container_id'      => 'bs-example-navbar-collapse-1',
-                //     'menu_class'        => 'nav navbar-nav',
-                //     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
-                //     'walker'            => new WP_Bootstrap_Navwalker()
-                // ) );
-                ?>  -->

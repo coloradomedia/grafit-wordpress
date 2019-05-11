@@ -1,23 +1,5 @@
 <?php
 
-// function register_my_menus() {
-//     register_nav_menus(
-//       array(
-//         'header-menu' => __( 'Menu główne' ),
-//         'extra-menu' => __( 'Extra Menu' )
-//       )
-//     );
-//   }
-//   add_action( 'init', 'register_my_menus' );
-
-
-// function prefix_modify_nav_menu_args( $args ) {
-//     return array_merge( $args, array(
-//         'walker' => WP_Bootstrap_Navwalker(),
-//     ) );
-// }
-// add_filter( 'wp_nav_menu_args', 'prefix_modify_nav_menu_args' );
-
 add_theme_support( 'post-thumbnails' );
 
 // Register Custom Navigation Walker
