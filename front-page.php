@@ -14,7 +14,7 @@
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
 				alt="First slide">
 			<div class="carousel-text">
 				<h2>Salon meblowy Grafit</h2>
@@ -22,7 +22,7 @@
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg"
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
@@ -30,7 +30,7 @@
 		</div>
 
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
@@ -39,7 +39,7 @@
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
+			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>

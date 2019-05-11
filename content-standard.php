@@ -8,6 +8,13 @@
     <div class="space"></div>
 
     <?php the_title('<h2 class="main-offer">', '</h2>'); ?>
+
+    <?php if ( has_post_thumbnail() ) : ?>
+        <div class="page-standard-img">
+            <?php the_post_thumbnail(); ?>
+        </div>
+    <?php endif; ?>
+
     <?php the_content(); ?>
 
     <footer class="edit-footer container">
