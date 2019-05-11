@@ -18,7 +18,7 @@
 
 <body <?php body_class(); ?>>
     
-<header class=" nav-head">
+<header class="nav-head">
 
         <nav class="container navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
@@ -64,7 +64,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
                     <li class="nav-item"><a class="nav-link" href="installment">Raty</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lokalizacja</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Grafit-MEBLE-%C5%BBegocina-1400822653517757/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Grafit-MEBLE-%C5%BBegocina-1400822653517757/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
 
             </div>

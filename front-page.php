@@ -18,6 +18,7 @@
 				alt="First slide">
 			<div class="carousel-text">
 				<h2>Salon meblowy Grafit</h2>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
