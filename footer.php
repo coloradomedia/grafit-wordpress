@@ -1,15 +1,12 @@
-<footer id="colophon" class="wrap-main-footer" role="contentinfo">
-	<div class="main-footer">
+<footer class="main-footer">
 
-		<div class="footer-widgets">
-			<?php get_sidebar('footer'); ?>
-		</div>
+		<?php get_sidebar('footer'); ?>
 
 		<div class="copyrights">
 			<p class="site-info">meblegrafit.pl &copy;<?php echo date("Y"); ?> | Realizacja: FreshLime</p>
 
 		</div>
-	</div>
+
 </footer>
 
 

@@ -31,7 +31,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
 
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="article.html">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about">O nas</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#">Oferta</a>
                         <div class="dropdown-i">
