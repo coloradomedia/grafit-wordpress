@@ -115,12 +115,16 @@ nav{
 }
 
 .carousel-text h2{
-    font-size: 7rem;
+    font-size: 6.5rem;
     border-bottom: .3rem solid #254675;
 }
 
 .carousel-text h3{
     font-size: 5rem;
+}
+
+.carousel-text p{
+    font-size: 2.7rem;
 }
 
 .main-offer,
@@ -603,6 +607,10 @@ nav{
 
 .single-post-fullwidth p{
     padding-bottom: 1.5rem;
+}
+
+.single-post-fullwidth .wp-block-image{
+    text-align: center;
 }
 
 .date{

@@ -33,7 +33,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="about">O nas</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Oferta</a>
+                        <a class="nav-link" href="#offer">Oferta</a>
                         <div class="dropdown-i">
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="salon">Pokoje dzienne</a>
@@ -61,9 +61,9 @@
                             <a class="dropdown-item" href="gateways">Bramy i ogrodzenia</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact">Kontakt</a></li>
                     <li class="nav-item"><a class="nav-link" href="installment">Raty</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Lokalizacja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map">Lokalizacja</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Grafit-MEBLE-%C5%BBegocina-1400822653517757/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
 

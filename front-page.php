@@ -25,7 +25,8 @@
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
+				<h2>Meble na wymiar</h2>
+				<p>Zaprojektuj z nami swoją wymarzoną kuchnię!</p>
 			</div>
 		</div>
 
@@ -34,8 +35,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -43,8 +43,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -52,8 +51,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -61,8 +59,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -70,17 +67,15 @@
 				alt="Second slide">
 			<div class="carousel-text d-md-block">
 				<h2>To jest biurko</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider10.jpg"
 				alt="Third slide">
 			<div class="carousel-text d-md-block">
-				<h2>To jest biurko</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<h2>This is America!</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -88,8 +83,7 @@
 				alt="Third slide">
 			<div class="carousel-text d-md-block">
 				<h2>To jest biurko</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fuga in aut doloribus nemo
-					repellendus, inventore illo</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 			</div>
 		</div>
 	</div>
@@ -103,7 +97,7 @@
 	</a>
 </div>
 
-<div class="space"></div>
+<div class="space" id="offer"></div>
 <div class="container main-offer">
 	<h2><span>O</span>ferta</h2>
 	<hr>
@@ -116,8 +110,6 @@
 		<br><br>
 		W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w naszej ofercie coś dla siebie.
 	</article>
-
-
 </div>
 
 <div class="cards">

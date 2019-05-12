@@ -6,14 +6,19 @@
         <div class="dark-image-overlay"></div>
         <div class="container">
             <div class="entry-title">
-                <?php the_title('<h1 class="entry-title-header">', '</h1>'); ?>
+                <h1 class="entry-title-header">Aktualności</h1>
             </div>
         </diV>
     </div>
 </header>
-
+<div class="container">
 <?php while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'content', 'single' ); ?>
+    <?php get_template_part( 'content', 'news' ); ?>
 <?php endwhile; ?>
 
+
+<?php pagination(); /*wyświetlamy paginację*/ ?>
+
+
+</div>
 <?php get_footer(); ?>

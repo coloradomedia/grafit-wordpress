@@ -125,3 +125,18 @@ function new_excerpt_length($length) {
 	return 15;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+
+function pagination() {
+    
+    global $wp_query;
+    
+    if ($wp_query->max_num_pages > 1) { echo '<p class="pages" role="navigation">' . paginate_links( array(
+        'base' => @add_query_arg('paged','%#%'),
+        'format' => '?paged=%#%',
+        'current' => max( 1, get_query_var('paged') ),
+        'total' => $wp_query->max_num_pages,
+        'prev_text' => __('« '),
+        'next_text'    => __(' »'),
+    ) ) . '</p>'; }
+}
