@@ -539,11 +539,17 @@ nav{
     width: 150px;
     height: 50px;
     font-size: 2rem;
+    padding: 0;
 }
 
 .edit-footer .btn a{
+    display: block;
     text-decoration: none;
     color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    /* height: 100%;
+    line-height: 50px; */
 }
 
 
@@ -696,6 +702,76 @@ nav{
     border-left: 1vw solid #254675ad;
     box-shadow: -10px 0px 0px 0px #8b8d92c0;
 } */
+
+.list-post{
+    /* background-color: rgba(0, 0, 0, 0.26); */
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.157);
+}
+
+.list-post-img{
+    padding: 0;
+    
+}
+
+.list-post-content{
+    padding: 2rem;
+    position: relative;
+    height: 100%;
+
+}
+
+.list-post-content h2{
+    font-size: 2.7rem;
+}
+
+.list-post-content .post-button{
+    position: relative;
+    bottom: 0;
+}
+
+.pagination{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.pagination p{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2.3rem;
+    color: #8b8d92b4;
+    font-weight: 600;
+}
+
+.pagination a{
+    color: #8b8d92b4;
+    text-decoration: none;
+    /* font-size: 2.2rem; */
+    transition: all .2s;
+    /* padding: 0 .5rem; */
+}
+
+.pagination a:hover{
+    color: #001f49;
+    text-decoration: none;
+    transition: all .2s;
+    border-bottom: 3px solid #254675;
+}
+
+.pagination .current{
+    color: #001f49;
+    border-bottom: 3px solid #254675;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

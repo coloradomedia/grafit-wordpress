@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php 
+/*  * The template for displaying blog page. */
+get_header(); ?>
 
 <header class="entry-header">
     <?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(5000,1000), false, ''); ?>
@@ -11,14 +13,16 @@
         </diV>
     </div>
 </header>
+
+<div class="space"></div>
+
 <div class="container">
-<?php while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'content', 'news' ); ?>
-<?php endwhile; ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', 'news' ); ?>
+    <?php endwhile; ?>
 
-
-<?php pagination(); /*wyświetlamy paginację*/ ?>
-
+    <?php pagination(); ?>
 
 </div>
+
 <?php get_footer(); ?>

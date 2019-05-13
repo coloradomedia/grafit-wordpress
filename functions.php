@@ -2,13 +2,6 @@
 
 add_theme_support( 'post-thumbnails' );
 
-// Register Custom Navigation Walker
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
-register_nav_menus( array(
-	'primary' => __( 'Primary Menu', 'Motyw GRAFIT' ),
-) );
-
 
 function grafit_widgets_init() {
 	register_sidebar( array(
@@ -131,12 +124,12 @@ function pagination() {
     
     global $wp_query;
     
-    if ($wp_query->max_num_pages > 1) { echo '<p class="pages" role="navigation">' . paginate_links( array(
+    if ($wp_query->max_num_pages > 1) { echo '<div class="pagination" role="navigation"><p>' . paginate_links( array(
         'base' => @add_query_arg('paged','%#%'),
         'format' => '?paged=%#%',
         'current' => max( 1, get_query_var('paged') ),
         'total' => $wp_query->max_num_pages,
-        'prev_text' => __('« '),
-        'next_text'    => __(' »'),
-    ) ) . '</p>'; }
+        'prev_text' => __(''),
+        'next_text'    => __(''),
+    ) ) . '</p></div>'; }
 }
