@@ -20,13 +20,16 @@
             <div class="list-post-content col-md-8">
                 <?php the_title( '<h2>', '</h2>');
                       the_excerpt();?>
-            </div>
 
 
 
-        </div>
-        <footer class="edit-footer">
-            <?php edit_post_link( __('Edytuj'), '<button class="edit-link btn btn-success">', '</button>' ); ?>
-        </footer>
-    </article>
 </div>
+
+
+<!-- <div class="space"></div> -->
+</div>
+</article>
+</div>
+                <footer class="edit-footer">
+                    <?php edit_post_link( __('Edytuj'), '<button class="edit-link btn btn-success">', '</button>' ); ?>
+                </footer>

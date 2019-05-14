@@ -10,7 +10,6 @@
 
 get_header(); ?>
 
-eleoeleoeo
 <div class="section-padding">
 
 		<div id="primary" class="col-xs-12">

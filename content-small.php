@@ -1,9 +1,11 @@
 <div class="col-md-4">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="mini-post-img">
+        <div class="mini-post-img img-fluid">
             <?php if ( has_post_thumbnail() ) : ?>
             <a href="<?php echo get_permalink($post->ID)?>">
-                <?php the_post_thumbnail('.mini-post-img'); ?>
+            <div class="img-fluid">
+                <?php the_post_thumbnail(); ?>
+            </div>
             </a>
             <div class="mini-post-content">
                 <?php the_title( '<h3>', '</h3>'); ?>

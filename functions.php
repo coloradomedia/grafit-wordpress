@@ -100,10 +100,7 @@ add_image_size( 'duze', 1920, 1024 );
 
 
 // Register custom login stylesheet
-function my_custom_login() {
-echo '<link rel="stylesheet" type="text/css"
-href="' . get_bloginfo('stylesheet_directory') .
-'/login/login-styles.css" />';
+function my_custom_login() { echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/login/login-styles.css" />';
 }
 add_action('login_head', 'my_custom_login');
 

@@ -348,6 +348,12 @@ nav{
 .mini-post-img{
     position: relative;
     margin: 0.5rem;
+    max-width: 100%;
+}
+
+.mini-post-img img{
+    max-width: 100%;
+    height: auto;
 }
 
 .mini-post-content{
@@ -704,8 +710,11 @@ nav{
 } */
 
 .list-post{
-    /* background-color: rgba(0, 0, 0, 0.26); */
     box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.157);
+}
+
+.list-post-content .post-button{
+    color: #000;
 }
 
 .list-post-img{
@@ -717,7 +726,6 @@ nav{
     padding: 2rem;
     position: relative;
     height: 100%;
-
 }
 
 .list-post-content h2{
