@@ -67,23 +67,23 @@ nav{
     border-top: 1px solid #2546750e;
 }
 
-.dropdown-i{
-    position: absolute;
-    visibility: hidden;
+/* .dropdown-menu{
+    position: absolute !important;
+    visibility: hidden !important;
     z-index: 100;
     background-color: rgb(255, 255, 255);
     left: -5px;
-    top: 150%;
+    top: 150% !important;
     transition: all 0.3s ease-in-out 0s;
     opacity: 0;
 }
 
-.nav-item:hover .dropdown-i{
+.nav-link:hover .dropdown-menu .show{
     visibility: visible;
     opacity: 1;
     top: 40px;
     transition: all 0.3s ease 0s;
-}
+} */
 
 .navbar-toggler{
     position: absolute;

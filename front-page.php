@@ -35,7 +35,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -43,7 +43,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -51,7 +51,7 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -59,31 +59,31 @@
 				alt="First slide">
 			<div class="carousel-text d-md-block">
 				<h2>Salon meblowy Grafit</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
 				alt="Second slide">
 			<div class="carousel-text d-md-block">
-				<h2>To jest biurko</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h2>Salon meblowy Grafit</h2>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider10.jpg"
 				alt="Third slide">
 			<div class="carousel-text d-md-block">
-				<h2>This is America!</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h2>Salon meblowy Grafit</h2>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider11.jpg"
 				alt="Third slide">
 			<div class="carousel-text d-md-block">
-				<h2>To jest biurko</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<h2>Salon meblowy Grafit</h2>
+				<h3>32-731 Żegocina 10</h3>
 			</div>
 		</div>
 	</div>
