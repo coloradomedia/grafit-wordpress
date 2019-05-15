@@ -9,7 +9,7 @@
             <div class="list-post-img col-md-4">
                 <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
-                    <?php the_post_thumbnail('.mini-post-img'); ?>
+                    <?php the_post_thumbnail(); ?>
                 </a>
                 <?php else : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">

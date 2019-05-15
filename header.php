@@ -5,7 +5,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?>Grafit Salon Meblowy Żegocina</title>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
@@ -63,7 +63,7 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact">Kontakt</a></li>
                     <li class="nav-item"><a class="nav-link" href="installment">Raty</a></li>
-                    <li class="nav-item"><a class="nav-link" href="map">Lokalizacja</a></li>
+                    <li class="nav-item"><a class="nav-link" href="map">Mapa</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Grafit-MEBLE-%C5%BBegocina-1400822653517757/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
 

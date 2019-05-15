@@ -692,15 +692,17 @@ nav{
     /* box-shadow: -5px 5px 10px -5px #8b8d92c0; */
 }
 
-/* .page-standard-img img{
-    border-radius: 50%;
+.page-standard-img img{
+    width: 100%;
+    height: auto;
+    /* border-radius: 50%;
     overflow: hidden;
     position: absolute;
     top: -10rem;
     left: -10rem;
     border-left: 1vw solid #254675ad;
-    box-shadow: -10px 0px 0px 0px #8b8d92c0;
-} */
+    box-shadow: -10px 0px 0px 0px #8b8d92c0; */
+}
 
 /* .page-standard-img img{
     border-radius: 50%;
@@ -719,7 +721,11 @@ nav{
 
 .list-post-img{
     padding: 0;
-    
+}
+
+.list-post-img img{
+    width: 100%;
+    height: auto;
 }
 
 .list-post-content{
