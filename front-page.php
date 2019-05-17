@@ -17,16 +17,16 @@
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
 				alt="First slide">
 			<div class="carousel-text">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+				<h2 class="animated fadeInUp">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
-				<h2>Meble na wymiar</h2>
-				<p>Zaprojektuj z nami swoją wymarzoną kuchnię!</p>
+			<h2 class="animated fadeInDown">Meble na wymiar</h2>
+				<h3 class="animated fadeInUp">Zaprojektuj z nami swoją wymarzoną kuchnię</h3>
 			</div>
 		</div>
 
@@ -34,56 +34,56 @@
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider7.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider8.jpg"
 				alt="First slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
 				alt="Second slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider10.jpg"
 				alt="Third slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 		<div class="carousel-item">
 			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider11.jpg"
 				alt="Third slide">
 			<div class="carousel-text d-md-block">
-				<h2>Salon meblowy Grafit</h2>
-				<h3>32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
+				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
 			</div>
 		</div>
 	</div>
@@ -266,7 +266,6 @@
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt=""></div>
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt=""></div>
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/meblik_logo.png" alt=""></div>
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt=""></div>
 	</div>
 </div>
