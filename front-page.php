@@ -96,17 +96,18 @@
 		<span class="sr-only">Następny</span>
 	</a>
 </div>
-
 <div class="space" id="offer"></div>
 <div class="container main-offer">
 	<h2><span>O</span>ferta</h2>
 	<hr>
-	<article>GRAFIT to niepowtarzalne miejsce, w którym pasja i doświadczenie idą w parze ze stylem. <br>
+	<article>
+			<?php the_field('offer_text'); ?>
+		GRAFIT to niepowtarzalne miejsce, w którym pasja i doświadczenie idą w parze ze stylem. <br>
 		W naszym salonie o powierzchni 1000 m&#178; oferujemy szeroki wybór mebli wypoczynkowych, kuchennych, stołów,
 		szaf, biurek, mebli kalwaryjskich, krzeseł, oświetlenia oraz dodatków. <br><br>
 		Dla nas ważne jest aby każdy klient był zadowolony. Dlatego mili i doświadczeni doradcy zawsze służą pomocą.
 		Możesz z nami zaprojektować swoją kuchnię marzeń, a dowolny mebel wykonamy według podanych przez Ciebie
-		wymiarów. Współpraca z wieloma znanymi markami daje nam szelokie pole manewru a Tobie nieograniczony wybór.
+		wymiarów. Współpraca z wieloma znanymi markami daje nam szerokie pole manewru a Tobie nieograniczony wybór.
 		<br><br>
 		W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w naszej ofercie coś dla siebie.
 	</article>
