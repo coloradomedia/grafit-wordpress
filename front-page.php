@@ -10,80 +10,71 @@
 		<li data-target="#arrows" data-slide-to="5"></li>
 		<li data-target="#arrows" data-slide-to="6"></li>
 		<li data-target="#arrows" data-slide-to="7"></li>
-		<li data-target="#arrows" data-slide-to="8"></li>
 	</ol>
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider5.jpg"
-				alt="First slide">
+			<img class="d-block w-100" src="<?php the_field('slide_1'); ?>"
+				alt="1 slide">
 			<div class="carousel-text">
-				<h2 class="animated fadeInUp">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+				<h2 class="animated fadeInUp"><?php the_field('top_slide_1'); ?></h2>
+				<h3 class="animated fadeInUp"><?php the_field('bottom_slide_1'); ?></h3>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider6.jpg"
-				alt="First slide">
+			<img class="d-block w-100" src="<?php the_field('slide_2'); ?>"
+				alt="2 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Meble na wymiar</h2>
-				<h3 class="animated fadeInUp">Zaprojektuj z nami swoją wymarzoną kuchnię</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_2'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_2'); ?></h3>
 			</div>
 		</div>
 
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider9.jpg"
-				alt="First slide">
+			<img class="d-block w-100" src="<?php the_field('slide_3'); ?>"
+				alt="3 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_3'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_3'); ?></h3>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider3.jpg"
-				alt="First slide">
+			<img class="d-block w-100" src="<?php the_field('slide_4'); ?>"
+				alt="4 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_4'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_4'); ?></h3>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider7.jpg"
-				alt="First slide">
+			<img class="d-block w-100" src="<?php the_field('slide_5'); ?>"
+				alt="5 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_5'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_5'); ?></h3>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider8.jpg"
-				alt="First slide">
+			<img class="d-block w-100" src="<?php the_field('slide_6'); ?>"
+				alt="6 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_6'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_6'); ?></h3>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider2.jpg"
-				alt="Second slide">
+			<img class="d-block w-100" src="<?php the_field('slide_7'); ?>"
+				alt="7 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_7'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_7'); ?></h3>
 			</div>
 		</div>
 		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider10.jpg"
-				alt="Third slide">
+			<img class="d-block w-100" src="<?php the_field('slide_8'); ?>"
+				alt="8 slide">
 			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php echo get_template_directory_uri(); ?>/img/slider11.jpg"
-				alt="Third slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInDown">Salon meblowy Grafit</h2>
-				<h3 class="animated fadeInUp">32-731 Żegocina 10</h3>
+			<h2 class="animated fadeInUp"><?php the_field('top_slide_8'); ?></h2>
+			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_8'); ?></h3>
 			</div>
 		</div>
 	</div>
@@ -100,17 +91,7 @@
 <div class="container main-offer">
 	<h2><span>O</span>ferta</h2>
 	<hr>
-	<article>
-			<?php the_field('offer_text'); ?>
-		GRAFIT to niepowtarzalne miejsce, w którym pasja i doświadczenie idą w parze ze stylem. <br>
-		W naszym salonie o powierzchni 1000 m&#178; oferujemy szeroki wybór mebli wypoczynkowych, kuchennych, stołów,
-		szaf, biurek, mebli kalwaryjskich, krzeseł, oświetlenia oraz dodatków. <br><br>
-		Dla nas ważne jest aby każdy klient był zadowolony. Dlatego mili i doświadczeni doradcy zawsze służą pomocą.
-		Możesz z nami zaprojektować swoją kuchnię marzeń, a dowolny mebel wykonamy według podanych przez Ciebie
-		wymiarów. Współpraca z wieloma znanymi markami daje nam szerokie pole manewru a Tobie nieograniczony wybór.
-		<br><br>
-		W GRAFIT podążamy za aktualnymi trendami i dzięki temu każdy znajdzie w naszej ofercie coś dla siebie.
-	</article>
+	<article><?php the_field('offer_text'); ?></article>
 </div>
 
 <div class="cards">
@@ -228,10 +209,9 @@
 </div>
 
 <div class="motto container-fluid">
-	<h2>Bo wygoda, jest najważniejsza
+	<h2><?php the_field('motto'); ?>
 		<hr>
 	</h2>
-
 </div>
 
 <div class="news">
@@ -240,9 +220,8 @@
 	<div class="row">
 			<?php 
 			$query = new WP_Query( array(
-				'posts_per_page' => 3)
-			);
-			while ( $query->have_posts() ) : $query->the_post(); ?>
+				'posts_per_page' => 3));
+			while ($query->have_posts() ) : $query->the_post(); ?>
 			<?php get_template_part( 'content', 'small' ); ?>
 			<?php endwhile; ?>
 	</div>
@@ -255,7 +234,6 @@
 		Formularz kontaktowy
 	</div>
 </div>
-
 <div class="container brand">
 	<h2><span>Partnerzy </span>handlowi</h2>
 	<article>Współpracujemy z wieloma znanymi markami i dzięki temu jesteśmy w stanie zaoferować bardzo wiele.</article>
