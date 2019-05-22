@@ -25,7 +25,7 @@
 				alt="2 slide">
 			<div class="carousel-text d-md-block">
 			<h2 class="animated fadeInUp"><?php the_field('top_slide_2'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_2'); ?></h3>
+			<p class="animated fadeInUp"><?php the_field('bottom_slide_2'); ?></p>
 			</div>
 		</div>
 
@@ -34,7 +34,7 @@
 				alt="3 slide">
 			<div class="carousel-text d-md-block">
 			<h2 class="animated fadeInUp"><?php the_field('top_slide_3'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_3'); ?></h3>
+			<p class="animated fadeInUp"><?php the_field('bottom_slide_3'); ?></p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -42,7 +42,7 @@
 				alt="4 slide">
 			<div class="carousel-text d-md-block">
 			<h2 class="animated fadeInUp"><?php the_field('top_slide_4'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_4'); ?></h3>
+			<p class="animated fadeInUp"><?php the_field('bottom_slide_4'); ?></p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -50,7 +50,7 @@
 				alt="5 slide">
 			<div class="carousel-text d-md-block">
 			<h2 class="animated fadeInUp"><?php the_field('top_slide_5'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_5'); ?></h3>
+			<p class="animated fadeInUp"><?php the_field('bottom_slide_5'); ?></p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -58,7 +58,7 @@
 				alt="6 slide">
 			<div class="carousel-text d-md-block">
 			<h2 class="animated fadeInUp"><?php the_field('top_slide_6'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_6'); ?></h3>
+			<p class="animated fadeInUp"><?php the_field('bottom_slide_6'); ?></p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -66,7 +66,7 @@
 				alt="7 slide">
 			<div class="carousel-text d-md-block">
 			<h2 class="animated fadeInUp"><?php the_field('top_slide_7'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_7'); ?></h3>
+			<p class="animated fadeInUp"><?php the_field('bottom_slide_7'); ?></p>
 			</div>
 		</div>
 		<div class="carousel-item">
@@ -97,7 +97,7 @@
 <div class="cards">
 	<div class="row">
 
-		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
+		<div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 one-two">
 			<a href="salon">
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;dzienny</p>
@@ -106,7 +106,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="kids">
 				<div class="wrapper">
 					<p class="card-text">Pokój dziecięcy</p>
@@ -115,7 +115,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="bedrooms">
 				<div class="wrapper">
 					<p class="card-text">Sypialnia</p>
@@ -124,7 +124,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="office">
 				<div class="wrapper">
 					<p class="card-text">Biuro</p>
@@ -133,7 +133,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="bathrooms">
 				<div class="wrapper">
 					<p class="card-text">Łazienka</p>
@@ -142,7 +142,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
+		<div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 one-two">
 			<a href="kitchen">
 				<div class="wrapper">
 					<p class="card-text">Kuchnia&nbsp;na&nbsp;wymiar</p>
@@ -151,7 +151,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="extras">
 				<div class="wrapper">
 					<p class="card-text">Dodatki</p>
@@ -160,7 +160,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-6 col-lg-8 col-md-8 one-two">
+		<div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 one-two">
 			<a href="teens">
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;młodzieżowy</p>
@@ -169,7 +169,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="agdrtv">
 				<div class="wrapper">
 					<p class="card-text">AGD/RTV</p>
@@ -178,7 +178,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-4 col-lg-4 col-md-4 one-four">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 one-four">
 			<a href="doors">
 				<div class="wrapper">
 					<p class="card-text">Drzwi</p>
@@ -187,7 +187,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-4 col-lg-4 col-md-4 one-two one-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 one-two one-3">
 			<a href="wood">
 				<div class="wrapper">
 					<p class="card-text">Panele</p>
@@ -196,7 +196,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-4 col-lg-4 col-md-4 one-four one-3">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 one-four one-3">
 			<a href="gateways">
 				<div class="wrapper">
 					<p class="card-text">Bramy i ogrodzenia</p>
@@ -217,7 +217,7 @@
 <div class="news">
 <h2>Aktualności</h2>
 <hr>
-	<div class="row">
+	<div class="row justify-content-center">
 			<?php 
 			$query = new WP_Query( array(
 				'posts_per_page' => 3));

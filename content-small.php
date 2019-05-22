@@ -1,4 +1,4 @@
-<div class="col-md-4">
+<div class="col-sm-6 col-md-4 col-sm-auto">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="mini-post-img img-fluid">
             <?php if ( has_post_thumbnail() ) : ?>

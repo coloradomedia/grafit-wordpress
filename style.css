@@ -3,7 +3,7 @@ Theme Name: Motyw GRAFIT
 Theme URI: http://meblegrafit.pl
 Author: ColoradoMedia
 Author URI: http://coloradomedia.pl
-Description: Motyw strony od zera
+Description: Motyw strony z możliwością wstawiania postów i dowolnej zmiany większości tekstów znajdujących się w serwisie. Istnieje możliwość zmiany zdjęć w sliderze na stronie głównej wraz z podpisami.
 Version: 1.0.0
 License: &copy;ColoradoMedia
 Text Domain: coloradomedia
@@ -1000,12 +1000,308 @@ nav{
 
 
 @media (max-width: 1199.98px) {
-    html{
+    /* html{
         overflow-x: hidden;
     }
 
     .wpadminbar{
         overflow: hidden;
         width: 100vw;
+    } */
+
+    .carousel-text h2{
+        font-size: 4.5rem;
+    }
+    
+    .carousel-text h3{
+        font-size: 3rem;
+    }
+    
+    .motto{
+        min-height: 400px;
+    }
+
+    .motto h3{
+        font-size: 3rem;
+    }
+
+    .motto::after{
+        border-top: 60px solid white;
+    }
+    
+    .motto::before{
+        border-bottom: 60px solid white;
+    }
+
+    .contact-form{
+        min-height: 45rem;
+    }
+    
+    .contact-form::after{
+        border-bottom: 60px solid white;
+        border-top: 60px solid white;
+    }
+
+    #cookies-message {
+        width: 38rem;
+        height: 10.5rem;
+        font-size: 1.5rem;
+    }
+    
+    #cookies-message img{
+        width: 85px;
+    }
+    
+    #accept-cookies-checkbox {
+        padding-top: 5px;
+    }
+
+    .container-standard{
+        max-width: 150rem;
+        margin: 0 auto;
+        min-height: 50vh;
+        padding: 5rem 2rem;
+    }
+
+    .main-offer h2{
+        font-size: 3rem;
+    }
+
+    .main-offer p{
+        font-size: 1.7rem;
+    }
+
+    .space{
+        display: none;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-toggler{
+        top: 1.5rem;
+    }
+    .carousel-text h2{
+        font-size: 3.5rem;
+    }
+
+    .main-offer h2{
+        font-size: 3rem;
+    }
+
+    .card-text{
+        font-size: 3.5rem;
+    }
+
+    .motto{
+        min-height: 350px;
+    }
+
+    .motto h2{
+        font-size: 4rem;
+    }
+
+    .motto::after{
+        border-top: 50px solid white;
+    }
+    
+    .motto::before{
+        border-bottom: 50px solid white;
+    }
+
+    .news h2{
+        font-size: 3rem;
+    }
+
+    .mini-post-content{
+        height: 10rem;
+        padding: .5rem;
+    }
+    
+    .mini-post-content h3{
+        font-size: 2rem;
+    }
+    
+    .mini-post-content p{
+        font-size: 1.3rem;
+    }
+
+    .post-button{
+        padding: 0 .5rem;
+    }
+    
+    .post-button a{
+        font-size: 1rem;
+    }
+    
+    .btn-news a{
+        font-size: 1.5rem;
+    }
+
+    .contact-form{
+        min-height: 40rem;
+    }
+    
+    .contact-form::after{
+        border-bottom: 50px solid white;
+        border-top: 50px solid white;
+    }
+    
+    .brand h2{
+        font-size: 3rem;
+    }
+    
+    .footer-widget{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .footer-title{
+        font-size: 2rem;
+    }
+
+    .contact-footer{
+        font-size: 1.5rem;
+    }
+    
+    .contact-footer p{
+        padding-top: 1rem;
+    }
+    
+    .facebook i{
+        font-size: 2rem;
+    }
+    
+    .phone i{
+        font-size: 2rem;
+    }
+    
+    .mail i{
+        font-size: 2.1rem;
+    }
+    
+    .map-mark i{
+        font-size: 2.1rem;
+    }
+    
+    .footer-row ul li{
+        padding-top: 1rem;
+    }
+    
+    .footer-row ul li a{
+        font-size: 1.5rem;
+    }
+    
+    .open-footer{
+        font-size: 2rem;
+    }
+    
+    .open-footer{
+        padding-top: 3rem;
+    }
+    
+    .open-footer h3{
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    .page-standard-img{
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer-widget{
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+    
+    .footer-title{
+        font-size: 3rem;
+    }
+
+    .contact-footer{
+        font-size: 2rem;
+    }
+    
+    .contact-footer p{
+        padding-top: 1rem;
+    }
+    
+    .facebook i{
+        font-size: 2.5rem;
+    }
+    
+    .phone i{
+        font-size: 2.5rem;
+    }
+    
+    .mail i{
+        font-size: 2.5rem;
+    }
+    
+    .map-mark i{
+        font-size: 2.3rem;
+    }
+    
+    .footer-row ul li{
+        padding-top: 1rem;
+    }
+    
+    .footer-row ul li a{
+        font-size: 2rem;
+    }
+    
+    .open-footer{
+        font-size: 2.5rem;
+    }
+    
+    .open-footer h3{
+        font-size: 4rem;
+    }
+
+    .main-offer{
+        max-width: 100%;
+    }
+
+    .brand{
+        max-width: 90%;
+    }
+
+    .card-text{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 380px) {
+    #cookies-message {
+        width: 100%;
+        height: 10rem;
+        /* padding: 2rem 5rem; */
+        padding-left: 13rem;
+        font-size: 1.4rem;
+        bottom: 0;
+        left: 0;
+    }
+    
+    #cookies-message img{
+        width: 80px;
+    }
+    
+    #accept-cookies-checkbox {
+        background-color: #254675;
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
+        top: -2rem;
+        line-height: 2.5rem;
+        right: 0;
+        text-decoration: none;
+        cursor: pointer
     }
 }
