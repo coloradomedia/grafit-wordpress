@@ -1,6 +1,6 @@
 <?php
-
 add_theme_support( 'post-thumbnails' );
+
 
 
 function grafit_widgets_init() {
@@ -40,6 +40,9 @@ function grafit_widgets_init() {
 		'before_title'  => '<h3 class="footer-title">',
 		'after_title'   => '</h3>',
 	) );
+	register_nav_menus( array(
+		'primary' => __( 'Menu NavWalker', 'motywgrafit' ),
+	) );
 }        
 add_action( 'widgets_init', 'grafit_widgets_init' );
 
@@ -52,7 +55,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 
 	wp_enqueue_style( 'all-css', '//use.fontawesome.com/releases/v5.0.0/css/all.css');
 
-     wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
+    //  wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
      
      wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/styles/animate.css', array(), '', 'all' );
 
@@ -80,7 +83,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     
     
 
-	wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.3.1', true );
+	// wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.3.1', true );
 	
 	
     wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/js/contact.js', array('jquery'), '', true );
@@ -133,3 +136,9 @@ function pagination() {
         'next_text'    => __(''),
     ) ) . '</p></div>'; }
 }
+
+// Register Custom Navigation Walker
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+
+

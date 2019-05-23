@@ -82,13 +82,16 @@
 }
 
 @-webkit-keyframes flash {
-  from,
-  50%,
+   from,
+  20%,
+  25%,
+  40%,
   to {
     opacity: 1;
   }
 
-  25%,
+  15%,
+  35%,
   75% {
     opacity: 0;
   }
@@ -96,12 +99,15 @@
 
 @keyframes flash {
   from,
-  50%,
+  20%,
+  25%,
+  40%,
   to {
     opacity: 1;
   }
 
-  25%,
+  15%,
+  35%,
   75% {
     opacity: 0;
   }
@@ -2970,6 +2976,35 @@
   animation-name: zoomIn;
 }
 
+/* @-webkit-keyframes galaxy {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.001, 0.001, 0.001);
+    transform: scale3d(0.001, 0.001, 0.001);
+  }
+
+  20% {
+    opacity: 1;
+  }
+} */
+
+@keyframes galaxy {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(30.0, 30.0, 30.0);
+    transform: scale3d(30.0, 30.0, 30.0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.galaxy {
+  -webkit-animation-name: galaxy;
+  animation-name: galaxy;
+}
+
 @-webkit-keyframes zoomInDown {
   from {
     opacity: 0;
@@ -3595,6 +3630,16 @@
   animation-iteration-count: infinite;
 }
 
+.animated.delay-025s {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.animated.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
 .animated.delay-1s {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
@@ -3628,6 +3673,11 @@
 .animated.faster {
   -webkit-animation-duration: 500ms;
   animation-duration: 500ms;
+}
+
+.animated.thefast {
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
 }
 
 .animated.slow {

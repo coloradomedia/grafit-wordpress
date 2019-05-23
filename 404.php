@@ -4,37 +4,13 @@
  */
 
 get_header(); ?>
+<div class="container-fluid notfound404">
 
-<div class="container section-padding">
-	<div class="row">
+	<h1 class="clip-text clip-text--cover animated galaxy faster">404</h1>
+	
+	<h2 class="animated fadeIn delay-05s"><?php _e( 'Kurwa mać! Istnieje wiele stron w galaktyce, ale ta nie została odnaleziona.', 'motywgrafit' ); ?></h2>
 
-	<div id="primary" class="col-md-12 col-lg-12">
-		<main id="main" class="site-main" role="main">
+	<p class="animated fadeIn delay-1s"><?php _e( 'Wygląda na to, że wpisałeś błędny adres. Sprawdź jeszcze raz.', 'motywgrafit' ); ?></p>
 
-			<div class="">
-				<div class="entry-container">
-					<section class="error-404 not-found">
-						<div class="error-404-img">
-							<i class="fa fa-thumbs-down"></i>
-						</div>
-						<header>
-							<h1 class="page-title"><?php _e( 'Ups! Taka strona nie istnieje.', 'grafitmotyw' ); ?></h1>
-						</header><!-- .page-header -->
-
-					
-						<div class="page-content">
-							<p><?php _e( 'Wygląda na to, że wpisałeś błędny adres. Sprawdź jeszcze raz albo skorzystaj z wyszukiwarki.', 'grafitmotyw' ); ?></p>
-
-						</div><!-- .page-content -->
-
-					</section><!-- .error-404 -->
-				</div><!-- .entry-content -->
-			</div><!-- .card -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-	</div> <!-- .row -->
-</div> <!-- .container -->
-
+</div>
 <?php get_footer(); ?>

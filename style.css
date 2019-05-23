@@ -40,6 +40,7 @@ nav{
     -webkit-box-shadow: 0px -35px 34px 15px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px -35px 34px 15px rgba(0,0,0,0.75);
     box-shadow: 0px -35px 34px 15px rgba(0,0,0,0.75);
+    z-index: 1000;
 }
 
 .nav-item{
@@ -67,23 +68,16 @@ nav{
     border-top: 1px solid #2546750e;
 }
 
-/* .dropdown-menu{
-    position: absolute !important;
-    visibility: hidden !important;
-    z-index: 100;
-    background-color: rgb(255, 255, 255);
+.dropdown-menu{
+    border: none;
+    padding-bottom: 0;
+    padding-top: 2.2rem;
     left: -5px;
-    top: 150% !important;
-    transition: all 0.3s ease-in-out 0s;
-    opacity: 0;
 }
 
-.nav-link:hover .dropdown-menu .show{
-    visibility: visible;
-    opacity: 1;
-    top: 40px;
-    transition: all 0.3s ease 0s;
-} */
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 .navbar-toggler{
     position: absolute;
@@ -532,6 +526,10 @@ nav{
 }
 
 .space{
+    padding-top: 5rem;
+}
+
+.space-news{
     padding-top: 5rem;
 }
 
@@ -1304,4 +1302,52 @@ nav{
         text-decoration: none;
         cursor: pointer
     }
+}
+
+.notfound404{
+	text-align: center;
+}
+
+.notfound404 h2{
+	font-size: 3.5rem;
+	padding: 2rem 0;
+}
+
+.notfound404 p{
+	font-size: 2.8rem;
+	padding: 2rem 0 5rem 0;
+}
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/* Clip text element */
+.clip-text {
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    padding: 5rem 0;
+    /* Color fallback */
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-size: 20vw;
+	font-weight: 900;
+	font-family: 'Oswald', sans-serif;
+	background-image: url(https://images-na.ssl-images-amazon.com/images/I/81kTrSqMuLL._SL1135_.jpg);
+}
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
 }

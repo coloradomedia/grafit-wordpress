@@ -9,14 +9,37 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
 
 
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    
-<header class="nav-head">
+
+<!-- <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+  <div class="container">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<a class="navbar-brand" href="#">Menu Navwalker</a>
+        <?//php
+        // wp_nav_menu( array(
+        //     'theme_location'    => 'primary',
+        //     'depth'             => 2,
+        //     'container'         => 'div',
+        //     'container_class'   => 'collapse navbar-collapse justify-content-end',
+        //     'container_id'      => 'navbarNavDropdown',
+        //     'menu_class'        => 'navbar-nav',
+        //     'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        //     'walker'            => new WP_Bootstrap_Navwalker()
+		// ) );
+        ?>
+    </div>
+</nav> -->
+
+<header class="nav-head animated fadeInDown">
 
         <nav class="container navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
@@ -31,7 +54,7 @@
                     <li class="nav-item"><a class="nav-link" href="about">O nas</a></li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oferta</a>
+                        <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Oferta</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="salon">Pokoje dzienne</a>
                             <div class="dropdown-divider"></div>
@@ -56,7 +79,7 @@
                             <a class="dropdown-item" href="wood">Panele</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="gateways">Bramy i ogrodzenia</a>
-                        </div>
+                        </>
                     </li>
 
                     <li class="nav-item"><a class="nav-link" href="contact">Kontakt</a></li>

@@ -1,5 +1,5 @@
 <?php 
-/*  * The template for displaying blog page. */
+/* The template for displaying blog page. */
 get_header(); ?>
 
 <header class="entry-header">
@@ -14,7 +14,7 @@ get_header(); ?>
     </div>
 </header>
 
-<div class="space"></div>
+<div class="space-news"></div>
 
 <div class="container">
     <?php while ( have_posts() ) : the_post(); ?>
