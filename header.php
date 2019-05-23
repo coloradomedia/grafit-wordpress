@@ -39,7 +39,7 @@
     </div>
 </nav> -->
 
-<header class="nav-head animated fadeInDown">
+<header class="nav-head">
 
         <nav class="container navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img

@@ -2979,11 +2979,11 @@
 /* @-webkit-keyframes galaxy {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(0.001, 0.001, 0.001);
-    transform: scale3d(0.001, 0.001, 0.001);
+    -webkit-transform: scale3d(30.0, 30.0, 30.0);
+    transform: scale3d(30.0, 30.0, 30.0);
   }
 
-  20% {
+  50% {
     opacity: 1;
   }
 } */
@@ -2991,8 +2991,8 @@
 @keyframes galaxy {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(30.0, 30.0, 30.0);
-    transform: scale3d(30.0, 30.0, 30.0);
+    -webkit-transform: scale3d(10, 10, 10);
+    transform: scale3d(10, 10, 10);
   }
 
   50% {

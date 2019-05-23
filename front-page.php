@@ -2,82 +2,45 @@
 
 <div id="arrows" class="carousel slide carousel-fade" data-ride="carousel">
 	<ol class="carousel-indicators">
-		<li data-target="#arrows" data-slide-to="0" class="active"></li>
-		<li data-target="#arrows" data-slide-to="1"></li>
-		<li data-target="#arrows" data-slide-to="2"></li>
-		<li data-target="#arrows" data-slide-to="3"></li>
-		<li data-target="#arrows" data-slide-to="4"></li>
-		<li data-target="#arrows" data-slide-to="5"></li>
-		<li data-target="#arrows" data-slide-to="6"></li>
-		<li data-target="#arrows" data-slide-to="7"></li>
+		
+		<?php
+		if( have_rows('slider') ):
+		$count = 0;
+		while ( have_rows('slider') ) : the_row(); ?>
+
+		<li data-target="#arrows" data-slide-to="<?php the_sub_field('slide'); ?>"
+		<?php if (!$count) { ?> class="active"<?php }?>></li>
+
+		<?php $count++; endwhile;
+
+		else :
+
+		endif; ?>
+
 	</ol>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img class="d-block w-100" src="<?php the_field('slide_1'); ?>"
+<div class="carousel-inner">
+	<?php
+		if( have_rows('slider') ):
+		$count = 0;
+		while ( have_rows('slider') ) : the_row(); ?>
+		
+		<div class="carousel-item <?php if (!$count) { ?> active<?php } ?>">
+			<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>"
 				alt="1 slide">
 			<div class="carousel-text">
-				<h2 class="animated fadeInUp"><?php the_field('top_slide_1'); ?></h2>
-				<h3 class="animated fadeInUp"><?php the_field('bottom_slide_1'); ?></h3>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_2'); ?>"
-				alt="2 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_2'); ?></h2>
-			<p class="animated fadeInUp"><?php the_field('bottom_slide_2'); ?></p>
+				<h2 class="animated fadeInUp"><?php the_sub_field('top_slide'); ?></h2>
+				<h3 class="animated fadeInUp"><?php the_sub_field('bottom_slide'); ?></h3>
+				<p class="animated fadeInUp"><?php the_sub_field('bottom_slide_p'); ?></p>
 			</div>
 		</div>
 
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_3'); ?>"
-				alt="3 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_3'); ?></h2>
-			<p class="animated fadeInUp"><?php the_field('bottom_slide_3'); ?></p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_4'); ?>"
-				alt="4 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_4'); ?></h2>
-			<p class="animated fadeInUp"><?php the_field('bottom_slide_4'); ?></p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_5'); ?>"
-				alt="5 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_5'); ?></h2>
-			<p class="animated fadeInUp"><?php the_field('bottom_slide_5'); ?></p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_6'); ?>"
-				alt="6 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_6'); ?></h2>
-			<p class="animated fadeInUp"><?php the_field('bottom_slide_6'); ?></p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_7'); ?>"
-				alt="7 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_7'); ?></h2>
-			<p class="animated fadeInUp"><?php the_field('bottom_slide_7'); ?></p>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img class="d-block w-100" src="<?php the_field('slide_8'); ?>"
-				alt="8 slide">
-			<div class="carousel-text d-md-block">
-			<h2 class="animated fadeInUp"><?php the_field('top_slide_8'); ?></h2>
-			<h3 class="animated fadeInUp"><?php the_field('bottom_slide_8'); ?></h3>
-			</div>
-		</div>
-	</div>
+		<?php $count++; endwhile;
+
+		else :
+
+		endif;
+	?>
+</div>
 	<a class="carousel-control-prev" href="#arrows" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		<span class="sr-only">Poprzedni</span>
@@ -87,6 +50,7 @@
 		<span class="sr-only">Następny</span>
 	</a>
 </div>
+
 <div class="space" id="offer"></div>
 <div class="container main-offer">
 	<h2><span>O</span>ferta</h2>

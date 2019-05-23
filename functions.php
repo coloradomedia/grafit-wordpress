@@ -110,6 +110,16 @@ function my_custom_login() { echo '<link rel="stylesheet" type="text/css" href="
 }
 add_action('login_head', 'my_custom_login');
 
+function my_login_logo_url(){
+	return ( 'coloradomedia.pl' );
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title(){
+	return ( 'ColoradoMedia.pl' );
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
 function new_excerpt_more($more){
 	global $post;
 	return '<div class="post-button"><a href="'. get_permalink($post->ID) .'">Czytaj całość&nbsp;<i class="fas fa-angle-double-right"></i></a></div>';

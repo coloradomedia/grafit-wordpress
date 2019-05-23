@@ -22,6 +22,7 @@ body{
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     color: #000;
+    overflow: hidden;
 }
 
 nav{
@@ -804,7 +805,22 @@ nav{
     background-size: cover;
     position: relative;
     bottom: 0;
+    z-index: 1;
 }
+
+/* .main-footer::after{
+    content: '';
+    width: 100%;
+    height: auto;
+    background: #254675;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+} */
 
 .main-footer img{
     z-index: -200;
@@ -1305,12 +1321,13 @@ nav{
 }
 
 .notfound404{
-	text-align: center;
+    text-align: center;
+    /* background-color: #001e4911; */
 }
 
 .notfound404 h2{
 	font-size: 3.5rem;
-	padding: 2rem 0;
+    padding: 2rem 0;
 }
 
 .notfound404 p{
