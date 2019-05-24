@@ -35,6 +35,11 @@ nav{
     position: relative;
 }
 
+a{
+    color: #000;
+    text-decoration: none;
+}
+
 .nav-head{
     background-color: #fff;
     width: 100vw;
@@ -351,6 +356,22 @@ nav{
     height: auto;
 }
 
+.logo-placeholder::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(img/logo-grafit-wektor.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 25%;
+    position: absolute;
+    top: 0;
+}
+
+.mini-post-content .post-button{
+    display: none;
+}
+
 .mini-post-content{
     position: absolute;
     bottom: 0;
@@ -360,13 +381,15 @@ nav{
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 1rem;
+    /* text-align: center; */
 }
 
 .mini-post-content h3{
     position: relative;
     color: #fff;
     padding: 0.5rem 1rem 0 1rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
+    padding-top: 0;
 }
 
 .mini-post-content p{
@@ -375,8 +398,28 @@ nav{
     bottom: 0;
     font-size: 1.3rem;
 	white-space: nowrap;
-	overflow: hidden;
+    overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+.mini-post-content a{
+    position: absolute;
+    bottom: 1.5rem;
+    right: 2rem;
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+    border: 2px solid #fff;
+    line-height: 1;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.mini-post-content a:hover{
+    background-color: #fff;
+    color: #254675;
 }
 
 .post-button{
@@ -553,6 +596,7 @@ nav{
     color: #fff;
     width: 100%;
     padding: 1rem 0;
+    line-height: 1;
     /* height: 100%;
     line-height: 50px; */
 }
@@ -595,6 +639,7 @@ nav{
 
 .single-post-content{
     padding-top: 5rem;
+    min-height: 40rem;
 }
 
 .single-post-img{
@@ -720,7 +765,7 @@ nav{
 }
 
 .list-post-content .post-button{
-    color: #000;
+    display: none;
 }
 
 .list-post-img{
@@ -733,18 +778,70 @@ nav{
 }
 
 .list-post-content{
-    padding: 2rem;
+    padding: 0 0 2rem 0;
     position: relative;
     height: 100%;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .list-post-content h2{
     font-size: 2.7rem;
+    text-align: center;
+    background: rgba(37, 70, 117, 0.9);
+    color: #fff;
+    padding: 2rem;
 }
 
-.list-post-content .post-button{
+.list-post-content p{
+    padding: 1rem 2rem 1rem 2rem;
+	/* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+
+.list-post-content a{
+    background-color: transparent;
+    padding: 0.5rem 2rem;
+    font-size: 1.8rem;
+    border: 2px solid #254675;
+    line-height: 1.5;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #001f49;
+    font-weight: bold;
+}
+
+.list-post-content a:hover{
+    background-color: #254675;
+    color: #fff;
+}
+
+
+/* .news-box{
+    background-color: rgba(139, 141, 146, 0.109);
+} */
+
+
+.news-container{
+    background: url(img/apartment-chair-contemporary-509922.jpg);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 20rem;
+}
+
+/* .list-post-content .post-button{
     position: relative;
     bottom: 0;
+    color: #000;
+    background-color: #fff;
+    width: auto;
+} */
+
+.list-post-content .post-button a{
+    color: #000;
 }
 
 .pagination{
@@ -1361,8 +1458,8 @@ nav{
 }
 
 /* Use Background-size cover for photo background and no-repeat background */
-.clip-text--cover,
-.clip-text--cover:before {
+.cover-404,
+.cover-404:before {
     background-repeat: no-repeat;
     -webkit-background-size: cover;
             background-size: cover;

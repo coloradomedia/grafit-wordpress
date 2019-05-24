@@ -2976,17 +2976,17 @@
   animation-name: zoomIn;
 }
 
-/* @-webkit-keyframes galaxy {
+@-webkit-keyframes galaxy {
   from {
     opacity: 0;
-    -webkit-transform: scale3d(30.0, 30.0, 30.0);
-    transform: scale3d(30.0, 30.0, 30.0);
+    -webkit-transform: scale3d(10, 10, 10);
+    transform: scale3d(10, 10, 10);
   }
 
   50% {
     opacity: 1;
   }
-} */
+}
 
 @keyframes galaxy {
   from {

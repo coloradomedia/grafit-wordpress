@@ -29,8 +29,7 @@
 				alt="1 slide">
 			<div class="carousel-text">
 				<h2 class="animated fadeInUp"><?php the_sub_field('top_slide'); ?></h2>
-				<h3 class="animated fadeInUp"><?php the_sub_field('bottom_slide'); ?></h3>
-				<p class="animated fadeInUp"><?php the_sub_field('bottom_slide_p'); ?></p>
+				<p class="animated fadeInUp"><?php the_sub_field('bottom_slide'); ?></p>
 			</div>
 		</div>
 
@@ -189,6 +188,7 @@
 			<?php get_template_part( 'content', 'small' ); ?>
 			<?php endwhile; ?>
 	</div>
+
 	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 

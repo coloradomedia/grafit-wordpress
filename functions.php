@@ -1,8 +1,6 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 
-
-
 function grafit_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Główny widget', 'grafit' ),
@@ -40,9 +38,6 @@ function grafit_widgets_init() {
 		'before_title'  => '<h3 class="footer-title">',
 		'after_title'   => '</h3>',
 	) );
-	register_nav_menus( array(
-		'primary' => __( 'Menu NavWalker', 'motywgrafit' ),
-	) );
 }        
 add_action( 'widgets_init', 'grafit_widgets_init' );
 
@@ -54,8 +49,6 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     wp_enqueue_script( 'app-js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
 
 	wp_enqueue_style( 'all-css', '//use.fontawesome.com/releases/v5.0.0/css/all.css');
-
-    //  wp_enqueue_style( 'grafit-bootstrap-styles', get_template_directory_uri() . '/styles/bootstrap.min.css', array(), '4.3.1', 'all' );
      
      wp_enqueue_style( 'animate-css', get_template_directory_uri() . '/styles/animate.css', array(), '', 'all' );
 
@@ -67,24 +60,8 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 	 wp_enqueue_style( 'bootstrap-dropdownhover-css', get_template_directory_uri() . '/styles/bootstrap-dropdownhover.css', array(), '', 'all' );
 
 
-    //  wp_enqueue_style( 'sensiblewp-open-sans', '//fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700');
-
-
-
-
-
-
-
-
-
 
     wp_enqueue_style( 'grafit-style', get_stylesheet_uri() );
-
-    
-    
-
-	// wp_enqueue_script( 'mwp-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '4.3.1', true );
-	
 	
     wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/js/contact.js', array('jquery'), '', true );
 	
@@ -97,8 +74,7 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     
 if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	wp_enqueue_script( 'comment-reply' );
-}
-}
+}}
 add_action( 'wp_enqueue_scripts', 'grafit_scripts' );
 
 add_theme_support( 'post-thumbnails' );
@@ -120,15 +96,30 @@ function my_login_logo_url_title(){
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
-function new_excerpt_more($more){
-	global $post;
-	return '<div class="post-button"><a href="'. get_permalink($post->ID) .'">Czytaj całość&nbsp;<i class="fas fa-angle-double-right"></i></a></div>';
+function hide_logo() {
+	global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('wp-logo');
+    $wp_admin_bar->remove_menu('about');
+    $wp_admin_bar->remove_menu('wporg');
+    $wp_admin_bar->remove_menu('documentation');
+    $wp_admin_bar->remove_menu('support-forums');
+    $wp_admin_bar->remove_menu('feedback');
 }
+add_action( 'wp_before_admin_bar_render', 'hide_logo' );
 
-add_filter('excerpt_more', 'new_excerpt_more');
+function thanks() {
+    echo 'ColoradoMedia.pl - Piotr Majkrzak, FrontEnd Developer'; //wpisz swój tekst
+}
+add_filter('admin_footer_text', 'thanks');
+
+// function new_excerpt_more($more){
+// 	global $post;
+// 	return '<div class="post-button"><a href="'. get_permalink($post->ID) .'">Czytaj całość&nbsp;<i class="fas fa-angle-double-right"></i></a></div>';
+// }
+// add_filter('excerpt_more', 'new_excerpt_more');
 
 function new_excerpt_length($length) {
-	return 15;
+	return 20;
 }
 add_filter('excerpt_length', 'new_excerpt_length');
 
@@ -146,9 +137,3 @@ function pagination() {
         'next_text'    => __(''),
     ) ) . '</p></div>'; }
 }
-
-// Register Custom Navigation Walker
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
-
-

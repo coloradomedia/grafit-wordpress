@@ -18,18 +18,16 @@
                 <?php endif; ?>
             </div>
             <div class="list-post-content col-md-8">
-                <?php the_title( '<h2>', '</h2>');
-                      the_excerpt();?>
+                <?php the_title( '<h2>', '</h2>' );
+                      the_excerpt(); ?>
+                <a href="<?php echo get_permalink($post->ID)?>" class="btn">Więcej</a>
+            </div>
 
 
-
+            <!-- <div class="space"></div> -->
+        </div>
+    </article>
 </div>
-
-
-<!-- <div class="space"></div> -->
-</div>
-</article>
-</div>
-                <footer class="edit-footer">
-                    <?php edit_post_link( __('Edytuj'), '<button class="edit-link btn btn-success">', '</button>' ); ?>
-                </footer>
+<footer class="edit-footer">
+    <?php edit_post_link( __('Edytuj'), '<button class="edit-link btn btn-success">', '</button>' ); ?>
+</footer>

@@ -6,7 +6,7 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <?php get_template_part( 'content', 'gallery' ); ?>
+        <?php get_template_part( 'content', 'gallery' ); ?>
 
     <?php endwhile; // end of the loop. ?>
 
