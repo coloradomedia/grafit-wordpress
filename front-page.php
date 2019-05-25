@@ -26,10 +26,10 @@
 		
 		<div class="carousel-item <?php if (!$count) { ?> active<?php } ?>">
 			<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>"
-				alt="1 slide">
+				alt="Slide">
 			<div class="carousel-text">
 				<h2 class="animated fadeInUp"><?php the_sub_field('top_slide'); ?></h2>
-				<p class="animated fadeInUp"><?php the_sub_field('bottom_slide'); ?></p>
+				<p class="animated fadeInUp delay-1s"><?php the_sub_field('bottom_slide'); ?></p>
 			</div>
 		</div>
 
@@ -65,7 +65,7 @@
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;dzienny</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/living_room.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/living_room.jpg" class="img-fluid" alt="Pokój dzienny">
 			</a>
 		</div>
 
@@ -74,7 +74,7 @@
 				<div class="wrapper">
 					<p class="card-text">Pokój dziecięcy</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/kids_room.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/kids_room.jpg" class="img-fluid" alt="Pokój dziecięcy">
 			</a>
 		</div>
 
@@ -83,7 +83,7 @@
 				<div class="wrapper">
 					<p class="card-text">Sypialnia</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/bedroom.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/bedroom.jpg" class="img-fluid" alt="Sypialnia">
 			</a>
 		</div>
 
@@ -92,7 +92,7 @@
 				<div class="wrapper">
 					<p class="card-text">Biuro</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/office.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/office.jpg" class="img-fluid" alt="Biuro">
 			</a>
 		</div>
 
@@ -101,7 +101,7 @@
 				<div class="wrapper">
 					<p class="card-text">Łazienka</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/bathroom.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/bathroom.jpg" class="img-fluid" alt="Łazienka">
 			</a>
 		</div>
 
@@ -110,7 +110,7 @@
 				<div class="wrapper">
 					<p class="card-text">Kuchnia&nbsp;na&nbsp;wymiar</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/foto1-2.jpg" class="img-fluid" alt="Kuchnia">
 			</a>
 		</div>
 
@@ -119,7 +119,7 @@
 				<div class="wrapper">
 					<p class="card-text">Dodatki</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/extras.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/extras.jpg" class="img-fluid" alt="Dodatki">
 			</a>
 		</div>
 
@@ -128,7 +128,7 @@
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;młodzieżowy</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/teen_room.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/teen_room.jpg" class="img-fluid" alt="Pokój młodzieżowy">
 			</a>
 		</div>
 
@@ -137,7 +137,7 @@
 				<div class="wrapper">
 					<p class="card-text">AGD/RTV</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/agd.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/agd.jpg" class="img-fluid" alt="AGD i RTV">
 			</a>
 		</div>
 
@@ -146,7 +146,7 @@
 				<div class="wrapper">
 					<p class="card-text">Drzwi</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/door.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/door.jpg" class="img-fluid" alt="Drzwi">
 			</a>
 		</div>
 
@@ -155,7 +155,7 @@
 				<div class="wrapper">
 					<p class="card-text">Panele</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/floor_panels.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/floor_panels.jpg" class="img-fluid" alt="Panele">
 			</a>
 		</div>
 
@@ -164,7 +164,7 @@
 				<div class="wrapper">
 					<p class="card-text">Bramy i ogrodzenia</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/wisniowski.jpg" class="img-fluid">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/wisniowski.jpg" class="img-fluid" alt="Bramy i ogrodzenia">
 			</a>
 		</div>
 
@@ -183,9 +183,9 @@
 	<div class="row justify-content-center">
 			<?php 
 			$query = new WP_Query( array(
-				'posts_per_page' => 3));
+				'posts_per_page' => 3 ));
 			while ($query->have_posts() ) : $query->the_post(); ?>
-			<?php get_template_part( 'content', 'small' ); ?>
+				<?php get_template_part( 'content', 'small' ); ?>
 			<?php endwhile; ?>
 	</div>
 
@@ -203,13 +203,13 @@
 	<article>Współpracujemy z wieloma znanymi markami i dzięki temu jesteśmy w stanie zaoferować bardzo wiele.</article>
 	<hr>
 	<div class="brand-slider">
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/ml_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/halmar_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/bogfran_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt=""></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt=""></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/ml_logo.png" alt="ML Meble"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/halmar_logo.png" alt="Halmar"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/bogfran_logo.png" alt="Bogfran"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt="Signal"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt="Rabalux"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt="Fadome"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt="Specjaliści AGD/RTV"></div>
 	</div>
 </div>
 

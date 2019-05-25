@@ -13,7 +13,7 @@ get_header(); ?>
                 <div class="dark-image-overlay"></div>
                 <div class="container">
                     <div class="entry-title">
-                        <h1 class="entry-title-header">Aktualności</h1>
+                        <h1 class="entry-title-header animated fadeInUp">Aktualności</h1>
                     </div>
                 </diV>
             </div>
@@ -23,7 +23,7 @@ get_header(); ?>
 
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'content', 'news' ); ?>
+            <?php get_template_part( 'content', 'news' ); ?>
         <?php endwhile; ?>
 
         <?php pagination(); ?>

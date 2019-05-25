@@ -3,7 +3,7 @@
  * The template used for displaying post content in index.php
  */
 ?>
-<div class="news-box">
+<div class="news-box animated zoomIn">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="row list-post">
             <div class="list-post-img col-md-4">
@@ -13,7 +13,7 @@
                 </a>
                 <?php else : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder_logo.jpg" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder_logo.jpg" alt="Logo Grafit">
                 </a>
                 <?php endif; ?>
             </div>
@@ -29,5 +29,5 @@
     </article>
 </div>
 <footer class="edit-footer">
-    <?php edit_post_link( __('Edytuj'), '<button class="edit-link btn btn-success">', '</button>' ); ?>
+    <?php edit_post_link( __( 'Edytuj' ), '<button class="edit-link btn animated zoomIn delay-05s">', '</button>' ); ?>
 </footer>

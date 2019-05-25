@@ -20,7 +20,7 @@
 
 
     <footer class="edit-footer container">
-        <?php edit_post_link( __( 'Edytuj', 'motywgrafit' ), '<button class="edit-link btn btn-success">', '</button>' ); ?>
-    </footer><!-- .edit-footer -->
+        <?php edit_post_link( __( 'Edytuj' ), '<button class="edit-link btn">', '</button>' ); ?>
+    </footer>
 
 </div>

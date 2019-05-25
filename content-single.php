@@ -4,7 +4,7 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="container single-post-content">
+    <div class="container single-post-content animated fadeIn slow">
         
         <div class="single-post-fullwidth">
             <div class="post-date-fullwidth">
@@ -14,7 +14,7 @@
         </div>
 
         <footer class="edit-footer">
-            <?php edit_post_link( __( 'Edytuj', 'motywgrafit' ), '<button class="edit-link btn btn-success">', '</button>' ); ?>
+            <?php edit_post_link( __( 'Edytuj' ), '<button class="edit-link btn animated fadeIn">', '</button>' ); ?>
         </footer>
 
     </div>

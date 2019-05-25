@@ -15,7 +15,7 @@
             <?php else : ?>
                 <a class="logo-placeholder" href="<?php echo get_permalink($post->ID)?>">
                     <div class="img-fluid">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/blue-placeholder.jpg" alt="logo-grafit">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/blue-placeholder.jpg" alt="Logo Grafit">
                     </div> 
                 </a>
             <?php endif; ?>

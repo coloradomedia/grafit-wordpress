@@ -63,8 +63,6 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 
     wp_enqueue_style( 'grafit-style', get_stylesheet_uri() );
 	
-    wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/js/contact.js', array('jquery'), '', true );
-	
 	wp_enqueue_script( 'slick-min-js', get_template_directory_uri() . '/slick/js/slick.min.js', array('jquery'), '', true );
     
     wp_enqueue_script( 'script-js', get_template_directory_uri() . '/slick/js/script.js', array('jquery'), '', true );

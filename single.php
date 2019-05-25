@@ -15,7 +15,7 @@ get_header(); ?>
     
             <div class="dark-image-overlay"></div>
             <div class="container">
-                <div class="entry-title">
+                <div class="entry-title animated fadeInUp">
                     <?php the_title('<h1 class="entry-title-header">', '</h1>'); ?>
                 </div>
             </div>
@@ -23,8 +23,15 @@ get_header(); ?>
 </header>
 
 
-<?php while ( have_posts() ) : the_post(); ?>
-    <?php get_template_part( 'content', 'single' ); ?>
-<?php endwhile; ?>
+<?php if ( has_post_thumbnail() ) : ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', 'single' ); ?>
+    <?php endwhile; ?>
+<?php else : ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', 'column' ); ?>
+    <?php endwhile; ?>
+<?php endif; ?>
+
 
 <?php get_footer(); ?>

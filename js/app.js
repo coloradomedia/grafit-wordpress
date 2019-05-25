@@ -9,3 +9,13 @@ $(".page-standard-content > h2").html(function () {
     var first = text.shift();
     return (text.length > 0 ? "<span class='first-word'>" + first + "</span> " : first) + text.join(" ");
 });
+
+$('html').addClass('js');
+
+$(document).ready(function() {
+    // setTimeout(
+    //     function()
+    //         {
+            $("#loading").fadeOut();
+        // }, 3000);
+});

@@ -1,86 +1,127 @@
-/* NOWE TŁO */
-
-body.login {
-    background-image: url('screenshot.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    font-family: Roboto;
+.login {
+    background-image: linear-gradient(to bottom,#254675 0%,#fff 80%)
 }
 
-/* NOWE LOGO */
+.login form {
+    position: relative;
+    box-shadow: 0 0 25px -5px #254675;
+    min-height: 240px;
+    border-radius: 0;
+    text-align: center;
+}
+
+#lostpasswordform{
+    min-height: 150px;
+}
+
+#login label {
+    color: #254675;
+    font-weight: bold;
+    font-size: 15px;
+}
+ 
+#login form p label input {
+    font-weight: 500;
+    font-size: 20px;
+    height: 35px;
+    width: 230px;
+    text-align: center;
+}
+
+.login form .input, .login input[type=text]{
+    margin: 10px 0 16px 0;
+}
+
+#login form p label #rememberme {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+input[type=checkbox]:checked:before{
+    transform: scale(1.5);
+    margin: 0 0 0 -3px;
+}
+
+#login form p label input {
+    background: rgba(139, 141, 146, 0.247);
+    border: none;
+    box-shadow: none;
+    color: #001f49;
+}
+
+.login #login_error {
+    font-size: 14px;
+    border-left: none;
+    background: #ff4747;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 25px -5px #254675;
+    line-height: 1.8;
+}
+
+.login .message{
+    font-size: 13px;
+    border-left: none;
+    background: #acecff;
+    text-align: center;
+    box-shadow: 0 0 25px -5px #254675;
+    line-height: 1.8;
+}
+
+.login form .forgetmenot label {
+    font-size: 13px;
+    font-weight: 400 !important;
+}
+
+.login form .forgetmenot {
+    float: none;
+}
 
 .login h1 a {
-    background-image: url('logo-grafit.png');
-    background-size: 250px;
+    width: 100%;
+    background-image: url('../img/logo-grafit-wektor.svg');
+    background-position: center;
+    background-size: 60%;
+}
+.wp-core-ui .button.button-large {
+    position: relative;
+    top: 15px;
+    width: 150px;
+    height: 38px;
+    display: block;
     margin: 0 auto;
-    width: 300px;
-    height: 100px;
+    float: none;
+    font-weight: bold;
+    background:#254675;
+    border: 2px solid #254675;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.5s ease;
 }
-
-/* FORMULARZ LOGOWANIA */
-
-.login label {
-    font-size: 18px;
-    color: #254675;
-}
-    
-.login input[type="text"]{
-    background-color: #ffffff;
-    border-color:#dddddd;
-    -webkit-border-radius: 4px;
-}
-    
-.login input[type="password"]{
-    background-color: #ffffff;
-    border-color:#dddddd;
-    -webkit-border-radius: 4px;
-}
-
-/* WYGLĄD PRZYCISKU */
-
-.login .button-primary {
-    width: 120px;
-    float:right;
-    background-color:#254675 !important;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#17a8e3), to(#17a8e3));
-    background: -webkit-linear-gradient(top, #17a8e3, #17a8e3);
-    background: -moz-linear-gradient(top, #17a8e3, #17a8e3);
-    background: -ms-linear-gradient(top, #17a8e3, #17a8e3);
-    background: -o-linear-gradient(top, #17a8e3, #17a8e3);
-    background-image: -ms-linear-gradient(top, #17a8e3 0%, #17a8e3 100%); */
-    color: #ffffff;
-    /* -webkit-border-radius: 4px; */
-    /* border: 1px solid #0d9ed9; */
-}
-    
+   
 .login .button-primary:hover {
-    background-color:#17a8e3 !important;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#17a8e3), to(#0d9ed9 ));
-    background: -webkit-linear-gradient(top, #17a8e3, #0d9ed9 );
-    background: -moz-linear-gradient(top, #17a8e3, #0d9ed9 );
-    background: -ms-linear-gradient(top, #17a8e3, #0d9ed9 );
-    background: -o-linear-gradient(top, #17a8e3, #0d9ed9 );
-    background-image: -ms-linear-gradient(top, #0b436e 0%, #0d9ed9 100%); */
-    color: #fff;
-    -webkit-border-radius: 4px;
-    border: 1px solid #0d9ed9;
-}
-    
-.login .button-primary:active {
-    background-color:#17a8e3 !important;
-    /* background: -webkit-gradient(linear, left top, left bottom, from(#0d9ed9), to(#17a8e3));
-    background: -webkit-linear-gradient(top, #0d9ed9, #17a8e3);
-    background: -moz-linear-gradient(top, #0d9ed9, #17a8e3);
-    background: -ms-linear-gradient(top, #0d9ed9, #17a8e3);
-    background: -o-linear-gradient(top, #0d9ed9, #17a8e3);
-    background-image: -ms-linear-gradient(top, #0d9ed9 0%, #17a8e3 100%); */
-    color: #fff;
-    -webkit-border-radius: 4px;
-    border: 1px solid #0d9ed9;
+    background-color: transparent;
+    color: #254675;
+    font-weight: bold;
 }
 
-#loginform{
-    /* width: 500px; */
+#nav {
+    position: relative;
+    top: -55px;
     text-align: center;
+}
+
+#backtoblog {
+    position: relative;
+    top: -40px;
+    text-align: center;
+}
+
+.login #backtoblog a,.login #nav a {
+    font-weight: 600;
+    color: #254675;
 }
