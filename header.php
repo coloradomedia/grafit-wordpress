@@ -64,6 +64,8 @@
                             <a class="dropdown-item" href="wood">Panele</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="gateways">Bramy i ogrodzenia</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="catalogs">Katalogi</a>
                         </div>
                     </li>
 

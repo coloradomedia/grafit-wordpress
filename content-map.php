@@ -3,7 +3,7 @@
  * The template used for displaying page content in page-map.php
  */
 ?>
-<div class="main-offer gallery-offer">
+<div class="page-content">
 
     <div class="space"></div>
 

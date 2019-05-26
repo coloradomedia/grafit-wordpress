@@ -22,7 +22,7 @@ body{
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     color: #000;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 nav{
@@ -135,14 +135,14 @@ a{
     font-size: 2.7rem;
 }
 
-.main-offer,
+.page-content,
 .brand{
     font-size: 1.6rem;
     text-align: center;
     padding-top: 2rem; 
 }
 
-.main-offer h2,
+.page-content h2,
 .brand h2,
 .news h2{
     text-align: center;
@@ -154,7 +154,7 @@ a{
     color: #254675;
 }
 
-.main-offer h2 span,
+.page-content h2 span,
 .brand h2 span{
     color: #8b8d92;
 }
@@ -163,7 +163,7 @@ a{
     color: #8b8d92;
 }
 
-.main-offer hr,
+.page-content hr,
 .brand hr,
 .news hr{
     border-top-color: rgba(37, 70, 117, 0.3);
@@ -171,13 +171,13 @@ a{
     width: 70%;
 }
 
-.gallery-offer hr{
+.page-content hr{
     border-top-color: rgba(37, 70, 117, 0.3);
     padding-bottom: 1rem;
     width: 40%;
 }
 
-.main-offer article,
+.page-content article,
 .brand article,
 .paragraph-offer{
     color: #5e6064;
@@ -850,9 +850,7 @@ a{
 .pagination a{
     color: rgba(139, 141, 146, 0.706);
     text-decoration: none;
-    /* font-size: 2.2rem; */
     transition: all .2s;
-    /* padding: 0 .5rem; */
 }
 
 .pagination a:hover{
@@ -869,6 +867,7 @@ a{
 
 .notfound404{
     text-align: center;
+    overflow: hidden;
 }
 
 .notfound404 h2{
@@ -904,7 +903,53 @@ a{
   background-position: 50% 50%;
 }
 
+.catalog-container{
+    min-height: 25rem;
+}
 
+.catalog-container .row{
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.157);
+    width: 100%;
+    margin: 0 0 3rem 0;
+}
+
+.catalog-description{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.catalog-link{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 38px;
+    font-weight: bold;
+    background:#254675;
+    border: 3px solid #254675;
+    border-radius: 0;
+    color: #fff;
+    transition: all 0.5s ease;
+    font-size: 2rem;
+    padding: 0;
+}
+
+.catalog-link:hover{
+    background: transparent;
+    color: #254675;
+    transition: all 0.5s ease;
+}
+
+.nothing{
+    font-size: 3rem;
+    color: #001f49;
+    text-transform: uppercase;
+    font-style: italic;
+    padding: 5rem;
+}
 
 #loading {
     position: fixed;
@@ -1154,8 +1199,14 @@ a{
 }
 
 
+.lightbox .lb-outerContainer .lb-container .lb-image{
+    border: 0;
+    border-radius: 0;
+}
 
-
+.lightbox .lb-dataContainer .lb-data .lb-details .lb-number{
+    display: none !important;
+}
 
 
 
@@ -1238,11 +1289,11 @@ a{
         padding: 5rem 2rem;
     }
 
-    .main-offer h2{
+    .page-content h2{
         font-size: 3rem;
     }
 
-    .main-offer p{
+    .page-content p{
         font-size: 1.7rem;
     }
 
@@ -1260,7 +1311,7 @@ a{
         font-size: 3.5rem;
     }
 
-    .main-offer h2{
+    .page-content h2{
         font-size: 3rem;
     }
 
@@ -1436,7 +1487,7 @@ a{
         font-size: 4rem;
     }
 
-    .main-offer{
+    .page-content{
         max-width: 100%;
     }
 

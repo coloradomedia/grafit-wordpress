@@ -12,7 +12,4 @@ if ( ! is_active_sidebar( 'main' ) ) {
 	
 		<?php dynamic_sidebar( 'main' ); ?>
 	
-</div><!-- #secondary -->
-
-</div> <!-- .row -->
-</div> <!-- .container -->
+</div>

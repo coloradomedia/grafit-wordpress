@@ -8,12 +8,10 @@
 		$count = 0;
 		while ( have_rows('slider') ) : the_row(); ?>
 
-		<li data-target="#arrows" data-slide-to="<?php the_sub_field('slide'); ?>"
+		<li data-target="#arrows" data-slide-to="<?php echo $count; ?>"
 		<?php if (!$count) { ?> class="active"<?php }?>></li>
 
 		<?php $count++; endwhile;
-
-		else :
 
 		endif; ?>
 
@@ -28,16 +26,16 @@
 			<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>"
 				alt="Slide">
 			<div class="carousel-text">
-				<h2 class="animated fadeInUp"><?php the_sub_field('top_slide'); ?></h2>
+				<h2 class="animated fadeInUp delay-05s"><?php the_sub_field('top_slide'); ?></h2>
 				<p class="animated fadeInUp delay-1s"><?php the_sub_field('bottom_slide'); ?></p>
 			</div>
 		</div>
 
 		<?php $count++; endwhile;
 
-		else :
-
-		endif;
+		else : ?>
+			<h3 class="nothing">Brak slajdów :(</h3>
+		<?php endif; ?>
 	?>
 </div>
 	<a class="carousel-control-prev" href="#arrows" role="button" data-slide="prev">
@@ -51,7 +49,7 @@
 </div>
 
 <div class="space" id="offer"></div>
-<div class="container main-offer">
+<div class="container page-content">
 	<h2><span>O</span>ferta</h2>
 	<hr>
 	<article><?php the_field('offer_text'); ?></article>
@@ -181,12 +179,12 @@
 <h2>Aktualności</h2>
 <hr>
 	<div class="row justify-content-center">
-			<?php 
-			$query = new WP_Query( array(
-				'posts_per_page' => 3 ));
-			while ($query->have_posts() ) : $query->the_post(); ?>
-				<?php get_template_part( 'content', 'small' ); ?>
-			<?php endwhile; ?>
+		<?php 
+		$query = new WP_Query( array(
+			'posts_per_page' => 3 ));
+		while ($query->have_posts() ) : $query->the_post(); ?>
+			<?php get_template_part( 'content', 'small' ); ?>
+		<?php endwhile; ?>
 	</div>
 
 	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>

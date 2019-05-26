@@ -8,8 +8,8 @@
 
         <?php get_template_part( 'content', 'gallery' ); ?>
 
-    <?php endwhile; // end of the loop. ?>
+    <?php endwhile; ?>
 
-</article><!-- #post-## -->
+</article>
 
 <?php get_footer(); ?>

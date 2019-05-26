@@ -8,8 +8,8 @@
 
         <?php get_template_part( 'content', 'standardtext' ); ?>
 
-    <?php endwhile; // end of the loop. ?>
+    <?php endwhile; ?>
 
-</article><!-- #post-## -->
+</article>
 </div>
 <?php get_footer(); ?>

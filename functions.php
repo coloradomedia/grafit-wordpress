@@ -1,5 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'Full HD', 1920, 1024 );
+add_image_size( 'Miniaturka', 200, 200 );
 
 function grafit_widgets_init() {
 	register_sidebar( array(
@@ -75,8 +77,6 @@ if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 }}
 add_action( 'wp_enqueue_scripts', 'grafit_scripts' );
 
-add_theme_support( 'post-thumbnails' );
-add_image_size( 'duze', 1920, 1024 );
 
 
 // Register custom login stylesheet
