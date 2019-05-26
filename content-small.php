@@ -23,7 +23,7 @@
             <div class="mini-post-content">
                 <?php the_title( '<h3>', '</h3>'); ?>
                 <?php the_excerpt(); ?>
-                <a href="<?php echo get_permalink($post->ID)?>" class="btn btn-small-post">Więcej</a>
+                <div class="btn-small"><a href="<?php echo get_permalink($post->ID)?>" class="btn btn-small-post">Więcej</a></div>
             </div>
         </div>
     </article>

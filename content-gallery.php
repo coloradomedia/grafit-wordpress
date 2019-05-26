@@ -7,7 +7,7 @@
     
     <div class="space"></div>
 
-    <?php the_title('<h2 class="page-content">', '</h2>'); ?>
+    <?php the_title('<h2 class="page-header">', '</h2>'); ?>
 
     <?php the_content(); ?>
 

@@ -26,7 +26,7 @@
 </div>
 
     <header class="nav-head">
-        <nav class="container navbar navbar-expand-lg navbar-light">
+        <nav class="container navbar navbar-light navbar-expand-lg">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
                     src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo Grafit" width="200"
                     height="auto" /></a>
@@ -40,7 +40,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Oferta</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu animated slideInMenu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="salon">Pokoje dzienne</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="kitchen">Kuchnie - na wymiar</a>

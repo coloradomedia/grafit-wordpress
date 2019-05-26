@@ -47,7 +47,7 @@
 		<span class="sr-only">Następny</span>
 	</a>
 </div>
-
+<div class="mobile-top"><p>Salon Meblowy<br><span>GRAFIT</span><br>32-731 Żegocina 10</p></div>
 <div class="space" id="offer"></div>
 <div class="container page-content">
 	<h2><span>O</span>ferta</h2>
@@ -58,7 +58,7 @@
 <div class="cards">
 	<div class="row">
 
-		<div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 one-two">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 one-two">
 			<a href="salon">
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;dzienny</p>
@@ -67,7 +67,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 one-four">
 			<a href="kids">
 				<div class="wrapper">
 					<p class="card-text">Pokój dziecięcy</p>
@@ -76,7 +76,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 one-four">
 			<a href="bedrooms">
 				<div class="wrapper">
 					<p class="card-text">Sypialnia</p>
@@ -85,7 +85,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 one-four">
 			<a href="office">
 				<div class="wrapper">
 					<p class="card-text">Biuro</p>
@@ -94,7 +94,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 one-four">
 			<a href="bathrooms">
 				<div class="wrapper">
 					<p class="card-text">Łazienka</p>
@@ -103,7 +103,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 one-two">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 one-two">
 			<a href="kitchen">
 				<div class="wrapper">
 					<p class="card-text">Kuchnia&nbsp;na&nbsp;wymiar</p>
@@ -112,7 +112,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 one-four">
 			<a href="extras">
 				<div class="wrapper">
 					<p class="card-text">Dodatki</p>
@@ -121,7 +121,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-6 col-lg-8 col-md-8 col-sm-8 one-two">
+		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-8 one-two">
 			<a href="teens">
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;młodzieżowy</p>
@@ -130,7 +130,7 @@
 			</a>
 		</div>
 
-		<div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 one-four">
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-4 one-four">
 			<a href="agdrtv">
 				<div class="wrapper">
 					<p class="card-text">AGD/RTV</p>
@@ -193,7 +193,7 @@
 <!-- contact section -->
 <div class="contact-form darker-bg">
 	<div class="container">
-		Formularz kontaktowy
+		<!-- Formularz kontaktowy -->
 	</div>
 </div>
 <div class="container brand">

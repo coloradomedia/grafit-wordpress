@@ -7,11 +7,11 @@
     
     <div class="space"></div>
 
-    <div class="container catalog-container  animated zoomIn">
+    <div class="container catalog-container">
         <?php if( have_rows('catalog') ):
             while ( have_rows('catalog') ) : the_row(); ?>
 
-                <div class="row justify-content-center">
+                <div class="row justify-content-center animated zoomIn">
                         <div class="col-md-2">
                             <img class="img-fluid" src="<?php the_sub_field('catalog_brand'); ?>" alt="Marka">
                         </div>

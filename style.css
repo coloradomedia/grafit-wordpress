@@ -22,7 +22,7 @@ body{
     font-family: 'Muli', sans-serif;
     font-weight: 400;
     color: #000;
-    /* overflow: hidden; */
+    overflow-x: hidden;
 }
 
 nav{
@@ -60,9 +60,12 @@ a{
 .nav-item{
     font-size: 2rem;
     text-transform: uppercase;
-    color: #000;
     text-decoration: none;
     padding: 0 15px 0 15px;
+}
+
+.nav-item .nav-link{
+    color: #001f49 !important;
 }
 
 .dropdown-item{
@@ -78,8 +81,12 @@ a{
 }
 
 .dropdown-divider{
-    margin: 0 -1rem;
+    margin: 0 0;
     border-top: 1px solid rgba(37, 70, 117, 0.055);
+}
+
+.dropdown-menu.animated:before{
+    z-index: -1;
 }
 
 .dropdown-menu{
@@ -91,7 +98,7 @@ a{
 
 .dropdown:hover .dropdown-menu {
     display: block;
-  }
+}
 
 .navbar-toggler{
     position: absolute;
@@ -250,7 +257,7 @@ a{
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-size: 40px;
+    font-size: 3.8rem;
     text-transform: uppercase;
     z-index: 3;
     line-height: 50px;
@@ -457,7 +464,6 @@ a{
 }
 
 .btn-news a:hover{
-    font-size: 2rem;
     background-color: #001f49;
     color: #fff;
 }
@@ -918,6 +924,7 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 2rem;
 }
 
 .catalog-link{
@@ -1174,6 +1181,7 @@ a{
     z-index: 500;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
     display: none;
+    transition: all 0.5s;
 }
 
 #cookies-message img{
@@ -1194,6 +1202,8 @@ a{
     position: absolute;
     top: -1rem;
     right: -1rem;
+    line-height: 1.5rem;
+    font-size: 2.5rem;
     text-decoration: none;
     cursor: pointer
 }
@@ -1208,7 +1218,9 @@ a{
     display: none !important;
 }
 
-
+.mobile-top{
+    display: none;
+}
 
 
 
@@ -1226,15 +1238,6 @@ a{
 
 
 @media (max-width: 1199.98px) {
-    /* html{
-        overflow-x: hidden;
-    }
-
-    .wpadminbar{
-        overflow: hidden;
-        width: 100vw;
-    } */
-
     .carousel-text h2{
         font-size: 4.5rem;
     }
@@ -1243,6 +1246,10 @@ a{
         font-size: 3rem;
     }
     
+    .card-text{
+        font-size: 3.5vw;
+    }
+
     .motto{
         min-height: 400px;
     }
@@ -1300,6 +1307,10 @@ a{
     .space{
         display: none;
     }
+
+    .news-container{
+        background-size: 150%;
+    }
 }
 
 
@@ -1313,10 +1324,6 @@ a{
 
     .page-content h2{
         font-size: 3rem;
-    }
-
-    .card-text{
-        font-size: 3.5rem;
     }
 
     .motto{
@@ -1434,6 +1441,10 @@ a{
     .page-standard-img{
         max-width: 50%;
     }
+
+    .news-container{
+        background-size: 200%;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1496,38 +1507,272 @@ a{
     }
 
     .card-text{
-        font-size: 3rem;
+        font-size: 4vw;
+    }
+
+    .news-container{
+        background-size: 250%;
     }
 }
 
 @media (max-width: 575.98px) {
+    .card-text{
+        font-size: 7.3vw;
+    }
 
-}
+    .mobile-top{
+        display: block;
+        width: 100vw;
+        height: 90vh;
+        background: url(img/extras.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 90vh;
+    }
+    
+    .mobile-top p{
+        position: relative;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-size: 9vw;
+    }
 
-@media (max-width: 380px) {
+    .mobile-top p span{
+        font-size: 12vw;
+    }
+
+    .carousel{
+        display: none;
+    }
+
+    #offer{
+        display: block;
+    }
+
     #cookies-message {
         width: 100%;
-        height: 10rem;
+        height: 12rem;
         /* padding: 2rem 5rem; */
         padding-left: 13rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         bottom: 0;
         left: 0;
     }
     
     #cookies-message img{
-        width: 80px;
+        width: 100px;
     }
     
     #accept-cookies-checkbox {
         background-color: #254675;
-        width: 4rem;
-        height: 4rem;
-        font-size: 3rem;
-        top: -2rem;
-        line-height: 2.5rem;
+        width: 5rem;
+        height: 5rem;
+        font-size: 4rem;
+        top: -2.5rem;
+        line-height: 3rem;
         right: 0;
-        text-decoration: none;
-        cursor: pointer
     }
+    
+    .nav-item{
+        text-align: center;
+        font-size: 6vw;
+        padding: 1.5rem 0;
+        color: #001f49;
+    }
+    
+    .dropdown-item{
+        text-align: center;
+        font-size: 5vw;
+        padding: 1rem 0;
+        color: #001f49;
+    }
+
+    .navbar .nav-item::active{
+        background-color: #254675;
+        color: #fff;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        color: #001f49 !important;
+    }
+
+    .mini-post-content{
+        padding-top: 1rem;
+        height: auto;
+    }
+
+    .mini-post-content h3{
+        font-size: 2.5rem;
+    }
+
+    .mini-post-content p{
+        font-size: 1.5rem;
+    }
+
+    .logo-placeholder::after{
+        background-position: 50% 15%;
+    }
+    .btn-small{
+        text-align: right;
+        padding-bottom: 2rem;
+    }
+
+    a.btn.btn-small-post{
+        position: relative;
+        bottom: 0;
+    }
+    .page-content{
+        padding-top: 0;
+    }
+
+    .container-standard{
+        padding: 1rem;
+    }
+
+    .page-standard-content{
+        padding: 0 0 2rem 0;
+    }
+
+    .page-standard-content h2{
+        padding-top: 2rem;
+    }
+    
+    .page-standard-img{
+        max-width: 80%;
+        padding: 0;
+        padding-bottom: 2rem
+    }
+    
+    .page-header{
+        padding: 2rem 1rem;
+    }
+
+    .page-content .wp-block-spacer{
+        display: none;
+    }
+
+    .entry-header .entry-img{
+        padding: 4rem 0;
+    }
+
+    .entry-title-header{
+        font-size: 8vw;
+    }
+
+    .catalog-container{
+        padding-top: 2rem;
+    }
+
+    .catalog-container img{
+        max-width: 70%;;
+    }
+
+    .catalog-link{
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .single-post-content{
+        padding-top: 0;
+    }
+
+    .post-date-fullwidth{
+        padding-top: 2rem;
+    }
+
+    .wp-block-gallery.columns-2 .blocks-gallery-item{
+        width: 100%;
+    }
+
+    .wp-block-gallery{
+        display: block;
+    }
+
+
+
+}
+
+@media (max-width: 380px) {
+    .navbar-brand img{
+        width: 15rem;
+    }
+
+    .cards{
+        padding: 1rem;
+    }
+    .card-text{
+        font-size: 7vw;
+    }
+
+    .motto h2{
+        font-size: 10vw;
+    }
+
+    .logo-placeholder::after{
+        background-position: 50% 30%;
+        background-size: 70%;
+    }
+
+    .mini-post-content{
+        background-color: #254675;
+        padding-top: 1rem;
+        position: relative;
+    }
+
+    .mini-post-content h3{
+        font-size: 3rem;
+    }
+    
+    .btn-small{
+        text-align: right;
+        padding-bottom: 0;
+    }
+
+    a.btn.btn-small-post{
+        position: relative;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
+
+    .brand{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-footer{
+        padding-bottom: 6rem;
+    }
+
+    #cookies-message {
+        padding-left: 9rem;
+        font-size: 1.6rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+        height: 11rem;
+    }
+    
+    #cookies-message img{
+        width: 80px;
+        margin: 1rem 0 0 0;
+    }
+
+    #accept-cookies-checkbox {
+        background-color: rgb(37, 70, 117);
+        width: 5rem;
+        height: 5rem;
+        font-size: 4rem;
+        top: -3rem;
+    }
+
+    .entry-header .entry-img{
+        padding: 3rem 0;
+    }
+
 }
