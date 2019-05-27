@@ -181,10 +181,12 @@
 	<div class="row justify-content-center">
 		<?php 
 		$query = new WP_Query( array(
-			'posts_per_page' => 3 ));
+			'posts_per_page' => 3,
+			'category_name' => 'aktualnosci' ));
 		while ($query->have_posts() ) : $query->the_post(); ?>
 			<?php get_template_part( 'content', 'small' ); ?>
 		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
 	</div>
 
 	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
@@ -192,13 +194,11 @@
 
 <!-- contact section -->
 <div class="contact-form darker-bg">
-	<div class="container">
-		<!-- Formularz kontaktowy -->
-	</div>
+
 </div>
 <div class="container brand">
 	<h2><span>Partnerzy </span>handlowi</h2>
-	<article>Współpracujemy z wieloma znanymi markami i dzięki temu jesteśmy w stanie zaoferować bardzo wiele.</article>
+	<article><?php the_field('brand_description'); ?></article>
 	<hr>
 	<div class="brand-slider">
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/ml_logo.png" alt="ML Meble"></div>
@@ -211,5 +211,8 @@
 	</div>
 </div>
 
+<footer class="edit-footer container">
+    <?php edit_post_link( __( 'Edytuj stronę główną' ), '<button class="edit-link btn">', '</button>' ); ?>
+</footer>
 
 <?php get_footer(); ?>

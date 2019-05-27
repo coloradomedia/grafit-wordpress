@@ -3,7 +3,7 @@
  * The template used for displaying post content in front-page.php
  */
 ?>
-<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-sm-auto">
+<div class="col-sm-6 col-md-4 col-sm-auto">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="mini-post-img img-fluid">
             <?php if ( has_post_thumbnail() ) : ?>
@@ -22,7 +22,7 @@
 
             <div class="mini-post-content">
                 <?php the_title( '<h3>', '</h3>'); ?>
-                <?php the_excerpt(); ?>
+                <?php the_field('cena', $post->ID); ?>
                 <div class="btn-small"><a href="<?php echo get_permalink($post->ID)?>" class="btn btn-small-post">Więcej</a></div>
             </div>
         </div>
