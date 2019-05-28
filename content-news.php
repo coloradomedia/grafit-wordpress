@@ -6,7 +6,7 @@
 <div class="news-box animated zoomIn">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="row list-post">
-            <div class="list-post-img col-md-4">
+            <div class="list-post-img col-sm-4">
                 <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
                     <?php the_post_thumbnail(); ?>
@@ -17,7 +17,7 @@
                 </a>
                 <?php endif; ?>
             </div>
-            <div class="list-post-content col-md-8">
+            <div class="list-post-content col-sm-8">
                 <?php the_title( '<h2>', '</h2>' );
                       the_excerpt(); ?>
                 <a href="<?php echo get_permalink($post->ID)?>" class="btn">Więcej</a>

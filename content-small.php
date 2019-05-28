@@ -3,7 +3,7 @@
  * The template used for displaying post content in front-page.php
  */
 ?>
-<div class="col-sm-12 col-md-6 col-lg-6 col-xl-4 col-sm-auto">
+<div class="col-sm-6 col-xl-4 col-sm-auto">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="mini-post-img img-fluid">
             <?php if ( has_post_thumbnail() ) : ?>

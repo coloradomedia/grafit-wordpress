@@ -17,5 +17,5 @@ $(document).ready(function() {
     //     function()
     //         {
             $("#loading").fadeOut();
-        // }, 3000);
+        // }, 30000);
 });

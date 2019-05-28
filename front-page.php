@@ -2,29 +2,28 @@
 
 <div id="arrows" class="carousel slide carousel-fade" data-ride="carousel">
 	<ol class="carousel-indicators">
-		
+
 		<?php
 		if( have_rows('slider') ):
 		$count = 0;
 		while ( have_rows('slider') ) : the_row(); ?>
 
-		<li data-target="#arrows" data-slide-to="<?php echo $count; ?>"
-		<?php if (!$count) { ?> class="active"<?php }?>></li>
+		<li data-target="#arrows" data-slide-to="<?php echo $count; ?>" <?php if (!$count) { ?> class="active"
+			<?php }?>></li>
 
 		<?php $count++; endwhile;
 
 		endif; ?>
 
 	</ol>
-<div class="carousel-inner">
-	<?php
+	<div class="carousel-inner">
+		<?php
 		if( have_rows('slider') ):
 		$count = 0;
 		while ( have_rows('slider') ) : the_row(); ?>
-		
+
 		<div class="carousel-item <?php if (!$count) { ?> active<?php } ?>">
-			<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>"
-				alt="Slide">
+			<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>" alt="Slide">
 			<div class="carousel-text">
 				<h2 class="animated fadeInUp delay-05s"><?php the_sub_field('top_slide'); ?></h2>
 				<p class="animated fadeInUp delay-1s"><?php the_sub_field('bottom_slide'); ?></p>
@@ -34,10 +33,10 @@
 		<?php $count++; endwhile;
 
 		else : ?>
-			<h3 class="nothing">Brak slajdów :(</h3>
+		<h3 class="nothing">Brak slajdów :(</h3>
 		<?php endif; ?>
-	?>
-</div>
+		?>
+	</div>
 	<a class="carousel-control-prev" href="#arrows" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		<span class="sr-only">Poprzedni</span>
@@ -47,7 +46,9 @@
 		<span class="sr-only">Następny</span>
 	</a>
 </div>
-<div class="mobile-top"><p>Salon Meblowy<br><span>GRAFIT</span><br>32-731 Żegocina 10</p></div>
+<div class="mobile-top">
+	<p>Salon Meblowy<br><span>GRAFIT</span><br>32-731 Żegocina 10</p>
+</div>
 <div class="space" id="offer"></div>
 <div class="container page-content">
 	<h2><span>O</span>ferta</h2>
@@ -63,7 +64,8 @@
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;dzienny</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/living_room.jpg" class="img-fluid" alt="Pokój dzienny">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/living_room.jpg" class="img-fluid"
+					alt="Pokój dzienny">
 			</a>
 		</div>
 
@@ -72,7 +74,8 @@
 				<div class="wrapper">
 					<p class="card-text">Pokój dziecięcy</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/kids_room.jpg" class="img-fluid" alt="Pokój dziecięcy">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/kids_room.jpg" class="img-fluid"
+					alt="Pokój dziecięcy">
 			</a>
 		</div>
 
@@ -81,7 +84,8 @@
 				<div class="wrapper">
 					<p class="card-text">Sypialnia</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/bedroom.jpg" class="img-fluid" alt="Sypialnia">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/bedroom.jpg" class="img-fluid"
+					alt="Sypialnia">
 			</a>
 		</div>
 
@@ -99,7 +103,8 @@
 				<div class="wrapper">
 					<p class="card-text">Łazienka</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/bathroom.jpg" class="img-fluid" alt="Łazienka">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/bathroom.jpg" class="img-fluid"
+					alt="Łazienka">
 			</a>
 		</div>
 
@@ -126,7 +131,8 @@
 				<div class="wrapper">
 					<p class="card-text">Pokój&nbsp;młodzieżowy</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/teen_room.jpg" class="img-fluid" alt="Pokój młodzieżowy">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/teen_room.jpg" class="img-fluid"
+					alt="Pokój młodzieżowy">
 			</a>
 		</div>
 
@@ -153,7 +159,8 @@
 				<div class="wrapper">
 					<p class="card-text">Panele</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/floor_panels.jpg" class="img-fluid" alt="Panele">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/floor_panels.jpg" class="img-fluid"
+					alt="Panele">
 			</a>
 		</div>
 
@@ -162,7 +169,8 @@
 				<div class="wrapper">
 					<p class="card-text">Bramy i ogrodzenia</p>
 				</div>
-				<img src="<?php echo get_template_directory_uri(); ?>/img/wisniowski.jpg" class="img-fluid" alt="Bramy i ogrodzenia">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/wisniowski.jpg" class="img-fluid"
+					alt="Bramy i ogrodzenia">
 			</a>
 		</div>
 
@@ -176,20 +184,21 @@
 </div>
 
 <div class="news">
-<h2>Aktualności</h2>
-<hr>
+	<h2>Aktualności</h2>
+	<hr>
 	<div class="row justify-content-center">
 		<?php 
 		$query = new WP_Query( array(
 			'posts_per_page' => 3,
 			'category_name' => 'aktualnosci' ));
 		while ($query->have_posts() ) : $query->the_post(); ?>
-			<?php get_template_part( 'content', 'small' ); ?>
+		<?php get_template_part( 'content', 'small' ); ?>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
 	</div>
 
-	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
+	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i
+				class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
 <!-- contact section -->
@@ -207,12 +216,13 @@
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/signal_logo.png" alt="Signal"></div>
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/rabalux_logo.png" alt="Rabalux"></div>
 		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/fadome_logo.png" alt="Fadome"></div>
-		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt="Specjaliści AGD/RTV"></div>
+		<div><img src="<?php echo get_template_directory_uri(); ?>/slick/img/specjalisci.jpg" alt="Specjaliści AGD/RTV">
+		</div>
 	</div>
 </div>
 
 <footer class="edit-footer container">
-    <?php edit_post_link( __( 'Edytuj stronę główną' ), '<button class="edit-link btn">', '</button>' ); ?>
+	<?php edit_post_link( __( 'Edytuj stronę główną' ), '<button class="edit-link btn">', '</button>' ); ?>
 </footer>
 
 <?php get_footer(); ?>

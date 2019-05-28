@@ -119,15 +119,13 @@ a{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* padding: 0;
-    margin: 0; */
     color: #fff;
     text-align: center;
     text-transform: uppercase;
 }
 
 .carousel-text h2{
-    font-size: 6.5rem;
+    font-size: 3.5vw;
     border-bottom: .3rem solid #254675;
 }
 
@@ -434,22 +432,6 @@ a{
     color: #254675;
 }
 
-/* .post-button{
-    padding: 0 1rem;
-    text-align: right;
-}
-
-.post-button a{
-    color: #fff;
-    font-weight: 600 !important;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-.post-button a:hover{
-    color: #fff;
-} */
-
 .btn-news{
     text-align: center;
     padding-top: 2rem;
@@ -710,11 +692,6 @@ a{
     background-color: rgba(255, 255, 255, 0.898);
 }
 
-/* .page-standard-col{
-    position: relative;
-    min-height: 40vh;
-} */
-
 .page-standard-content{
     position: relative;
     top: 50%;
@@ -722,7 +699,6 @@ a{
     transform: translate(-50%, -50%);
     padding: 5rem;
     padding-top: 5rem;
-    /* background-color: #ffffffe5; */
 }
 
 .page-standard-img{
@@ -797,12 +773,6 @@ a{
     color: #fff;
 }
 
-
-/* .news-box{
-    background-color: rgba(139, 141, 146, 0.109);
-} */
-
-
 .news-container{
     background: url(img/chair.jpg);
     background-size: contain;
@@ -810,14 +780,6 @@ a{
     background-repeat: no-repeat;
     padding-bottom: 20rem;
 }
-
-/* .list-post-content .post-button{
-    position: relative;
-    bottom: 0;
-    color: #000;
-    background-color: #fff;
-    width: auto;
-} */
 
 .list-post-content .post-button a{
     color: #000;
@@ -883,7 +845,6 @@ a{
 	font-family: 'Oswald', sans-serif;
 	background-image: url(img/galaxy.jpg);
 }
-
 
 .cover-404,
 .cover-404:before {
@@ -1135,20 +1096,6 @@ a{
     z-index: 3;
 }
 
-
-
-
-/* {
-    FAJNE STYLOWANIE OBRAZKA :)
-    border-radius: 0 0 25vw 25vw;
-    overflow: hidden;
-    border-color: #0ee1f4 #0ee1f4 #0ee1f4 #179894;
-    border-left-width: 2vw;
-    box-shadow: -30px 0px 0px 0px rgba(23,152,148,0.69);
-} */
-
-
-
 /* cookie alert */
 #cookies-message {
     color: white;
@@ -1186,10 +1133,11 @@ a{
     position: absolute;
     top: -1rem;
     right: -1rem;
-    line-height: 1.5rem;
+    line-height: 2.5rem;
     font-size: 2.5rem;
     text-decoration: none;
-    cursor: pointer
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 
@@ -1274,6 +1222,7 @@ a{
     
     #accept-cookies-checkbox {
         padding-top: 5px;
+        line-height: 1.5rem;
     }
 
     .container-standard{
@@ -1380,6 +1329,20 @@ a{
 
 
 @media (max-width: 991.98px) {
+    .nav-item{
+        text-align: center;
+        font-size: 2rem;
+        padding: 1rem 0;
+        color: #001f49;
+    }
+    
+    .dropdown-item{
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 1rem 0;
+        color: #001f49;
+    }
+
     .carousel-text h2{
         font-size: 3.5rem;
     }
@@ -1489,9 +1452,33 @@ a{
         font-size: 2vw;
     }
 
+    .catalog-container{
+        max-width: none;
+    }
+
 }
 
 @media (max-width: 767.98px) {
+    .loading-logo{
+        width: 15rem;
+    }
+
+    .card-text::before{
+        background-color: transparent;
+    }
+
+    .one-two:hover{
+        transform: none;
+    }
+
+    .wrapper:hover{
+        background-color: transparent;
+    }
+
+    .one-two:hover .img-fluid{
+        filter: none;
+    }
+
     .container.navbar{
         max-width: none;
     }
@@ -1499,11 +1486,11 @@ a{
     .mobile-top{
         display: block;
         width: 100vw;
-        height: 90vh;
-        background: url(img/extras.jpg);
-        background-position: center;
+        height: 88vh;
+        background: url(img/pillows.jpg);
+        background-position: center center;
         background-repeat: no-repeat;
-        background-size: 90vh;
+        /* background-size: contain; */
     }
     
     .mobile-top p{
@@ -1514,11 +1501,11 @@ a{
         text-transform: uppercase;
         text-align: center;
         color: #fff;
-        font-size: 9vw;
+        font-size: 4rem;
     }
 
     .mobile-top p span{
-        font-size: 12vw;
+        font-size: 5rem;
     }
 
     .carousel{
@@ -1530,19 +1517,25 @@ a{
     }
     
     .nav-item{
-        text-align: center;
-        font-size: 6vw;
+        font-size: 2.5rem;
         padding: 1.5rem 0;
-        color: #001f49;
     }
     
     .dropdown-item{
-        text-align: center;
-        font-size: 5vw;
-        padding: 1rem 0;
-        color: #001f49;
+        font-size: 2.3rem;
     }
 
+    .navbar-brand img{
+        width: 14rem;
+    }
+
+    .nav-item{
+        font-size: 2.3rem;
+    }
+
+    .dropdown-item{
+        font-size: 2rem;
+    }
     .navbar .nav-item::active{
         background-color: #254675;
         color: #fff;
@@ -1550,6 +1543,22 @@ a{
 
     .navbar-light .navbar-toggler-icon{
         color: #001f49 !important;
+    }
+
+    .mini-post-content h3{
+        font-size: 2rem;
+    }
+
+    .mini-post-content p{
+        font-size: 1.8rem;
+    }
+
+    .btn-news a{
+        font-size: 2rem;
+    }
+
+    .edit-footer .btn{
+        font-size: 2rem;
     }
 
     .footer-widget{
@@ -1586,6 +1595,7 @@ a{
 
     .page-content{
         max-width: 100%;
+        padding-top: 0;
     }
 
     .brand{
@@ -1602,11 +1612,51 @@ a{
     .motto h2{
         font-size: 5vw;
     }
+
+    .space{
+        padding-top: 5vw;
+    }
 }
 
 @media (max-width: 575.98px) {
+    .mobile-top p{
+        font-size: 3.5rem;
+    }
+
+    .mobile-top p span{
+        font-size: 5rem;
+    }
+
+    .navbar-brand img{
+        width: 12rem;
+    }
+    
+    .nav-item{
+        font-size: 2.3rem;
+    }
+
+    .dropdown-item{
+        font-size: 2rem;
+    }
+
+    .cards{
+        max-width: 80vw;
+    }
+
     .card-text{
-        font-size: 7.3vw;
+        font-size: 6vw;
+    }
+    
+    .news{
+        max-width: 80vw;
+    }
+
+    .contact-footer{
+        font-size: 3.5vw;
+    }
+    
+    .page-standard-img img{
+        width: 60vw;
     }
 
     #cookies-message {
@@ -1633,6 +1683,9 @@ a{
         right: 0;
     }
 
+    .space{
+        padding-top: 7vw;
+    }
 
     .mini-post-content{
         padding-top: 1rem;
@@ -1694,7 +1747,7 @@ a{
     }
 
     .entry-title-header{
-        font-size: 8vw;
+        font-size: 5vw;
     }
 
     .catalog-container{
@@ -1729,24 +1782,36 @@ a{
         display: block;
     }
 
-
-
 }
 
 @media (max-width: 380px) {
     .navbar-brand img{
-        width: 15rem;
+        width: 13rem;
     }
 
     .cards{
         padding: 1rem;
+        max-width: none;
     }
+
     .card-text{
         font-size: 7vw;
     }
 
+    .news{
+        max-width: none;
+    }
+
     .motto h2{
         font-size: 10vw;
+    }
+
+    .mobile-top p{
+        font-size: 5vh;
+    }
+
+    .mobile-top p span{
+        font-size: 6vh;
     }
 
     .logo-placeholder::after{
@@ -1807,4 +1872,35 @@ a{
         padding: 3rem 0;
     }
 
+    .footer-title{
+        font-size: 2.3rem;
+    }
+
+    .contact-footer{
+        font-size: 2rem;
+    }
+
+    .facebook i,
+    .phone i,
+    .mail i,
+    .map-mark i{
+        font-size: 2.3rem;
+    }
+
+    .entry-title-header{
+        font-size: 2.3rem;
+    }
+    
+    .list-post-content{
+        font-size: 1.8rem;
+    }
+
+    .list-post-content h2{
+        font-size: 2rem;
+    }
+
+    .news-container{
+        padding-bottom: 10rem;
+        background-size: 300%;
+    }
 }

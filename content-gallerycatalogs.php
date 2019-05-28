@@ -12,11 +12,11 @@
             while ( have_rows('catalog') ) : the_row(); ?>
 
                 <div class="row justify-content-center animated zoomIn">
-                        <div class="col-md-2">
+                        <div class="col-sm-2">
                             <img class="img-fluid" src="<?php the_sub_field('catalog_brand'); ?>" alt="Marka">
                         </div>
-                        <div class="col-md-6"><p class="catalog-description"><?php the_sub_field('catalog_description'); ?></p></div>
-                        <div class="col-md-2"><a class="btn catalog-link" href="<?php the_sub_field('catalog_link'); ?>" target="_blank">Zobacz</a></div>
+                        <div class="col-sm-6"><p class="catalog-description"><?php the_sub_field('catalog_description'); ?></p></div>
+                        <div class="col-sm-2"><a class="btn catalog-link" href="<?php the_sub_field('catalog_link'); ?>" target="_blank">Zobacz</a></div>
                 </div>
                 
             <?php endwhile; ?>
