@@ -202,9 +202,13 @@
 </div>
 
 <!-- contact section -->
-<div class="contact-form darker-bg">
-
+<div class="motto-2 darker-bg">
+	<h2><?php the_field('motto_2'); ?>
+		<hr>
+	</h2>
 </div>
+
+
 <div class="container brand">
 	<h2><span>Partnerzy </span>handlowi</h2>
 	<article><?php the_field('brand_description'); ?></article>

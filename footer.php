@@ -3,7 +3,7 @@
 		<?php get_sidebar('footer'); ?>
 
 		<div class="copyrights">
-			<p class="site-info">meblegrafit.pl &copy;<?php echo date("Y"); ?> | Realizacja: FreshLime</p>
+			<p class="site-info">meblegrafit.pl &copy;<?php echo date("Y"); ?> | Projekt i realizacja: Piotr Majkrzak</p>
 
 		</div>
 
