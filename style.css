@@ -1133,6 +1133,9 @@ a{
     display: none;
     transition: all 0.5s;
 }
+#cookies-message a{
+    color: #fff;
+}
 
 #cookies-message img{
     position: absolute;

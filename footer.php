@@ -10,7 +10,7 @@
 </footer>
 
 <div id="cookies-message-container">
-	<div id="cookies-message">Ta strona używa ciasteczek (cookies), dzięki którym nasz serwis może działać lepiej.<a href="javascript:WHCloseCookiesWindow();" id="accept-cookies-checkbox">x</a>
+	<div id="cookies-message">Ta strona używa ciasteczek (<a href="cookies">cookies</a>), dzięki którym nasz serwis może działać lepiej.<a href="javascript:WHCloseCookiesWindow();" id="accept-cookies-checkbox">x</a>
 	<img src="<?php echo get_template_directory_uri(); ?>/img/cookie.png" alt="Cookie">
 	</div>
 </div>
