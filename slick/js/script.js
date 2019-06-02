@@ -31,3 +31,19 @@ $('.brand-slider').slick({
         }
     ]
 });
+
+$('.hits').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: '.hits-nav'
+  });
+$('.hits-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.hits',
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: false
+});     

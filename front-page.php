@@ -35,7 +35,6 @@
 		else : ?>
 		<h3 class="nothing">Brak slajdów :(</h3>
 		<?php endif; ?>
-		?>
 	</div>
 	<a class="carousel-control-prev" href="#arrows" role="button" data-slide="prev">
 		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -203,9 +202,22 @@
 
 <!-- contact section -->
 <div class="motto-2 darker-bg">
-	<h2><?php the_field('motto_2'); ?>
-		<hr>
-	</h2>
+	<!-- <h2>Hity cenowe</h2> -->
+	<hr>
+	<div class="row justify-content-center">
+		<?php 
+		$query = new WP_Query( array(
+			'posts_per_page' => 3,
+			'category_name' => 'hity-cenowe'));
+		while ($query->have_posts() ) : $query->the_post(); ?>
+			<?php get_template_part( 'content', 'sale' ); ?>
+		<?php endwhile; ?>
+
+		<?php wp_reset_postdata(); ?>
+
+	</div>
+
+	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
 

@@ -4,19 +4,38 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="container single-post-content">
+    <div class="hits-container single-post-content">
         <div class="row">
             <div class="col-md-6 single-post-img">
+            <div class="hits">
+                <?php
 
-                <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail(); ?>
-                <?php else : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder_logo.jpg" alt="Logo Grafit">
-                <?php endif; ?>
+                if( have_rows('photos') ):
+
+                    while ( have_rows('photos') ) : the_row(); ?>
+
+                    <img src="<?php the_sub_field('photo') ?>" alt="">
+
+
+                    <?php endwhile; else :?> <span>BRAK ZDJĘĆ</span> <?php endif; ?>
+            </div>
+
+            <div class="hits-nav">
+                <?php
+
+                if( have_rows('photos') ):
+
+                    while ( have_rows('photos') ) : the_row(); ?>
+
+                    <img src="<?php the_sub_field('photo') ?>" alt="">
+
+
+                    <?php endwhile; else :?> <span>BRAK ZDJĘĆ</span> <?php endif; ?>
+            </div>
 
             </div>
             <div class="col-md-6 single-post-text">
-                <div><?php the_field('price', $post->ID); ?></div>
+                <div><?php the_field('price'); ?></div>
                 <div><?php the_field('product_description', $post->ID); ?></div>
             
             </div>
