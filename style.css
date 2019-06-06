@@ -1184,17 +1184,17 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
-
+/* 
 .slick-list{
-    padding: 4rem;
-}
+    padding: 3vh;
+} */
 
 .hits .slick-next {
-    right: 10px;
+    right: 0.5vw;
 }
 
 .hits .slick-prev{
-    left: 10px;
+    left: 0.5vw;
     transform: rotate(180deg);
     margin-top: -13px;
     z-index: 10;
