@@ -31,7 +31,7 @@
 <div id="loading">
     <div class="loading-wrapper">
         <img class="loading-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo Grafit">
-        <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/loading.svg" alt="Loader">
+        <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" alt="Loader">
     </div>
 </div>
 

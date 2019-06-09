@@ -46,4 +46,32 @@ $('.hits-nav').slick({
     centerMode: true,
     focusOnSelect: true,
     arrows: false
-});     
+});
+
+$('.slider-hits').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2800,
+    adaptiveHeight: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});

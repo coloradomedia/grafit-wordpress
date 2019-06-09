@@ -200,14 +200,14 @@
 				class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
-<!-- contact section -->
-<div class="motto-2 darker-bg">
-	<!-- <h2>Hity cenowe</h2> -->
+<!-- hits section -->
+<div class="hits-section">
+	<h2><span>Hity </span>cenowe</h2>
 	<hr>
-	<div class="row justify-content-center">
+	<div class="slider-hits justify-content-center">
 		<?php 
 		$query = new WP_Query( array(
-			'posts_per_page' => 3,
+			'posts_per_page' => 10,
 			'category_name' => 'hity-cenowe'));
 		while ($query->have_posts() ) : $query->the_post(); ?>
 			<?php get_template_part( 'content', 'sale' ); ?>
@@ -217,7 +217,7 @@
 
 	</div>
 
-	<div class="btn-news"><a class="btn" href="news" role="button">Wszystkie wpisy <i class="far fa-arrow-alt-circle-right"></i></a></div>
+	<div class="btn-news"><a class="btn" href="news" role="button">Więcej produktów <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
 

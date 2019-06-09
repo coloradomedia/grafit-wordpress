@@ -1,7 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'Full HD', 1920, 1024 );
-add_image_size( 'Miniaturka', 200, 200 );
+add_image_size( 'Galeria', 500, 500 );
 
 function grafit_widgets_init() {
 	register_sidebar( array(
@@ -61,6 +61,8 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
 
 	 wp_enqueue_style( 'bootstrap-dropdownhover-css', get_template_directory_uri() . '/styles/bootstrap-dropdownhover.css', array(), '', 'all' );
 
+	 wp_enqueue_style( 'lightbox', get_template_directory_uri() . '/styles/lightbox.min.css', array(), '', 'all' );
+
 
 
     wp_enqueue_style( 'grafit-style', get_stylesheet_uri() );
@@ -69,7 +71,9 @@ add_action( 'widgets_init', 'grafit_widgets_init' );
     
     wp_enqueue_script( 'script-js', get_template_directory_uri() . '/slick/js/script.js', array('jquery'), '', true );
 	
-    wp_enqueue_script( 'bootstrap-dropdownhover-js', get_template_directory_uri() . '/js/bootstrap-dropdownhover.js', array('jquery'), '', true );
+	wp_enqueue_script( 'bootstrap-dropdownhover-js', get_template_directory_uri() . '/js/bootstrap-dropdownhover.js', array('jquery'), '', true );
+	
+    wp_enqueue_script( 'lightbox', get_template_directory_uri() . '/js/lightbox-plus-jquery.min.js', array('jquery'), '', true );
 
     
 if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

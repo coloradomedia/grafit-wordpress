@@ -13,9 +13,9 @@ $(".page-standard-content > h2").html(function () {
 $('html').addClass('js');
 
 $(document).ready(function() {
-    // setTimeout(
-    //     function()
-    //         {
+    setTimeout(
+        function()
+            {
             $("#loading").fadeOut();
-        // }, 30000);
+        }, 500);
 });

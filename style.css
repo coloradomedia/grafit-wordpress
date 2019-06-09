@@ -13,6 +13,8 @@ Text Domain: coloradomedia
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600|Raleway:200,400&subset=latin-ext');
 @import url(styles/animate.css);
 
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Exo+2:900|Russo+One|Skranji:700&display=swap');
+
 html{
     font-size: 10px;
     overflow-x: hidden;
@@ -450,15 +452,16 @@ a{
     color: #fff;
 }
 
-.motto-2{
+.hits-section{
     background: url(img/grafit.jpg) no-repeat fixed center;
     background-size: cover;
     position: relative;
     z-index: 0;
-    min-height: 50rem;
+    min-height: 70rem;
+    padding-top: 10rem;
 }
 
-.motto-2::after{
+.hits-section::after{
     content: '';
     width: 100%;
     height: 100%;
@@ -472,7 +475,7 @@ a{
     border-top: 70px solid white;
 }
 
-.motto-2::before{
+.hits-section::before{
     content: '';
     width: 100%;
     height: 100%;
@@ -482,22 +485,19 @@ a{
     z-index: -1;
 }
 
-.motto-2 h2{
+.hits-section h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 5rem;
-    position: absolute;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1000;
 }
 
-.motto-2 hr{
-    border-top: 3px solid #254675;
-    width: 30%;
+.hits-section hr{
+    border-top: 1px solid #8b8d92;
+    width: 70%;
+    padding-bottom: 5rem;
 }
 
 
@@ -1177,7 +1177,7 @@ a{
 }
 
 
-.hits-container {
+.hits-container{
     max-width: 1500px;
     padding-right: 15px;
     padding-left: 15px;
@@ -1215,8 +1215,8 @@ a{
     cursor: pointer;
     background-color: transparent;
     border: none;
-    /* background-image: url(slick/img/arrow-slider.png); */
-    background-image: url(slick/img/arrow-slider-black.png);
+    background-image: url(slick/img/arrow-slider.png);
+    /* background-image: url(slick/img/arrow-slider-black.png); */
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1232,9 +1232,50 @@ a{
     /* transition: all .2s ease; */
 /* } */
 
+.product-content{
+    text-align: center;
+}
 
+.reservation{
+    padding: 1rem 0 2rem 0;;
+}
 
+.price-small{
+    display: inline-block;
+    font-family: 'Russo One', sans-serif;
+    font-size: 6rem;
+    color: #001f49;
+    font-style: italic;
+    padding-right: 2rem;
+    padding-top: 5rem;
+}
 
+.price{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 3rem;
+    color: #254675;
+    text-decoration: line-through; 
+}
+
+.product-description{
+    padding: 2rem 0;
+}
+
+.call{
+    font-size: 2rem;
+    background-color: #ff0000;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-weight: bold;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.call i{
+    transform: rotate(90deg);
+    margin-right: 1rem;
+}
 
 
 
@@ -1277,11 +1318,11 @@ a{
         border-bottom: 60px solid white;
     }
 
-    .motto-2{
+    .hits-section{
         min-height: 45rem;
     }
     
-    .motto-2::after{
+    .hits-section::after{
         border-bottom: 60px solid white;
         border-top: 60px solid white;
     }
@@ -1312,7 +1353,10 @@ a{
         padding: 3vw 2vw;
     }
 
-    .page-content h2, .brand h2, .news h2{
+    .page-content h2,
+    .brand h2,
+    .news h2,
+    .hits-section h2{
         font-size: 3rem;
     }
 
@@ -1443,11 +1487,11 @@ a{
         font-size: 1.5rem;
     }
 
-    .motto-2{
+    .hits-section{
         min-height: 40rem;
     }
     
-    .motto-2::after{
+    .hits-section::after{
         border-bottom: 50px solid white;
         border-top: 50px solid white;
     }
@@ -1471,7 +1515,7 @@ a{
     .footer-widget{
         text-align: center;
         padding-top: 2vw;
-        padding-bottom: 3vw;
+        /* padding-bottom: 3vw; */
     }
     
     .footer-title{
@@ -1532,6 +1576,13 @@ a{
         max-width: none;
     }
 
+    .price-small{
+        font-size: 5vw;
+    }
+
+    .price{
+        font-size: 4vw;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1543,7 +1594,8 @@ a{
         background-color: transparent;
     }
 
-    .one-two:hover{
+    .one-two:hover,
+    .one-four:hover{
         transform: none;
     }
 
@@ -1551,7 +1603,8 @@ a{
         background-color: transparent;
     }
 
-    .one-two:hover .img-fluid{
+    .one-two:hover .img-fluid,
+    .one-four:hover .img-fluid{
         filter: none;
     }
 
@@ -1653,7 +1706,7 @@ a{
     .phone i,
     .mail i,
     .map-mark i{
-        font-size: 3vw;
+        font-size: 2rem;
     }
     
     .footer-row ul li a{
@@ -1692,6 +1745,15 @@ a{
     .space{
         padding-top: 5vw;
     }
+    
+    .price-small{
+        font-size: 7vw;
+    }
+
+    .price{
+        font-size: 5vw;
+    }
+    
 }
 
 @media (max-width: 575.98px) {
@@ -1715,20 +1777,20 @@ a{
         font-size: 2rem;
     }
 
-    .cards{
+    /* .cards{
         max-width: 80vw;
-    }
+    } */
 
     .card-text{
         font-size: 6vw;
     }
     
-    .news{
+    /* .news{
         max-width: 80vw;
-    }
+    } */
 
     .contact-footer{
-        font-size: 3.5vw;
+        font-size: 2rem;
     }
     
     .page-standard-img img{
@@ -1858,6 +1920,31 @@ a{
         display: block;
     }
 
+    .site-info{
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .hits-container{
+        padding-top: 3rem;
+    }
+
+    .hits-container .single-post-img{
+        padding: 0;
+    }
+
+    .product-content{
+        border: none;
+        padding: 0;
+    }
+
+    .price-small{
+        font-size: 9vw;
+    }
+
+    .price{
+        font-size: 7vw;
+    }
 }
 
 @media (max-width: 380px) {
