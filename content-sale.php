@@ -20,10 +20,9 @@
                 </a>
             <?php endif; ?>
 
-            <div class="mini-post-content">
+            <div class="hits-post-content">
                 <?php the_title( '<h3>', '</h3>'); ?>
-                <?php the_field('cena', $post->ID); ?>
-                <div class="btn-small"><a href="<?php echo get_permalink($post->ID)?>" class="btn btn-small-post">Zobacz cenę</a></div>
+                <a href="<?php echo get_permalink($post->ID)?>" class="btn">Sprawdź cenę</a>
             </div>
         </div>
     </article>

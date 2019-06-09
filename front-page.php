@@ -202,6 +202,7 @@
 
 <!-- hits section -->
 <div class="hits-section">
+	
 	<h2><span>Hity </span>cenowe</h2>
 	<hr>
 	<div class="slider-hits justify-content-center">
@@ -217,7 +218,7 @@
 
 	</div>
 
-	<div class="btn-news"><a class="btn" href="news" role="button">Więcej produktów <i class="far fa-arrow-alt-circle-right"></i></a></div>
+	<div class="btn-news"><a class="btn" href="hits" role="button">Więcej produktów <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
 
