@@ -1,5 +1,5 @@
 <?php 
-/* The template for displaying blog page. */
+/* The template for displaying category-hits. */
 get_header(); ?>
 <div class="news-container">
     <header class="entry-header">
@@ -13,21 +13,20 @@ get_header(); ?>
                 <div class="dark-image-overlay"></div>
                 <div class="container">
                     <div class="entry-title">
-                        <h1 class="entry-title-header animated fadeInUp">Aktualności</h1>
+                        <h1 class="entry-title-header animated fadeInUp">Hity cenowe</h1>
                     </div>
                 </diV>
             </div>
     </header>
-
     <div class="space-news"></div>
 
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
-            <?php get_template_part( 'content', 'news' ); ?>
+            <?php get_template_part( 'content', 'hity-cenowe' ); ?>
         <?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
-        <?php pagination(); ?>
 
+        <?php pagination(); ?>
     </div>
 </div>
 <?php get_footer(); ?>

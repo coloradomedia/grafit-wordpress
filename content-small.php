@@ -5,11 +5,11 @@
 ?>
 <div class="col-sm-6 col-xl-4 col-sm-auto">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <div class="mini-post-img img-fluid">
+        <div class="mini-post-img">
             <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
                     <div class="img-fluid">
-                        <?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail('Galeria'); ?>
                     </div>
                 </a>
             <?php else : ?>

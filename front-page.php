@@ -218,7 +218,7 @@
 
 	</div>
 
-	<div class="btn-news"><a class="btn" href="hits" role="button">Więcej produktów <i class="far fa-arrow-alt-circle-right"></i></a></div>
+	<div class="btn-news"><a class="btn" href="hity-cenowe" role="button">Więcej produktów <i class="far fa-arrow-alt-circle-right"></i></a></div>
 </div>
 
 

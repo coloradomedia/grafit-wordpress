@@ -139,3 +139,10 @@ function pagination() {
         'next_text'    => __(''),
     ) ) . '</p></div>'; }
 }
+
+function exclude_category_hits( $query ) {
+if ( $query->is_home ) {
+	$query->set( 'cat', '-9' );
+} return $query;
+}
+add_filter( 'pre_get_posts', 'exclude_category_hits' );
