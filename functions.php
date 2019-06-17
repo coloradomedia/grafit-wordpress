@@ -1,7 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'Full HD', 1920, 1024 );
-add_image_size( 'Galeria', 500, 500 );
+add_image_size( 'Galeria', 500, 320, true );
 
 function grafit_widgets_init() {
 	register_sidebar( array(

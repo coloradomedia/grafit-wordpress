@@ -3,20 +3,24 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119988896-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119988896-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-119988896-2');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-119988896-2');
+    </script>
 
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php wp_title( '|', true, 'right' ); ?>Grafit Salon Meblowy Żegocina</title>
-    <meta name="description" content="Meble pokojowe, kuchenne, na wymiar, AGD i RTV, lampy, drzwi, dywany, panele, armatura łazienkowa, bramy i ogrodzenia Wiśniowski">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <meta name="description"
+        content="Meble pokojowe, kuchenne, na wymiar, AGD i RTV, lampy, drzwi, dywany, panele, armatura łazienkowa, bramy i ogrodzenia Wiśniowski">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -28,18 +32,19 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="loading">
-    <div class="loading-wrapper">
-        <img class="loading-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo Grafit">
-        <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" alt="Loader">
+    <div id="loading">
+        <div class="loading-wrapper">
+            <img class="loading-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg"
+                alt="Logo Grafit">
+            <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" alt="Loader">
+        </div>
     </div>
-</div>
 
     <header class="nav-head">
         <nav class="container navbar navbar-light navbar-expand-lg">
             <a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img
-                    src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo Grafit" width="200"
-                    height="auto" /></a>
+                    src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg" alt="Logo Grafit"
+                    width="200" height="auto" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
