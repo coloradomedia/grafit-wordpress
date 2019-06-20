@@ -22,15 +22,23 @@
                     <?php 
                     $images = get_field('product_gallery');
                     if( $images ): ?>
-                        <?php foreach( $images as $image ): ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                    <?php foreach( $images as $image ): ?>
+                            <img src="<?php echo $image['sizes']['Galeria']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
             </div>
             <div class="col-md-6 single-post-text product-content">
-                <div class="price-small"><?php the_field('price_small'); ?> zł</div>
-                <div class="price"><?php the_field('price'); ?> zł</div>
+
+        
+                <?php if( get_field('price_small') ): ?>
+                    <div class="price-small"><?php the_field('price_small'); ?>&nbsp;zł</div>
+                <?php endif; ?>
+
+                <?php if( get_field('price') ): ?>
+                    <div class="price"><?php the_field('price'); ?>&nbsp;zł</div>
+                <?php endif; ?>
+                
                 <div class="product-description"><?php the_field('product_description', $post->ID); ?></div>
                 <div>Kup na raty w&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/img/credit_logo_mini.png" alt="">&nbsp;&nbsp;lub&nbsp;&nbsp;<img src="<?php echo get_template_directory_uri(); ?>/img/santander_logo_mini.png" alt=""></div>
                 <div class="reservation">Zarezerwuj teraz i odbierz w salonie</div>

@@ -9,7 +9,7 @@
             <div class="list-post-img col-sm-4">
                 <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('Galeria'); ?>
                 </a>
                 <?php else : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">

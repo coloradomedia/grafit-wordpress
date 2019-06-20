@@ -1339,7 +1339,10 @@ a{
     margin-right: 1rem;
 }
 
-
+.money{
+    font-size: 15rem;
+    color: #254675;
+}
 
 
 
@@ -1816,6 +1819,9 @@ a{
         font-size: 5vw;
     }
     
+    .money{
+        font-size: 10rem;
+    }
 }
 
 @media (max-width: 575.98px) {

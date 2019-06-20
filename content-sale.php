@@ -9,7 +9,7 @@
             <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
                     <div class="img-fluid">
-                        <?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail('Galeria'); ?>
                     </div>
                 </a>
             <?php else : ?>

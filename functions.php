@@ -1,27 +1,27 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'Full HD', 1920, 1024 );
-add_image_size( 'Galeria', 500, 320, true );
+add_image_size( 'Galeria', 500, 330, true );
 
 function grafit_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Główny widget', 'grafit' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget-sidebar %2$s"><div class="">',
-		'after_widget'  => '</div></aside>',
-		'before_title'  => ' <div class=""><h3 class="widget-title">',
-		'after_title'   => '</h3></div>',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Footer 1', 'grafit' ),
-		'id'            => 'footer-1',
-		'description'   => '',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="footer-title">',
-		'after_title'   => '</h3>',
-	) );
+	// register_sidebar( array(
+	// 	'name'          => __( 'Główny widget', 'grafit' ),
+	// 	'id'            => 'sidebar-1',
+	// 	'description'   => '',
+	// 	'before_widget' => '<aside id="%1$s" class="widget-sidebar %2$s"><div class="">',
+	// 	'after_widget'  => '</div></aside>',
+	// 	'before_title'  => ' <div class=""><h3 class="widget-title">',
+	// 	'after_title'   => '</h3></div>',
+	// ) );
+	// register_sidebar( array(
+	// 	'name'          => __( 'Footer 1', 'grafit' ),
+	// 	'id'            => 'footer-1',
+	// 	'description'   => '',
+	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	// 	'after_widget'  => '</div>',
+	// 	'before_title'  => '<h3 class="footer-title">',
+	// 	'after_title'   => '</h3>',
+	// ) );
 	register_sidebar( array(
 		'name'          => __( 'Footer 2', 'grafit' ),
 		'id'            => 'footer-2',
@@ -139,7 +139,7 @@ function pagination() {
         'next_text'    => __(''),
     ) ) . '</p></div>'; }
 }
-
+//Wykluczenie kategorii w wyświetlanych aktualnościach
 function exclude_category_hits( $query ) {
 if ( $query->is_home ) {
 	$query->set( 'cat', '-9' );
