@@ -30,6 +30,23 @@
 
     </div>
 
+<div class="hits-page-section">
+
+	<div class="slider-hits-page justify-content-center">
+		<?php 
+		$query = new WP_Query( array(
+            'posts_per_page' => 10,
+            'orderby' => 'rand',
+			'category_name' => 'hity-cenowe'));
+		while ($query->have_posts() ) : $query->the_post(); ?>
+			<?php get_template_part( 'content', 'sale-gallery' ); ?>
+		<?php endwhile; ?>
+
+		<?php wp_reset_postdata(); ?>
+
+	</div>
+
+</div>
 
     <footer class="edit-footer container">
         <?php edit_post_link( __( 'Edytuj' ), '<button class="edit-link btn">', '</button>' ); ?>

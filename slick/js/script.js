@@ -75,3 +75,37 @@ $('.slider-hits').slick({
         }
     ]
 });
+
+$('.slider-hits-page').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    adaptiveHeight: true,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
