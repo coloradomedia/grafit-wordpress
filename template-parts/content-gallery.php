@@ -39,7 +39,7 @@
             'orderby' => 'rand',
 			'category_name' => 'hity-cenowe'));
 		while ($query->have_posts() ) : $query->the_post(); ?>
-			<?php get_template_part( 'content', 'sale-gallery' ); ?>
+			<?php get_template_part( 'template-parts/content', 'sale-gallery' ); ?>
 		<?php endwhile; ?>
 
 		<?php wp_reset_postdata(); ?>

@@ -6,10 +6,10 @@
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-        <?php get_template_part( 'content', 'standardtext' ); ?>
+        <?php get_template_part( 'template-parts/content', 'standardtext' ); ?>
 
     <?php endwhile; ?>
-
+    <?php wp_reset_postdata(); ?>
 </article>
 </div>
 <?php get_footer(); ?>

@@ -13,21 +13,27 @@ get_header(); ?>
                 <div class="dark-image-overlay"></div>
                 <div class="container">
                     <div class="entry-title">
+                    <?php if(is_category( 'hity-cenowe' )) : ?>
+                        <h1 class="entry-title-header animated fadeInUp">Hity cenowe</h1>
+                    <?php else: ?>
                         <h1 class="entry-title-header animated fadeInUp">Aktualności</h1>
+                    <?php endif; ?> 
                     </div>
                 </diV>
             </div>
     </header>
-
     <div class="space-news"></div>
 
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
-            <?php get_template_part( 'content', 'news' ); ?>
+            <?php if(is_category('hity-cenowe')) : ?>
+                <?php get_template_part( 'template-parts/content', 'hity' ); ?>
+            <?php else: ?>
+                <?php get_template_part( 'template-parts/content', 'news' ); ?>
+            <?php endif; ?>
         <?php endwhile; ?>
-		<?php wp_reset_postdata(); ?>
         <?php pagination(); ?>
-
+		<?php wp_reset_postdata(); ?>
     </div>
 </div>
 <?php get_footer(); ?>

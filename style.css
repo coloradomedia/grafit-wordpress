@@ -9,10 +9,8 @@ License: &copy;ColoradoMedia
 Text Domain: coloradomedia
 */
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin-ext');
-/* @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400&subset=latin-ext'); */
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600|Raleway:200,400&subset=latin-ext');
 @import url(styles/animate.css);
-
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Exo+2:900|Russo+One|Skranji:700&display=swap');
 
 html{

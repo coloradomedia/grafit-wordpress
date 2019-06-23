@@ -22,8 +22,6 @@
                       <p><?php the_field('short_description', $post->ID); ?></p>
                 <a href="<?php echo get_permalink($post->ID)?>" class="btn red-btn">Sprawdź cenę</a>
             </div>
-
-
             <!-- <div class="space"></div> -->
         </div>
     </article>

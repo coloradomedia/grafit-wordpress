@@ -1,5 +1,13 @@
 <?php get_header(); ?>
 
+<div id="loading">
+	<div class="loading-wrapper">
+		<img class="loading-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg"
+			alt="Logo Grafit">
+		<img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" alt="Loader">
+	</div>
+</div>
+
 <div id="arrows" class="carousel slide carousel-fade" data-ride="carousel">
 	<ol class="carousel-indicators">
 
@@ -14,7 +22,7 @@
 		<?php $count++; endwhile;
 
 		endif; ?>
-
+            <?php wp_reset_postdata(); ?>
 	</ol>
 	<div class="carousel-inner">
 		<?php
@@ -33,6 +41,7 @@
 		<?php $count++; endwhile;
 
 		else : ?>
+		<?php wp_reset_postdata(); ?>
 		<h3 class="nothing">Brak slajdów :(</h3>
 		<?php endif; ?>
 	</div>
@@ -189,9 +198,9 @@
 		<?php 
 		$query = new WP_Query( array(
 			'posts_per_page' => 3,
-			'category_name' => 'aktualnosci' ));
+			'cat' => 10 ));
 		while ($query->have_posts() ) : $query->the_post(); ?>
-		<?php get_template_part( 'content', 'small' ); ?>
+		<?php get_template_part( 'template-parts/content', 'small' ); ?>
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
 	</div>
@@ -209,11 +218,10 @@
 		<?php 
 		$query = new WP_Query( array(
 			'posts_per_page' => 10,
-			'category_name' => 'hity-cenowe'));
+			'cat' => 9));
 		while ($query->have_posts() ) : $query->the_post(); ?>
-			<?php get_template_part( 'content', 'sale' ); ?>
+			<?php get_template_part( 'template-parts/content', 'sale' ); ?>
 		<?php endwhile; ?>
-
 		<?php wp_reset_postdata(); ?>
 
 	</div>

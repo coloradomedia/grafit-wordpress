@@ -11,23 +11,15 @@
 get_header(); ?>
 
 <div class="section-padding">
-
 		<div id="primary" class="col-xs-12">
 			<main id="main" class="site-main" role="main">
-
 				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'content', 'page' ); ?>
-
-					<?php
-
-						if ( comments_open() || get_comments_number() ) :
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+					<?php if ( comments_open() || get_comments_number() ) :
 							comments_template();
-						endif;
-					?>
-
+					endif; ?>
 				<?php endwhile; ?>
-
+				<?php wp_reset_postdata(); ?>
 			</main>
 		</div>
 </div>

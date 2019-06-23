@@ -4,7 +4,7 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <div class="hits-container single-post-content">
+    <div class="hits-container single-post-content animated fadeIn">
         <div class="row">
             <div class="col-md-6 single-post-img">
                 <div class="hits">

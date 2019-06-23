@@ -25,12 +25,13 @@ get_header(); ?>
 
 <?php if ( has_post_thumbnail() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'content', 'single' ); ?>
+        <?php get_template_part( 'template-parts/content', 'single' ); ?>
     <?php endwhile; ?>
 <?php else : ?>
     <?php while ( have_posts() ) : the_post(); ?>
-        <?php get_template_part( 'content', 'column' ); ?>
+        <?php get_template_part( 'template-parts/content', 'column' ); ?>
     <?php endwhile; ?>
+    <?php wp_reset_postdata(); ?>
 <?php endif; ?>
 
 

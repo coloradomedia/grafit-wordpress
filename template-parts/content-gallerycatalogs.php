@@ -20,6 +20,7 @@
                 </div>
                 
             <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
             <?php else : ?>
 
                 <h3 class="nothing">Tu nic nie ma :(</h3>

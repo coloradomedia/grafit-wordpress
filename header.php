@@ -20,7 +20,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php wp_title( '|', true, 'right' ); ?></title>
     <meta name="description"
-        content="Meble pokojowe, kuchenne, na wymiar, AGD i RTV, lampy, drzwi, dywany, panele, armatura łazienkowa, bramy i ogrodzenia Wiśniowski">
+        content="Meble pokojowe, kuchenne, na wymiar, AGD, RTV. Konkurencyjne ceny, krótki czas realizacji. Zadzwoń 14 613 21 04 lub napisz biuro@meblegrafit.pl. Zapraszamy!">
+    <meta name="theme-color" content="#254675">
+    <meta property="og:image" content="img/logo.png"/>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -32,13 +34,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="loading">
-        <div class="loading-wrapper">
-            <img class="loading-logo" src="<?php echo get_template_directory_uri(); ?>/img/logo-grafit-wektor.svg"
-                alt="Logo Grafit">
-            <img class="circle" src="<?php echo get_template_directory_uri(); ?>/img/loading.gif" alt="Loader">
-        </div>
-    </div>
 
     <header class="nav-head">
         <nav class="container navbar navbar-light navbar-expand-lg">
@@ -51,11 +46,11 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="about">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hity-cenowe">Promocje</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Oferta</a>
-                        <div class="dropdown-menu animated slideInMenu" aria-labelledby="navbarDropdownMenuLink">
+                        <div class="dropdown-menu animated slideInMenu thefast" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="salon">Pokoje dzienne</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="kitchen">Kuchnie - na wymiar</a>

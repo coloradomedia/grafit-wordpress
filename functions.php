@@ -4,24 +4,6 @@ add_image_size( 'Full HD', 1920, 1024 );
 add_image_size( 'Galeria', 500, 330, true );
 
 function grafit_widgets_init() {
-	// register_sidebar( array(
-	// 	'name'          => __( 'Główny widget', 'grafit' ),
-	// 	'id'            => 'sidebar-1',
-	// 	'description'   => '',
-	// 	'before_widget' => '<aside id="%1$s" class="widget-sidebar %2$s"><div class="">',
-	// 	'after_widget'  => '</div></aside>',
-	// 	'before_title'  => ' <div class=""><h3 class="widget-title">',
-	// 	'after_title'   => '</h3></div>',
-	// ) );
-	// register_sidebar( array(
-	// 	'name'          => __( 'Footer 1', 'grafit' ),
-	// 	'id'            => 'footer-1',
-	// 	'description'   => '',
-	// 	'before_widget' => '<div id="%1$s" class="widget %2$s">',
-	// 	'after_widget'  => '</div>',
-	// 	'before_title'  => '<h3 class="footer-title">',
-	// 	'after_title'   => '</h3>',
-	// ) );
 	register_sidebar( array(
 		'name'          => __( 'Footer 2', 'grafit' ),
 		'id'            => 'footer-2',
@@ -106,6 +88,7 @@ function hide_logo() {
     $wp_admin_bar->remove_menu('documentation');
     $wp_admin_bar->remove_menu('support-forums');
     $wp_admin_bar->remove_menu('feedback');
+    $wp_admin_bar->remove_menu('comments');
 }
 add_action( 'wp_before_admin_bar_render', 'hide_logo' );
 
@@ -114,11 +97,6 @@ function thanks() {
 }
 add_filter('admin_footer_text', 'thanks');
 
-// function new_excerpt_more($more){
-// 	global $post;
-// 	return '<div class="post-button"><a href="'. get_permalink($post->ID) .'">Czytaj całość&nbsp;<i class="fas fa-angle-double-right"></i></a></div>';
-// }
-// add_filter('excerpt_more', 'new_excerpt_more');
 
 function new_excerpt_length($length) {
 	return 20;
@@ -139,10 +117,19 @@ function pagination() {
         'next_text'    => __(''),
     ) ) . '</p></div>'; }
 }
-//Wykluczenie kategorii w wyświetlanych aktualnościach
-function exclude_category_hits( $query ) {
-if ( $query->is_home ) {
-	$query->set( 'cat', '-9' );
-} return $query;
+// Wyświetlanie aktualności na stronie bloga
+function my_home_category( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'cat', '10' );
+    }
+	
+    if ( ! $query->is_main_query() || $query->is_admin() )
+	return false; 
+	
+    if ( $query->is_category() ) {
+		$query->set( 'cat', '9' );
+        $query->set( 'posts_per_page', 10 );
+    }
+    return $query;
 }
-add_filter( 'pre_get_posts', 'exclude_category_hits' );
+add_action( 'pre_get_posts', 'my_home_category' );
