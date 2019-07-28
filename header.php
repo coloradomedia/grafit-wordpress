@@ -46,7 +46,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="hity-cenowe">Promocje</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://meblegrafit.pl/hity-cenowe/">Promocje</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">Oferta</a>

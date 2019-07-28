@@ -9,8 +9,10 @@ License: &copy;ColoradoMedia
 Text Domain: coloradomedia
 */
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin-ext');
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400&subset=latin-ext'); */
 @import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,600|Raleway:200,400&subset=latin-ext');
 @import url(styles/animate.css);
+
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Exo+2:900|Russo+One|Skranji:700&display=swap');
 
 html{
@@ -833,7 +835,7 @@ a{
     padding: 0 0 2rem 0;
     position: relative;
     height: 100%;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     text-align: center;
 }
 
@@ -1514,13 +1516,17 @@ a{
     }
 
     .list-post-content h2{
-        font-size: 2vw;
+        font-size: 2rem;
     }
 
     .list-post-content{
         font-size: 1.5vw;
     }
     
+    .list-post-content a{
+        font-size: 1.5rem;
+    }
+
     .news-container .container{
         max-width: none;
     }
@@ -1648,7 +1654,7 @@ a{
     }
 
     .list-post-content{
-        font-size: 2vw;
+        font-size: 2rem;
     }
 
     .post-edit-link{
@@ -1843,6 +1849,10 @@ a{
     
     .money{
         font-size: 10rem;
+    }
+
+    .list-post-content{
+        font-size: 1.8rem;
     }
 }
 
