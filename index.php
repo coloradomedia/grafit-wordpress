@@ -4,7 +4,10 @@ get_header(); ?>
 <div class="news-container">
     <header class="entry-header">
         <?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(5000,1000), false, ''); ?>
-        <?php if ( has_post_thumbnail() ) : ?>
+        <?php if(is_category('komputery')) : ?>
+            <div class="entry-img"
+                style="background: url(<?php echo get_template_directory_uri(); ?>/img/pattern.jpg);">
+        <?php elseif ( has_post_thumbnail() ) : ?>
             <div class="entry-img" style="background: url(<?php echo $src[0]; ?>);">
         <?php else : ?>
             <div class="entry-img"
@@ -15,6 +18,8 @@ get_header(); ?>
                     <div class="entry-title">
                     <?php if(is_category( 'hity-cenowe' )) : ?>
                         <h1 class="entry-title-header animated fadeInUp">Hity cenowe</h1>
+                    <?php elseif(is_category( 'komputery' )) : ?>
+                        <h1 class="entry-title-header animated fadeInUp">Komputery</h1>
                     <?php else: ?>
                         <h1 class="entry-title-header animated fadeInUp">Aktualności</h1>
                     <?php endif; ?> 
@@ -27,7 +32,9 @@ get_header(); ?>
     <div class="container">
         <?php while ( have_posts() ) : the_post(); ?>
             <?php if(is_category('hity-cenowe')) : ?>
-                <?php get_template_part( 'template-parts/content', 'hity' ); ?>
+                <?php get_template_part( 'template-parts/content', 'hity' ); ?> 
+            <?php elseif(is_category('komputery')) : ?>
+                <?php get_template_part( 'template-parts/content', 'komputery-list' ); ?>
             <?php else: ?>
                 <?php get_template_part( 'template-parts/content', 'news' ); ?>
             <?php endif; ?>

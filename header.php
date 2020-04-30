@@ -69,7 +69,7 @@
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="agdrtv">AGD/RTV</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="doors">Drzwi</a>
+                            <a class="dropdown-item" href="http://localhost/wordpress/komputery/">Komputery</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="wood">Panele</a>
                             <div class="dropdown-divider"></div>

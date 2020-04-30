@@ -1367,6 +1367,127 @@ a{
 }
 
 
+/* .hits-container {
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 3rem;
+} */
+
+.single-post-content {
+    position: relative;
+}
+
+  
+  .product-content {
+    text-align: left;
+    position: relative;
+  }
+
+  .line {
+    width: 100%;
+    margin: 0;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    transition: ease-in-out .03s;
+  }
+  
+  .line div:nth-child(1) {
+    padding-left: 5%;
+  }
+  
+  .line:nth-of-type(even) {
+    background-color: #f6f6f6d0;
+  }
+  
+  .line:hover {
+    background-color: #f0f0f0;
+    transition: ease-in-out .03s;
+  }
+
+  .main-post-title {
+    position: relative;
+    width: 100%;
+    max-height: 7rem;
+    background-color: #254675;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  .product-page-price {
+    position: relative;
+    bottom: 0rem;
+    right: 0;
+    padding-top: 2rem;
+    text-align: right;
+  }
+  
+  .product-old-price {
+    display: inline-block;
+    font-size: 3rem;
+    text-decoration: line-through;
+    padding-right: 1rem;
+  }
+  
+  .product-price {
+    display: inline-block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #190074;
+  }
+  
+  .product-price span {
+    font-size: 2.5rem;
+  }
+
+  .note {
+    padding-top: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .prices {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 3rem;
+    line-height: 1.1;
+  }
+  
+  .old-price {
+    font-size: 2rem;
+    text-decoration: line-through;
+    text-align: right;
+  }
+  
+  .mini-price-list {
+    display: inline-block;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #190074;
+  }
+  
+  .mini-price-list span {
+    font-size: 1.7rem;
+  }
+
+  .laptops{
+      font-size: 1.8rem;
+      text-align: left;
+    }
+    .laptops h2{
+        padding: 1.1rem;
+    }
+    .laptops-spec{
+        padding-left: 3rem;
+        padding-top: .5rem;
+  }
+  .more{
+      margin-top: 1.2rem;
+  }
+
 @media (max-width: 1199.98px) {
     .nav-item{
         font-size: 1.7vw;

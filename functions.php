@@ -126,10 +126,48 @@ function my_home_category( $query ) {
     if ( ! $query->is_main_query() || $query->is_admin() )
 	return false; 
 	
-    if ( $query->is_category() ) {
-		$query->set( 'cat', '9' );
-        $query->set( 'posts_per_page', 10 );
-    }
-    return $query;
+    // if ( $query->is_category() ) {
+		// $query->set( 'cat', '11' );
+    //     $query->set( 'posts_per_page', 10 );
+    // }
+    // return $query;
 }
 add_action( 'pre_get_posts', 'my_home_category' );
+
+//CUSTOM POST TYPES
+function laptops_post_type() {
+    $labels = array(
+        'name' => 'Laptopy',
+        'singular_name' => 'Laptop',
+        'edit_item' => 'Edytuj laptopa',
+        'new_item' => 'Nowy laptop',
+        'add_new_item' => 'Dodaj nowego laptopa',
+        'add_new' => 'Dodaj laptopa',
+        'all_items' => 'Wszystkie laptopy',
+        'view_item' => 'Wyświetl laptopa',
+        'search_item' => 'Szukaj laptopa'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'publicly_queryable' => true,
+        'query_var' => true,
+        'rewrite' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'default_category' => 2,
+        'supports' => array( 
+            'title',
+            'thumbnail',
+            'revisions'
+        ),
+        'taxonomies' => array(
+            'category', 
+            'post_tag'
+        ),
+        'menu_position' => 4
+    );
+    register_post_type( 'laptops', $args );
+}
+add_action( 'init', 'laptops_post_type' );
