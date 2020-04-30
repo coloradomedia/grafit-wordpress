@@ -19,6 +19,7 @@
             </div>
             <div class="list-post-content col-sm-8">
                 <?php the_title( '<h2>', '</h2>' ); ?>
+                      <p style="padding-top: 1.5rem;">Procesor: <b><?php the_field('CPU'); ?></b> &bull; <b><?php the_field('memory'); ?> RAM</b> &bull; Ekran: <b><?php the_field('diagonal'); ?> (<?php the_field('resolution'); ?>)</b> &bull; Dysk: <b><?php the_field('disc'); ?></b></p>
                       <p><?php the_field('short_description', $post->ID); ?></p>
                 <a href="<?php echo get_permalink($post->ID)?>" class="btn red-btn">Zobacz cenę</a>
             </div>
