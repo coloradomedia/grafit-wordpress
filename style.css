@@ -1379,7 +1379,7 @@ a{
 }
 
   
-  .product-content {
+  .computer-content {
     text-align: left;
     position: relative;
   }
@@ -1474,18 +1474,35 @@ a{
   }
 
   .laptops{
-      font-size: 1.8rem;
-      text-align: left;
-    }
-    .laptops h2{
-        padding: 1.1rem;
-    }
-    .laptops-spec{
-        padding-left: 3rem;
-        padding-top: .5rem;
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .laptops h2{
+      padding: 1.1rem;
+  }
+  .laptops-spec{
+      padding-left: 3rem;
+      padding-top: .5rem;
   }
   .more{
       margin-top: 1.2rem;
+  }
+
+  .sale-promotion{
+    width: 30px;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 @media (max-width: 1199.98px) {

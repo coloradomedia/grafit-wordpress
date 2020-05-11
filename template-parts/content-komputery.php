@@ -27,7 +27,7 @@
         </div>
         <div class="space"></div>
       </div>
-      <div class="col-md-7 single-post-text product-content">
+      <div class="col-md-7 single-post-text computer-content">
         <?php the_title('<h2 class="main-post-title">', '</h2>'); ?>
         <div class="line row">
           <div class="col-5"><b>Procesor:</b></div>

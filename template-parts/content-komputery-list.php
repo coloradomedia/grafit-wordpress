@@ -10,11 +10,14 @@
                 <?php if ( has_post_thumbnail() ) : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
                     <?php the_post_thumbnail('Galeria'); ?>
+                    <?php if( get_field('resolution') ): ?>
+                      <div class="sale-promotion">Promocja</div>
+                    <?php endif; ?>
                 </a>
                 <?php else : ?>
                 <a href="<?php echo get_permalink($post->ID)?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder_logo.jpg" alt="Logo Grafit">
                 </a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/placeholder_logo.jpg" alt="Logo Grafit">
                 <?php endif; ?>
             </div>
             <div class="list-post-content col-sm-8">
