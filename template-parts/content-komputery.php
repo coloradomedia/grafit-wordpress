@@ -49,18 +49,24 @@
           <div class="col-5"><b>Grafika:</b></div>
           <div class="col-7"><?php the_field('graphics'); ?></div>
         </div>
-        <div class="line row">
-          <div class="col-5"><b>Przekątna ekranu:</b></div>
-          <div class="col-7"><?php the_field('diagonal'); ?></div>
-        </div>
-        <div class="line row">
-          <div class="col-5"><b>Rozdzielczość:</b></div>
-          <div class="col-7"><?php the_field('resolution'); ?></div>
-        </div>
-        <div class="line row">
-          <div class="col-5"><b>Typ ekranu:</b></div>
-          <div class="col-7"><?php the_field('screen_type'); ?></div>
-        </div>
+		<?php if(get_field('diagonal')) : ?>
+			<div class="line row">
+			  <div class="col-5"><b>Przekątna ekranu:</b></div>
+			  <div class="col-7"><?php the_field('diagonal'); ?></div>
+			</div>
+		<?php endif; ?>
+		<?php if(get_field('resolution')) : ?> 
+			<div class="line row">
+			  <div class="col-5"><b>Rozdzielczość:</b></div>
+			  <div class="col-7"><?php the_field('resolution'); ?></div>
+			</div>
+		<?php endif; ?>
+		<?php if(get_field('screen_type')) : ?>   
+			<div class="line row">
+			  <div class="col-5"><b>Typ ekranu:</b></div>
+			  <div class="col-7"><?php the_field('screen_type'); ?></div>
+			</div>
+		<?php endif; ?>
         <div class="line row">
           <div class="col-5"><b>Dysk:</b></div>
           <div class="col-7"><?php the_field('disc'); ?></div>
@@ -72,10 +78,6 @@
         <div class="line row">
           <div class="col-5"><b>Napęd optyczny:</b></div>
           <div class="col-7"><?php the_field('drive'); ?></div>
-        </div>
-        <div class="line row">
-          <div class="col-5"><b>System operacyjny:</b></div>
-          <div class="col-7"><?php the_field('operating_system'); ?></div>
         </div>
         <div class="line row">
           <div class="col-5"><b>Gwarancja:</b></div>
@@ -97,7 +99,9 @@
           zwiększona lub zmniejszona zgodnie z oczekiwaniami.</div>
       </div>
     </div>
-    <?php the_content(); ?>
+	<div>
+	<?php the_content(); ?>	
+	</div>
   </div>
       <footer class="edit-footer">
         <?php edit_post_link( __( 'Edytuj' ), '<button class="edit-link btn animated zoomIn delay-05s">', '</button>' ); ?>

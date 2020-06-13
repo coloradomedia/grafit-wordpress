@@ -30,8 +30,15 @@
 		$count = 0;
 		while ( have_rows('slider') ) : the_row(); ?>
 
-		<div class="carousel-item <?php if (!$count) { ?> active<?php } ?>">
-			<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>" alt="Slide">
+    <div class="carousel-item <?php if (!$count) { ?> active<?php } ?>">
+			<?php if( get_sub_field('baner_link') ): ?>
+			<a href="<?php the_sub_field('baner_link'); ?>">
+				<?php endif; ?>
+				<img class="d-block w-100" src="<?php the_sub_field('slide'); ?>" alt="Slide">
+
+				<?php if( get_sub_field('baner_link') ): ?>
+			</a>
+			<?php endif; ?>
 			<div class="carousel-text">
 				<h2 class="animated fadeInUp delay-05s"><?php the_sub_field('top_slide'); ?></h2>
 				<p class="animated fadeInUp delay-1s"><?php the_sub_field('bottom_slide'); ?></p>
