@@ -4,7 +4,7 @@ Theme URI: http://meblegrafit.pl
 Author: ColoradoMedia
 Author URI: http://coloradomedia.pl
 Description: Motyw strony z możliwością wstawiania postów i dowolnej zmiany większości tekstów znajdujących się w serwisie. Istnieje możliwość zmiany zdjęć w sliderze na stronie głównej wraz z podpisami.
-Version: 1.0.0
+Version: 1.1.4
 License: &copy;ColoradoMedia
 Text Domain: coloradomedia
 */
@@ -128,7 +128,7 @@ a {
 
 .carousel-text h2 {
   font-size: 3.5vw;
-  border-bottom: .3rem solid #254675;
+  border-bottom: 0.3rem solid #254675;
 }
 
 .carousel-text h3 {
@@ -154,7 +154,7 @@ a {
   font-size: 4rem;
   padding-bottom: 1.5rem;
   font-weight: 600;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   color: #254675;
 }
 
@@ -271,19 +271,19 @@ a {
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all .75s cubic-bezier(.5, 0, 0, 0.75) 0s;
-  transition: all .75s cubic-bezier(.5, 0, 0, 0.75) 0s;
+  -webkit-transition: all 0.75s cubic-bezier(0.5, 0, 0, 0.75) 0s;
+  transition: all 0.75s cubic-bezier(0.5, 0, 0, 0.75) 0s;
 }
 
 .one-two:hover .img-fluid {
   filter: blur(3px);
-  transition: ease-in .75s;
+  transition: ease-in 0.75s;
   overflow: hidden;
 }
 
 .one-four:hover .img-fluid {
   filter: blur(3px);
-  transition: ease-in .75s;
+  transition: ease-in 0.75s;
 }
 
 .one-two:hover .card-text::before,
@@ -508,7 +508,6 @@ a {
 .hits-post-content {
   color: #fff;
   text-align: center;
-
 }
 
 .hits-post-content h3 {
@@ -625,7 +624,7 @@ a {
   background-size: 30%;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .brand-slider .slick-arrow:hover {
@@ -634,7 +633,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #254675;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .brand {
@@ -669,7 +668,7 @@ a {
   background-color: #8b8d92;
   border: 0;
   color: #fff;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .post-edit-link:hover {
@@ -677,8 +676,6 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
-
 
 /* CSS NAGLOWEK DO WYSWIETLANIA POSTA */
 .entry-header {
@@ -699,14 +696,14 @@ a {
   text-transform: uppercase;
   color: #fff;
   font-size: 4rem;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   line-height: 39px;
   font-weight: 600;
 }
 
 .dark-image-overlay {
   background-color: #212121;
-  opacity: .4;
+  opacity: 0.4;
   position: absolute;
   top: 0;
   right: 0;
@@ -727,7 +724,6 @@ a {
   width: 100%;
   height: auto;
 }
-
 
 .single-post-text {
   font-size: 1.7rem;
@@ -855,7 +851,6 @@ a {
     text-overflow: ellipsis; */
 }
 
-
 .list-post-content a {
   background-color: transparent;
   padding: 0.5rem 2rem;
@@ -872,7 +867,6 @@ a {
   background-color: #254675;
   color: #fff;
 }
-
 
 .news-container {
   background: url(img/chair.jpg);
@@ -907,22 +901,22 @@ a {
 .pagination a {
   color: #254675;
   text-decoration: none;
-  transition: all .2s;
-  padding: .2rem 1rem;
+  transition: all 0.2s;
+  padding: 0.2rem 1rem;
   border: 1px solid #254675;
 }
 
 .pagination a:hover {
   color: #001f49;
   text-decoration: none;
-  transition: all .2s;
+  transition: all 0.2s;
   border-bottom: 3px solid #254675;
 }
 
 .pagination .current {
   color: #001f49;
   border-bottom: 5px solid #254675;
-  padding: 0rem .8rem;
+  padding: 0rem 0.8rem;
   border: 3px solid #254675;
 }
 
@@ -1019,7 +1013,7 @@ a {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #ECF0F1;
+  background: #ecf0f1;
   display: none;
 }
 
@@ -1050,7 +1044,6 @@ a {
 }
 
 @keyframes pulse {
-
   0%,
   100% {
     transform: scale(1);
@@ -1151,7 +1144,7 @@ a {
 
 .map-mark i {
   font-size: 2.2rem;
-  padding-left: .3rem;
+  padding-left: 0.3rem;
   padding-right: 1.2rem;
 }
 
@@ -1168,7 +1161,7 @@ a {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .open-footer {
@@ -1258,7 +1251,6 @@ a {
   transition: all 0.5s ease;
 }
 
-
 .lightbox .lb-outerContainer .lb-container .lb-image {
   border: 0;
   border-radius: 0;
@@ -1271,7 +1263,6 @@ a {
 .mobile-top {
   display: none;
 }
-
 
 .hits-container {
   max-width: 1500px;
@@ -1317,7 +1308,7 @@ a {
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 /* .hits .slick-arrow:hover{ */
@@ -1329,13 +1320,17 @@ a {
 /* transition: all .2s ease; */
 /* } */
 
+.slider-hits {
+  max-width: 205rem;
+  margin: 0 auto;
+}
+
 .product-content {
   text-align: center;
 }
 
 .reservation {
   padding: 1rem 0 2rem 0;
-  ;
 }
 
 .price-small {
@@ -1384,7 +1379,6 @@ a {
   position: relative;
 }
 
-
 .computer-content {
   text-align: left;
   position: relative;
@@ -1393,9 +1387,9 @@ a {
 .line {
   width: 100%;
   margin: 0;
-  padding-top: .4rem;
-  padding-bottom: .4rem;
-  transition: ease-in-out .03s;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  transition: ease-in-out 0.03s;
 }
 
 .line div:nth-child(1) {
@@ -1408,7 +1402,7 @@ a {
 
 .line:hover {
   background-color: #f0f0f0;
-  transition: ease-in-out .03s;
+  transition: ease-in-out 0.03s;
 }
 
 .main-post-title {
@@ -1490,7 +1484,7 @@ a {
 
 .laptops-spec {
   padding-left: 3rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .more {
@@ -1510,10 +1504,9 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 @media (max-width: 1199.98px) {
   .nav-item {
@@ -1612,7 +1605,6 @@ a {
 
   .mini-post-content h3 {
     font-size: 2.5vw;
-
   }
 
   .mini-post-content p {
@@ -1685,7 +1677,6 @@ a {
     font-size: 2rem;
   }
 }
-
 
 @media (max-width: 991.98px) {
   .nav-item {
@@ -2123,7 +2114,7 @@ a {
   .page-standard-img {
     max-width: 80%;
     padding: 0;
-    padding-bottom: 2rem
+    padding-bottom: 2rem;
   }
 
   .page-header {
@@ -2148,7 +2139,6 @@ a {
 
   .catalog-container img {
     max-width: 70%;
-    ;
   }
 
   .catalog-link {
