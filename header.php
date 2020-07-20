@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> class='js'>
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
